@@ -7,9 +7,9 @@ driver = webdriver.Chrome()
 import time
 driver.maximize_window()
 driver.get("https://yopmail.com/en/wm")
-
+time.sleep(2)
 driver.switch_to.frame("ifmail")
-
 driver.find_element(By.LINK_TEXT,'View My Booking').click()
+driver.switch_to.default_content()
 
 
