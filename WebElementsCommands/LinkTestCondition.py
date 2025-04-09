@@ -13,6 +13,6 @@ print(count)
 print("The total links are there in the website is",len(count))
 # driver.find_element(By.PARTIAL_LINK_TEXT,'CWC Meet').click()
 for link in count:
- print(link.text)
+ print(link.text) #...
 
 # /home/web-h-028/PycharmProjects/TrainingAutomation
