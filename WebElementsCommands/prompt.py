@@ -7,7 +7,7 @@ driver = webdriver.Chrome()
 
 # Open the target URL
 driver.get("https://testautomationpractice.blogspot.com/")
-
+#priya
 # Maximize the window
 driver.maximize_window()
 
