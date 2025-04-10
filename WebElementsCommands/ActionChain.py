@@ -8,3 +8,8 @@ driver.maximize_window()
 time.sleep(2)
 
 actions = ActionChains(driver) # driver pass as a parameter
+
+link = driver.find_element(By.PARTIAL_LINK_TEXT, "DSA to Development")
+
+actions.click(link).perform()
+time.sleep(2)
