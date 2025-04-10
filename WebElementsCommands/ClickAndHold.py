@@ -13,4 +13,4 @@ link = driver.find_element(By.PARTIAL_LINK_TEXT, "DSA to Development")
 
 actions.click_and_hold(link).perform()
 time.sleep(2)
-actions.release()
+actions.release(link).perform()
