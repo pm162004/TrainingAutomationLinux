@@ -17,7 +17,7 @@ profile = FirefoxProfile(profile_path)
 options.profile = profile
 
 # Set up the service for geckodriver
-service = Service(executable_path='/home/web-h-028/PycharmProjects/TrainingAutomation/webbrowser/geckodriver')
+service = Service(executable_path='/home/web-h-028/PycharmProjects/TrainingAutomation/webbrowser/')
 options.log.level = "trace"
 
 # Initialize the Firefox WebDriver with profile and options

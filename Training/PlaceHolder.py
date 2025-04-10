@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-from ElementLocators.ById import placeholder_element
+from ElementLocators.PlaceHolder import placeholder_element
 # Initialize the WebDriver
 driver = webdriver.Chrome()
 
