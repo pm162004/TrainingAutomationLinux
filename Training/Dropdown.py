@@ -14,4 +14,5 @@ driver.execute_script("arguments[0].click();", element)
 time.sleep(2)
 driver.back()
 element2 = driver.find_element(By.XPATH,"(//*[contains(text(),'Join Us')])[1]")
+
 driver.execute_script("arguments[0].click();", element2)
