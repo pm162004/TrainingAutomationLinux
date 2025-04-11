@@ -3,11 +3,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 import time
-driver.get("https://stage.app.navodayatransport.com/login")
+driver.get("https://demo.automationtesting.in/Windows.html")
 driver.maximize_window()
-print(driver.title)
-print(driver.current_url)
-print(driver.page_source)
+driver.find_element(By.XPATH,"//button[@class='btn btn-info']").click()
 time.sleep(5)
-driver.close()
+
 driver.quit()
