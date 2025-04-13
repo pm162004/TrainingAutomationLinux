@@ -12,8 +12,7 @@ driver.find_element(By.NAME,"password").send_keys("Admin@123")
 driver.find_element(By.XPATH,"//button[@type='submit']").click()  # login
 time.sleep(3.0)
 driver.forward()
-driver.get("https://safarr-admin-dev.webelight.co.in/truth-or-truth")
-time.sleep(3.0)   # select the truth or truth menu
+
 driver.get("https://safarr-admin-dev.webelight.co.in/truth-or-truth")
 time.sleep(3.0)   # select the truth or truth menu
 toggles = driver.find_elements(By.CLASS_NAME, "switcher-toggle")  # finds all
@@ -22,4 +21,53 @@ driver.find_element(By.XPATH,"(//button[normalize-space()='Confirm'])[1]").click
 time.sleep(2) # CONFIRM
 button = driver.find_element(By.XPATH, "(//button)[5]")
 button.click()
+
 time.sleep(3.0)   # Edit Button
+driver.find_element(By.XPATH,"(//div[@class='select__control css-15bhs5i-control'])[1]").click()
+time.sleep(3.0) # open the dropdown
+sel = driver.find_element(By.XPATH,"(//*[contains(text(),'English')])[1]")
+driver.execute_script("arguments[0].click();",sel)
+
+time.sleep(3.0) # select the english
+driver.find_element(By.XPATH,"(//button[normalize-space()='Submit'])[1]").click()
+time.sleep(3.0) # submit button
+input_element = driver.find_element(By.XPATH, "(//input[@placeholder='Enter Question'])[1]")
+ # This clears any existing text in the input field
+input_element.click()
+input_element.send_keys(Keys.CONTROL + "a")  # or Keys.COMMAND + "a" on macOS
+input_element.send_keys(Keys.DELETE)
+
+# Then send new text
+input_element.send_keys("Test User 2 ....")
+
+time.sleep(3) # write the question
+driver.find_element(By.XPATH,"(//button[normalize-space()='Save'])[1]").click()
+time.sleep(3) # Click the save button
+button = driver.find_element(By.XPATH, "(//button)[6]")
+button.click()
+time.sleep(3.0)   # Translate  Button
+
+
+
+driver.find_element(By.XPATH,"(//div[@class='select__control css-15bhs5i-control'])[1]").click()
+
+time.sleep(3.0) # open the dropdown
+sel = driver.find_element(By.XPATH,"(//*[contains(text(),'Hindi')])[1]")
+driver.execute_script("arguments[0].click();",sel)
+
+time.sleep(3.0) # select the english
+driver.find_element(By.XPATH,"(//button[normalize-space()='Submit'])[1]").click()
+time.sleep(3.0)
+input_element = driver.find_element(By.XPATH, "(//input[@placeholder='Enter Question'])[1]")
+ # This clears any existing text in the input field
+input_element.click()
+input_element.send_keys(Keys.CONTROL + "a")  # or Keys.COMMAND + "a" on macOS
+input_element.send_keys(Keys.DELETE)
+
+# Then send new text
+input_element.send_keys("how are uuu")
+
+time.sleep(3) # write the question
+driver.find_element(By.XPATH,"(//button[normalize-space()='Save'])[1]").click()
+time.sleep(3) # Click the save button
+driver.close()
