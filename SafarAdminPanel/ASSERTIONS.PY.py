@@ -232,7 +232,12 @@ except NoSuchElementException:
 question_text = driver.find_element(By.XPATH, "(//span[contains(text(),'New User')])[1]")
 print("question message text:", question_text.text)
 assert "New User" in question_text.text, "New Question was not saved correctly"
+# Wait for the element to be present
+wait = WebDriverWait(driver, 10)  # wait for up to 10 seconds
+element = wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(), 'Translation has been added successfully.')]")))
 
+# Now interact with the element
+print(element.text)
 # Check if Successful message is displayed
 Successful_message = driver.find_element(By.XPATH, "//div[contains(text(), 'Translation has been added successfully.')]")  # Change to actual error text if different
 print("Translation text:", Successful_message.text)
