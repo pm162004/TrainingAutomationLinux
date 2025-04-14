@@ -3,14 +3,22 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 import random
+
+# Start the driver
 driver = webdriver.Chrome()
 driver.implicitly_wait(30)
 driver.get("https://safarr-admin-dev.webelight.co.in/sign-in")
 driver.maximize_window()
+
+# Login with blank inputs (this is an invalid login case)
 driver.find_element(By.NAME,"email").send_keys("")
 driver.find_element(By.NAME,"password").send_keys("")
 driver.find_element(By.XPATH,"//button[@type='submit']").click()  # login
 time.sleep(3.0) # blank inputs
+
+# # Assert that an error message appears due to blank inputs
+# error_message = driver.find_element(By.XPATH, "//div[contains(text(),'Email is required.')] AND //div[contains(text(),'Email is required.')]")
+# assert "Invalid" in error_message.text, "Error message not found"
 
 adminUname = driver.find_element(By.NAME,"email")
 adminUname.send_keys(Keys.CONTROL,"a")
@@ -45,6 +53,7 @@ adminUpass.send_keys("Admin@12")
 driver.find_element(By.XPATH,"//button[@type='submit']").click()  # login
 time.sleep(3.0) # wrong email password
 
+# Login with correct credentials
 adminUname = driver.find_element(By.NAME,"email")
 adminUname.send_keys(Keys.CONTROL,"a")
 adminUname.send_keys(Keys.DELETE)
