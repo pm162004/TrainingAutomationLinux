@@ -13,5 +13,6 @@ driver.find_element(By.NAME, "q").send_keys(Keys.ENTER)
 # driver.save_screenshot('/home/web-h-028/PycharmProjects/TrainingAutomation/Training/s1.png')
 
 driver.get_screenshot_as_file('/home/web-h-028/PycharmProjects/TrainingAutomation/Training/s1.png')
+
 time.sleep(2)
 driver.close()
