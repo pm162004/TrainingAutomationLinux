@@ -20,11 +20,11 @@ driver.find_element(By.XPATH,"//button[@type='submit']").click()  # login
 time.sleep(3.0) # blank inputs
 
 # Assert that an error message appears due to blank inputs
-error_message = driver.find_element(By.XPATH, "//div[contains(text(),'Email is required.') or contains(text(),'Password is required.')]")
+error_message = driver.find_element(By.XPATH, "//div[contains(text(),'Emails is required.') or contains(text(),'Passwords is required.')]")
 print("Error message text:", error_message.text)
 
 # Assert that the error message contains the expected text
-assert "Email is required" in error_message.text or "Password is required" in error_message.text, f"Error message not found: {error_message.text}"
+assert "Emails is required" in error_message.text or "Passwords is required" in error_message.text, f"Error message not found: {error_message.text}"
 
 adminUname = driver.find_element(By.NAME,"email")
 adminUname.send_keys(Keys.CONTROL,"a")
