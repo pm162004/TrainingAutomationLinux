@@ -1,45 +1,56 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
-import re
 
-# from SafarAdminPanel.Advertisements import error_message
-
-# Init WebDriver
 driver = webdriver.Chrome()
-driver.implicitly_wait(10)
-
-# Open the Site
-driver.get("https://dev.webelight.co.in/contact-us")
+driver.get("https://demo.nopcommerce.com/register?returnUrl=%2F")
 driver.maximize_window()
 
-# Give the page time to load
-time.sleep(2)
+# ===== Click the Register button without filling any fields =====
+driver.find_element(By.ID, "register-button").click()
+time.sleep(1)
 
-driver.execute_script('window.scrollBy(0,500)',"")
-time.sleep(2)
-# Submit the form using the submit() method
-form = driver.find_element(By.XPATH, "//button[@type='submit']")  # Adjust with the actual form's ID
-form.submit()
+# ===== Capture validation messages =====
+first_name_error = driver.find_element(By.ID, "FirstName-error").text
+last_name_error = driver.find_element(By.ID, "LastName-error").text
+email_error = driver.find_element(By.ID, "Email-error").text
 
-error_message = driver.find_element(By.XPATH,"//p[normalize-space()='Full name is required.']")
-print("Error message text:", error_message.text)
-assert "Full name is required." in error_message.text,f"Error message not found: {error_message.text}"
-# Give the page time to load
-time.sleep(2)
+confirm_password_error = driver.find_element(By.ID, "ConfirmPassword-error").text
 
-error_message = driver.find_element(By.XPATH,"//p[normalize-space()='Please enter a valid email address.']")
-print("Error message text:", error_message.text)
-assert "Please enter a valid email address." in error_message.text,f"Error message not found: {error_message.text}"
-# Give the page time to load
-time.sleep(2)
+# ===== Assert expected error messages =====
+assert first_name_error == "First name is required.", "First name error message mismatch"
+assert last_name_error == "Last name is required.", "Last name error message mismatch"
+assert email_error == "Email is required.", "Email error message mismatch"
 
-error_message = driver.find_element(By.XPATH,"//p[normalize-space()='Phone number is required.']")
-print("Error message text:", error_message.text)
-assert "Phone number is required." in error_message.text,f"Error message not found: {error_message.text}"
-# Give the page time to load
-time.sleep(2)
-# Close the browser
+assert confirm_password_error == "Password is required.", "Confirm password error message mismatch"
+
+print("Empty field validations passed.")
+
+# ===== Enter invalid email format =====
+driver.find_element(By.ID, "Email").send_keys("invalidemail")
+driver.find_element(By.ID, "register-button").click()
+time.sleep(1)
+
+invalid_email_error = driver.find_element(By.ID, "Email-error").text
+
+# ===== Assert invalid email format error =====
+assert invalid_email_error == "Wrong email", "Invalid email error message mismatch"
+
+print("Invalid email format validation passed.")
+
+# ===== Enter mismatching passwords =====
+driver.find_element(By.ID, "Password").send_keys("Password123")
+driver.find_element(By.ID, "ConfirmPassword").send_keys("DifferentPassword")
+driver.find_element(By.ID, "register-button").click()
+time.sleep(1)
+
+password_mismatch_error = driver.find_element(By.ID, "ConfirmPassword-error").text
+
+# ===== Assert password mismatch error =====
+assert password_mismatch_error == "The password and confirmation password do not match.", "Password mismatch error message mismatch"
+
+print("Password mismatch validation passed.")
+
+# ===== Close the browser =====
+time.sleep(3)
+driver.quit()

@@ -5,46 +5,43 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 driver = webdriver.Chrome()
-driver.get("https://www.google.com")
-driver.maximize_window()
+driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 
-# Typing text
-search_box = driver.find_element(By.NAME, "q")
-search_box.send_keys("Selenium Keyboard Interaction Examples")
+actions = ActionChains(driver)
 
-# Submitting form with Enter key
-search_box.send_keys(Keys.RETURN)
-time.sleep(2)
 
-# Navigating with Tab and selecting address bar
-ActionChains(driver).send_keys(Keys.TAB * 3).perform()
+input_box = driver.find_element(By.ID, "name")
+input_box.send_keys(" Test")
+
+input_box.send_keys(Keys.ENTER)
 time.sleep(1)
 
-# Scroll down with Page Down, then up with Page Up
-ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
+
+input_box.click()
+actions.send_keys(Keys.TAB).perform()
+
+
+input_box.send_keys("abc")
 time.sleep(1)
-ActionChains(driver).send_keys(Keys.PAGE_UP).perform()
+input_box.send_keys(Keys.BACKSPACE * 3)
+
+input_box.send_keys("Copied Text")
+input_box.send_keys(Keys.CONTROL, 'a')  # Select all
+input_box.send_keys(Keys.CONTROL, 'c')  # Copy
+time.sleep(1)
+input_box.send_keys(Keys.CONTROL, 'v')  # Paste
+
+# ===== Scrolling Down using PAGE_DOWN =====
+actions.send_keys(Keys.PAGE_DOWN).perform()
 time.sleep(1)
 
-# Refreshing the page with F5
-ActionChains(driver).send_keys(Keys.F5).perform()
-time.sleep(2)
 
-# Typing in a new query
-search_box = driver.find_element(By.NAME, "q")
-search_box.send_keys(Keys.DELETE)
+actions.send_keys(Keys.PAGE_UP).perform()
+time.sleep(1)
 
 
-# Typing text
-search_box.send_keys("Keyboard Shortcuts in Selenium")
+actions.send_keys(Keys.F5).perform()
 
-# Select All (Ctrl+A), Copy (Ctrl+C), Clear, Paste (Ctrl+V)
-search_box.send_keys(Keys.CONTROL, 'a')
-search_box.send_keys(Keys.CONTROL, 'c')
-search_box.clear()
-search_box.send_keys(Keys.CONTROL, 'v')
 
-time.sleep(2)
-
-# Close browser
+time.sleep(3)
 driver.quit()
