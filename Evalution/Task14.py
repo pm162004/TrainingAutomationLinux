@@ -6,8 +6,12 @@ driver = webdriver.Chrome() #Launch The Browser
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")  # Open the website
 driver.maximize_window()
 
+btn = driver.find_element(By.ID, "opentab")
 
+btn.click()
 btn = driver.find_element(By.ID, "openwindow")
 
 btn.click()
+
+
 time.sleep(4)
