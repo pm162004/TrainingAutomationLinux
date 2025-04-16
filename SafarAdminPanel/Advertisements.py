@@ -97,13 +97,13 @@ print("Successful text:", Successful_message.text)
 assert Successful_message.is_displayed(), "Successful message is not found after login"
 
 # Now navigating to the Advertisement section
-driver.get("https://safarr-admin-dev.webelight.co.in/truth-or-truth")
+driver.get("https://safarr-admin-dev.webelight.co.in/advertisements")
 time.sleep(3.0)  # Wait for the page to load
 
 # Assert the presence of the "Add Question" button
-add_question_button = driver.find_element(By.XPATH,"(//*[contains(text(),'Add Question')])[1]")
-assert add_question_button.is_displayed(), "Add Question button not found"
+add_adv_button = driver.find_element(By.XPATH,"(//*[contains(text(),'Add Advertisement')])[1]")
+assert add_adv_button.is_displayed(), "Add Advertisement button not found"
 
 # Add a new question
-driver.execute_script("arguments[0].click();",add_question_button)
+driver.execute_script("arguments[0].click();",add_adv_button)
 time.sleep(3.0)
