@@ -6,17 +6,15 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import re
 
-# from SafarAdminPanel.Advertisements import error_message
 
-# Init WebDriver
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
 
-# Open the Site
+
 driver.get("https://dev.webelight.co.in/contact-us")
 driver.maximize_window()
 
-# Give the page time to load
+
 time.sleep(2)
 
 driver.execute_script('window.scrollBy(0,500)',"")

@@ -5,18 +5,17 @@ import time
 
 
 def google_search(keyword):
-    # Set up the WebDriver (make sure to download the right ChromeDriver version)
+
     driver = webdriver.Chrome()
 
-    # Open Google
+
     driver.get("https://www.google.com")
 
-    # Find the search box and enter the keyword
     search_box = driver.find_element(By.NAME, "q")
     search_box.send_keys(keyword)
     search_box.send_keys(Keys.RETURN)
 
-    # Wait for results to load
+
     time.sleep(9)
 
 
@@ -26,9 +25,9 @@ def google_search(keyword):
     for i, result in enumerate(results, start=1):
         print(f"{i}. {result.text}")
 
-    # Close the browser
+
     driver.quit()
 
 
-# Example usage
-google_search("OpenAI ChatGPT")
+
+google_search("priya")
