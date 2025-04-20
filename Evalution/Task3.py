@@ -10,13 +10,13 @@ def google_search(keyword):
 
 
     driver.get("https://www.google.com")
-
+    driver.maximize_window()
+    driver.implicitly_wait(10)
     search_box = driver.find_element(By.NAME, "q")
     search_box.send_keys(keyword)
     search_box.send_keys(Keys.RETURN)
 
 
-    time.sleep(9)
 
 
     results = driver.find_elements(By.CSS_SELECTOR, "h3")[:5]
@@ -30,4 +30,4 @@ def google_search(keyword):
 
 
 
-google_search("priya")
+google_search("AI")
