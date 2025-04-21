@@ -1,7 +1,7 @@
 from Opencart.PageObjects.HomePage import HomePage
 from Opencart.PageObjects.AccountRegistrationPage import AccountRegistrationPage
 from Opencart.utilities.randomeString import random_string_generator
-
+import os
 
 class Test_AccountReg:
     baseURL = "https://demo.opencart.com.gr/"
@@ -44,4 +44,5 @@ class Test_AccountReg:
 
             assert True
         else:
+            self.driver.save_screenshot(os.path.abspath(os.curdir))
             assert False
