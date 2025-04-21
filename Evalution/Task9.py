@@ -10,8 +10,8 @@ import os
 driver = webdriver.Chrome()
 driver.get("https://demoqa.com/automation-practice-form")
 driver.maximize_window()
-driver.implicitly_wait(20)
-wait = WebDriverWait(driver, 10)
+driver.implicitly_wait(25)
+wait = WebDriverWait(driver, 20)
 
 
 driver.find_element(By.ID, "firstName").send_keys("pri")
@@ -56,7 +56,7 @@ print("Uploaded file path:", uploaded_file_path)
 driver.find_element(By.ID, "currentAddress").send_keys("123 Demo Street, Adipur")
 
 
-driver.execute_script("window.scrollBy(0, 500);")
+driver.execute_script("window.scrollBy(0, 1000);")
 
 # State
 state_input = driver.find_element(By.ID, "react-select-3-input")
