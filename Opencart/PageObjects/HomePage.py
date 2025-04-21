@@ -1,17 +1,24 @@
 from selenium.webdriver.common.by import By
-class HomePage():
-    link_myaccount_xpath = "//a[normalize-space()='Your Store']"
-    link_register_linktest = "Register"
-    link_login_linktest = "Login"
 
-    def __init__(self,driver):
+
+class HomePage():
+    lnk_logout_linktext = "Logout"
+    lnk_myaccount_xpath = "//span[normalize-space()='My Account']"
+    lnk_register_linktext = "Register"
+    lnk_login_linktext = "Login"
+
+    def __init__(self, driver):
         self.driver = driver
 
+    def clickLogOut(self):
+        self.driver.find_element(By.LINK_TEXT, self.lnk_logout_linktext).click()
+
     def clickMyAccount(self):
-        self.driver.find_element(By.XPATH,self.link_myaccount_xpath)
+        self.driver.find_element(By.XPATH, self.lnk_myaccount_xpath).click()
 
     def clickRegister(self):
-        self.driver.find_element(By.XPATH,self.link_register_linktest).click()
-        
+        self.driver.find_element(By.LINK_TEXT,self.lnk_register_linktext).click()
+
     def clickLogin(self):
-        self.driver.find_element(By.XPATH,self.link_login_linktest).click()
+        self.driver.find_element(By.LINK_TEXT,self.lnk_login_linktext).click()
+

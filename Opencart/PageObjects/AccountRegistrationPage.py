@@ -11,7 +11,7 @@ class AccountRegistrationPage():
     radio_newsletter_name = "newsletter"
     check_policy_name = "agree"
     button_continue_xpath = "//input[@value='Continue']"
-    message_sucess_xpath = "//p[contains(text(),'Congratulations! Your new account has been success')]"
+    message_sucess_xpath = "//p[contains(text(),'Congratulations! Your new account has been successfully created!')]"
 
     def __init__(self, driver):
         self.driver = driver
