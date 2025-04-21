@@ -36,7 +36,9 @@ class Test_AccountReg:
         self.regpage.setNewsletter()
         self.regpage.setAgree()
         self.regpage.clickContinue()
+
         self.ConfirmMsg = self.regpage.getSuccessMsg()
+        self.hp.clickLogOut()
         # self.hp.clickLogOut()
         self.driver.close()
 
