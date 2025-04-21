@@ -1,5 +1,3 @@
-
-
 from Opencart.PageObjects.HomePage import HomePage
 from Opencart.PageObjects.AccountRegistrationPage import AccountRegistrationPage
 from Opencart.utilities.randomeString import random_string_generator
