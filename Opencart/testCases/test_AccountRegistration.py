@@ -44,5 +44,6 @@ class Test_AccountReg:
 
             assert True
         else:
-            self.driver.save_screenshot(os.path.abspath(os.curdir))
+
+            # self.driver.save_screenshot(os.path.abspath(os.curdir))
             assert False
