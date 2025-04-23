@@ -8,7 +8,7 @@ def test_script():
     driver = webdriver.Chrome()
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
     driver.maximize_window()
-
+    driver.implicitly_wait(20)
 def test_login1():
 
     driver.find_element(By.NAME, "username").send_keys("admin")
