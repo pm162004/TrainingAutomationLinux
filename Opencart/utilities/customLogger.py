@@ -5,7 +5,8 @@ import os
 class LogGen():
     @staticmethod
     def loggen():
-        path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/utilities/logs/automation.log"
+        path = "C:/Users/Winner/PycharmProjects/1/Opencart/utilities/logs/automation.log"
+        # path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/utilities/logs/automation.log"
 
         # Make sure the log directory exists
         os.makedirs(os.path.dirname(path), exist_ok=True)

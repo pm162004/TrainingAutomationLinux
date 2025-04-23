@@ -3,7 +3,8 @@ import os
 
 config = configparser.RawConfigParser()
 # config.read(os.path.abspath(os.curdir)+'\\configurations\\config.ini')
-config.read("/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/configurations/config.ini")
+config.read("C:/Users/Winner/PycharmProjects/1/Opencart/configurations/config.ini")
+# config.read("/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/configurations/config.ini")
 class ReadConfig():
     @staticmethod
     def getApplicationURL():
