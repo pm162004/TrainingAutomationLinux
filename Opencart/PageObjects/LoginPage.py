@@ -23,4 +23,4 @@ class LoginPage():
         try:
             return self.driver.find_element(By.XPATH, self.msg_login_xpath).is_displayed()
         except:
-            None
+            return False

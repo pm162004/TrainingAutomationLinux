@@ -55,3 +55,75 @@
 04/22/2025 04:23:59 PM: INFO: Proving customer details for registration
 04/22/2025 04:24:01 PM: INFO: Account registration is passed..
 04/22/2025 04:24:02 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/23/2025 10:23:57 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:24:09 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:24:15 AM: INFO: ******* End of test_002_login **********
+04/23/2025 10:32:33 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:34:05 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:36:58 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:37:03 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:37:09 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:37:14 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:45:51 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:46:04 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:46:09 AM: INFO: Login successful for test@yopmail.com
+04/23/2025 10:46:45 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:46:57 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:47:03 AM: ERROR: Login failed for test1@yopmail.com
+04/23/2025 10:48:33 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:48:38 AM: INFO: Login successful for test@yopmail.com
+04/23/2025 10:52:28 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:52:33 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:52:37 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:52:42 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:59:18 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:59:22 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:59:23 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 10:59:23 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:02:26 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:02:35 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:02:35 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:02:35 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:02:38 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:03:01 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:03:12 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:03:23 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:03:24 AM: INFO: ******* End of test_002_login **********
+04/23/2025 11:10:55 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:03 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:03 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:03 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:05 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:19 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:31 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:42 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:11:44 AM: INFO: ******* End of test_002_login **********
+04/23/2025 11:22:48 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:22:56 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:22:56 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 11:22:56 AM: INFO: ******* Starting test_002_login **********
+04/23/2025 02:50:39 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 02:50:46 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 02:50:54 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 02:51:00 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 03:52:15 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:03:04 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:02 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:11 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:11 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:11 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:18 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:33 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:45 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:56 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:11:58 PM: INFO: ******* End of test_002_login **********
+04/23/2025 04:14:00 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:14:17 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:14:27 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:14:38 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:15:43 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:16:03 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:16:18 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:16:30 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:16:42 PM: INFO: ******* Starting test_002_login **********
+04/23/2025 04:16:43 PM: INFO: ******* End of test_002_login **********
