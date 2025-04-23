@@ -1,0 +1,57 @@
+04/22/2025 03:15:54 PM: DEBUG: This is a test debug message.
+04/22/2025 03:15:54 PM: INFO: This is an info message.
+04/22/2025 03:15:54 PM: ERROR: This is an error message.
+04/22/2025 03:28:22 PM: INFO: Logger setup completed successfully!
+04/22/2025 03:28:22 PM: DEBUG: This is a debug message.
+04/22/2025 03:28:22 PM: ERROR: This is an error message.
+04/22/2025 03:28:22 PM: WARNING: This is a warning message.
+04/22/2025 03:28:22 PM: INFO: Test log entry after setting up.
+04/22/2025 03:28:52 PM: INFO: Logger setup completed successfully!
+04/22/2025 03:28:52 PM: DEBUG: This is a debug message.
+04/22/2025 03:28:52 PM: ERROR: This is an error message.
+04/22/2025 03:28:52 PM: WARNING: This is a warning message.
+04/22/2025 03:28:52 PM: INFO: Test log entry after setting up.
+04/22/2025 03:29:56 PM: INFO: Logger setup completed successfully!
+04/22/2025 03:29:56 PM: DEBUG: This is a debug message.
+04/22/2025 03:29:56 PM: ERROR: This is an error message.
+04/22/2025 03:29:56 PM: WARNING: This is a warning message.
+04/22/2025 03:29:56 PM: INFO: Test log entry after setting up.
+04/22/2025 03:31:12 PM: INFO: Logger setup completed successfully!
+04/22/2025 03:31:12 PM: DEBUG: This is a debug message.
+04/22/2025 03:31:12 PM: ERROR: This is an error message.
+04/22/2025 03:31:12 PM: WARNING: This is a warning message.
+04/22/2025 03:31:12 PM: INFO: Test log entry after setting up.
+04/22/2025 04:19:18 PM: INFO: Logger is working!
+04/22/2025 04:19:18 PM: INFO: This is an info log
+04/22/2025 04:19:18 PM: DEBUG: This is a debug log
+04/22/2025 04:19:18 PM: ERROR: This is an error log
+04/22/2025 04:19:18 PM: INFO: Test started
+04/22/2025 04:19:22 PM: INFO: Launching the application
+04/22/2025 04:19:22 PM: INFO: clicking on MyAccount--> register
+04/22/2025 04:19:23 PM: INFO: Proving customer details for registration
+04/22/2025 04:19:54 PM: INFO: Logger is working!
+04/22/2025 04:19:54 PM: INFO: This is an info log
+04/22/2025 04:19:54 PM: DEBUG: This is a debug log
+04/22/2025 04:19:54 PM: ERROR: This is an error log
+04/22/2025 04:19:55 PM: INFO: Test started
+04/22/2025 04:19:58 PM: INFO: Launching the application
+04/22/2025 04:19:58 PM: INFO: clicking on MyAccount--> register
+04/22/2025 04:19:59 PM: INFO: Proving customer details for registration
+04/22/2025 04:20:00 PM: INFO: Account registration is passed..
+04/22/2025 04:20:00 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/22/2025 04:23:41 PM: INFO: This is an info log
+04/22/2025 04:23:41 PM: DEBUG: This is a debug log
+04/22/2025 04:23:41 PM: ERROR: This is an error log
+04/22/2025 04:23:42 PM: INFO: Test started
+04/22/2025 04:23:45 PM: INFO: Launching the application
+04/22/2025 04:23:46 PM: INFO: clicking on MyAccount--> register
+04/22/2025 04:23:46 PM: INFO: Proving customer details for registration
+04/22/2025 04:23:53 PM: INFO: This is an info log
+04/22/2025 04:23:53 PM: DEBUG: This is a debug log
+04/22/2025 04:23:53 PM: ERROR: This is an error log
+04/22/2025 04:23:54 PM: INFO: Test started
+04/22/2025 04:23:58 PM: INFO: Launching the application
+04/22/2025 04:23:58 PM: INFO: clicking on MyAccount--> register
+04/22/2025 04:23:59 PM: INFO: Proving customer details for registration
+04/22/2025 04:24:01 PM: INFO: Account registration is passed..
+04/22/2025 04:24:02 PM: INFO: **** test_001_AccountRegistration finished *** 
