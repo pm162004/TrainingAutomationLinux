@@ -32,7 +32,26 @@ def pytest_metadata(metadata):
     metadata.pop("JAVA_HOME", None)
     metadata.pop("Plugins", None)
 
-#Specifying report folder location and save report with timestamp
+
+import os
+from datetime import datetime
+
+
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
-    config.option.htmlpath = os.path.abspath(os.curdir)+"\\reports\\"+datetime.now().strftime("%d-%m-%Y %H-%M-%S")+".html"
+    # Define the path for the report folder
+    report_dir = "/home/web-h-028/PycharmProjects/TrainingAutomation/reports"
+
+    # Check if the reports directory exists, if not, create it
+    if not os.path.exists(report_dir):
+        os.makedirs(report_dir)
+
+    # Set the path for the HTML report with a timestamp
+    config.option.htmlpath = os.path.join(report_dir, datetime.now().strftime("%d-%m-%Y %H-%M-%S") + ".html")
+
+#
+# #Specifying report folder location and save report with timestamp
+# @pytest.hookimpl(tryfirst=True)
+# def pytest_configure(config):
+#     # config.option.htmlpath = os.path.abspath(os.curdir)+"\\reports\\"+datetime.now().strftime("%d-%m-%Y %H-%M-%S")+".html"
+#     config.option.htmlpath = "/home/web-h-028/PycharmProjects/TrainingAutomation/reports/"+datetime.now().strftime("%d-%m-%Y %H-%M-%S")+".html"

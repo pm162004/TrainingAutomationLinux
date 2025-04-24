@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 class MyAccountPage():
-    lnk_logout_xpath = "//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Logout']"
+    lnk_logout_xpath = "//aside[@id='column-right']//a[normalize-space()='Logout']"
 
     def __init__(self, driver):
         self.driver = driver
