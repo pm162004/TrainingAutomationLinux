@@ -11,8 +11,8 @@ class Test_Login_DDT():
     baseURL = ReadConfig.getApplicationURL()
     logger = LogGen.loggen()  # Logger
 
-    path = os.path.abspath(os.curdir)+"\\testdata\\Opencart_LoginData.xlsx"
-
+    # path = os.path.abspath(os.curdir)+"\\testdata\\Opencart_LoginData.xlsx"
+    path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/testdata/Opencart_LoginData.xlsx"
     def test_login_ddt(self,setup):
         self.logger.info("**** Starting test_003_login_Datadriven *******")
         self.rows=XLUtils.getRowCount(self.path,'Sheet1')
@@ -42,7 +42,7 @@ class Test_Login_DDT():
             if self.exp=='Valid':
                 if self.targetpage==True:
                     lst_status.append('Pass')
-                    self.ma.clickLogout()
+                    self.ma.clickLogOut()
                 else:
                     lst_status.append('Fail')
             elif self.exp=='Invalid':
