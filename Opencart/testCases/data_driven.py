@@ -47,8 +47,8 @@ class Test_Login_DDT():
 
 
             # Wait for the page to load after clicking login
-            WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//h2[text()='My Account']")))  # Adjust to an element that confirms login success
-            self.hp.clickLogin()
+            # WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//h2[text()='My Account']")))  # Adjust to an element that confirms login success
+            # self.ma.clickLogin()
             self.targetpage = self.lp.IsAccountPageExists()
 
             if self.exp == 'Valid':
