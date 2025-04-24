@@ -44,11 +44,11 @@ class Test_Login_DDT():
             self.lp.setEmail(self.email)
             self.lp.setPassword(self.password)
             self.lp.clickLogin()
-            # self.driver.refresh()
+
 
             # Wait for the page to load after clicking login
             WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//h2[text()='My Account']")))  # Adjust to an element that confirms login success
-
+            self.hp.clickLogin()
             self.targetpage = self.lp.IsAccountPageExists()
 
             if self.exp == 'Valid':
@@ -58,11 +58,18 @@ class Test_Login_DDT():
                     self.driver.refresh()
                 else:
                     lst_status.append('Fail')
+                    self.ma.clickLogin()
             elif self.exp == 'Invalid':
                 if self.targetpage:
                     lst_status.append('Fail')
-                    self.hp.clickLogin()
-                    self.driver.refresh()
+                    self.ma.clickLogOut()
+                    # self.hp = HomePage(self.driver)
+                    # self.hp.clickMyAccount()
+                    # self.hp.clickLogin()
+                    # self.hp.clickLogin()
+                    # self.driver.refresh()
+                    # self.ma.clickLogin()
+                    # self.driver.refresh()
                 else:
                     lst_status.append('Pass')
 
