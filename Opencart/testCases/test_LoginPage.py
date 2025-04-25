@@ -1,3 +1,4 @@
+import pytest
 
 from Opencart.PageObjects.HomePage import HomePage
 from Opencart.PageObjects.LoginPage import LoginPage
@@ -24,6 +25,7 @@ class Test_Login():
     user3 = ReadConfig.getUseremail3()
     password3 = ReadConfig.getPassword3()
 
+    @pytest.mark.sanity
     def test_login(self,setup):
         self.logger.info("******* Starting test_002_login **********")
         self.driver = setup

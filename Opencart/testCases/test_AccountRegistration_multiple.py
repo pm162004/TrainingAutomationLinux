@@ -1,3 +1,4 @@
+import pytest
 
 from Opencart.PageObjects.HomePage import HomePage
 from Opencart.PageObjects.AccountRegistrationPage import AccountRegistrationPage
@@ -5,11 +6,12 @@ from Opencart.utilities.randomeString import random_string_generator
 import os
 
 from Opencart.utilities.readProperties import ReadConfig
-
+from Opencart.utilities.customLogger import LogGen
 
 class Test_AccountReg:
     baseURL = ReadConfig.getApplicationURL()
-
+    logger = LogGen.loggen()
+    @pytest.mark.regression
     def test_account_reg(self, setup):
         self.driver = setup
         self.driver.get(self.baseURL)
