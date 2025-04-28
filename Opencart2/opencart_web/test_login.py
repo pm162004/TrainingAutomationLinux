@@ -3,14 +3,14 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from OpenCart2.opencart_setup.config import config
-from OpenCart2.constant import validation_assert
-from OpenCart2.constant import input_field
-import OpenCart2.constant
+from Opencart2.opencart_setup.config import config
+from Opencart2.constant import validation_assert
+from Opencart2.constant import input_field
+import Opencart2.constant
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from OpenCart2.opencart_web.test_signup import my_profile
+
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
@@ -69,6 +69,9 @@ def home_page_assert():
 def click_logout_button():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//aside[@id='column-right']//a[normalize-space()='Logout']")))
 
+def click_login_button():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//aside[@id='column-right']//a[normalize-space()='Login']")))
+
 
 # def assert_login_page_mobile():
 #     return wait.until(EC.presence_of_element_located((By.XPATH, "//label[@for='mobile-no']")))
@@ -92,20 +95,25 @@ class TestLogin:
 
     def test_incorrect_email(self):
         refresh_page()
+        click_login_button().click()
         email_input_field().send_keys(input_field.INVALID_EMAIL_ID_INPUT)
-        assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION
+
         password_input_field().send_keys(config.CORRECT_PASSWORD)
         login_button().click()
+        assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION
 
     def test_incorrect_password(self):
         refresh_page()
+        click_login_button().click()
         email_input_field().send_keys(config.CORRECT_EMAIL)
         password_input_field().send_keys(input_field.WRONG_PASSWORD[0])
-        assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION
         login_button().click()
+        assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION
 
     def test_login(self):
+        click_login_button().click()
         refresh_page()
+
         email_input_field().send_keys(config.CORRECT_EMAIL)
         password_input_field().send_keys(config.CORRECT_PASSWORD)
         login_button().click()
@@ -115,6 +123,7 @@ class TestLogin:
     def test_logout(self):
         # MyAccountPage().click()
         click_logout_button().click()
+        driver.quit()
         # assert assert_login_page_mobile().text == validation_assert.LOGIN_GET_VALIDATE[0]
         # assert assert_login_page_pwd().text == validation_assert.LOGIN_GET_VALIDATE[1]
 
