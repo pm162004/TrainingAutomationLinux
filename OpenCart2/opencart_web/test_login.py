@@ -10,6 +10,8 @@ import OpenCart2.constant
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
+from OpenCart2.opencart_web.test_signup import my_profile
+
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 # Only run with the latest Chrome version
@@ -27,7 +29,7 @@ def login_page():
 
 
 def login_button():
-    return wait.until(EC.element_to_be_clickable((By.ID, "btn-login")))
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@value='Login']")))
 
 
 def email_pass_validation():
@@ -53,92 +55,97 @@ def password_input_field():
 
 
 def home_page_assert():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//p[contains(text(),'Grow your Money')]")))
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//h2[normalize-space()='My Account']")))
 
 
-def error_message():
-    return wait.until(EC.presence_of_element_located((By.ID, "error-message")))
-
-
-def my_account_button():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='flex items-center ml-3']")))
+# def error_message():
+#     return wait.until(EC.presence_of_element_located((By.ID, "error-message")))
+#
+#
+# def my_account_button():
+#     return wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='flex items-center ml-3']")))
 
 
 def click_logout_button():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//a[normalize-space()='Logout']")))
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//aside[@id='column-right']//a[normalize-space()='Logout']")))
 
 
-def assert_login_page_mobile():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//label[@for='mobile-no']")))
-
-
-def assert_login_page_pwd():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//label[normalize-space()='Enter Password']")))
-
-
-def assert_verify_with_otp():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//label[normalize-space()='Enter OTP']")))
+# def assert_login_page_mobile():
+#     return wait.until(EC.presence_of_element_located((By.XPATH, "//label[@for='mobile-no']")))
+#
+#
+# def assert_login_page_pwd():
+#     return wait.until(EC.presence_of_element_located((By.XPATH, "//label[normalize-space()='Enter Password']")))
+#
+#
+# def assert_verify_with_otp():
+#     return wait.until(EC.presence_of_element_located((By.XPATH, "//label[normalize-space()='Enter OTP']")))
 
 
 class TestLogin:
     def test_blank_field_validation(self):
+        MyAccountPage().click()
         login_page().click()
         login_button().click()
-        assert mobile_no_validation().text == validation_assert.ENTER_MOBILE_NO
-        assert pwd_validation().text == validation_assert.ENTER_PASSWORD
+        assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION
 
-    def test_incorrect_phone_no(self):
+
+    def test_incorrect_email(self):
         refresh_page()
-        mobile_no_input_field().send_keys(input_field.INCORRECT_MOBILE_NO)
-        assert mobile_no_validation().text == validation_assert.INCORRECT_MOBILE_NO_VALIDATION
+        email_input_field().send_keys(input_field.INVALID_EMAIL_ID_INPUT)
+        assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION
         password_input_field().send_keys(config.CORRECT_PASSWORD)
         login_button().click()
 
-    def test_invalid_phone_no(self):
+    def test_incorrect_password(self):
         refresh_page()
-        mobile_no_input_field().send_keys(input_field.INVALID_PHONE_NO[0])
-        assert mobile_no_validation().text == validation_assert.INVALID_PHONE_NO_ASSERT
-        password_input_field().send_keys(config.CORRECT_PASSWORD)
-        login_button().click()
-
-    def test_incorrect_pwd_length(self):
-        refresh_page()
-        mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
-        password_input_field().send_keys(input_field.WRONG_PASSWORD[1])
-        assert pwd_validation().text == validation_assert.PWD_LENGTH
-        login_button().click()
-
-    def test_invalid_password(self):
-        refresh_page()
-        mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
+        email_input_field().send_keys(config.CORRECT_EMAIL)
         password_input_field().send_keys(input_field.WRONG_PASSWORD[0])
-        assert pwd_validation().text == validation_assert.INVALID_PWD
+        assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION
         login_button().click()
-
-    def test_wrong_password(self):
-        refresh_page()
-        mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
-        password_input_field().send_keys(input_field.WRONG_PASSWORD[2])
-        login_button().click()
-        assert error_message().text == validation_assert.INVALID_CREDS
 
     def test_login(self):
         refresh_page()
-        mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
+        email_input_field().send_keys(config.CORRECT_EMAIL)
         password_input_field().send_keys(config.CORRECT_PASSWORD)
         login_button().click()
         time.sleep(2)
         assert home_page_assert().text == validation_assert.HOME_PAGE
 
     def test_logout(self):
-        my_account_button().click()
+        # MyAccountPage().click()
         click_logout_button().click()
-        assert assert_login_page_mobile().text == validation_assert.LOGIN_GET_VALIDATE[0]
-        assert assert_login_page_pwd().text == validation_assert.LOGIN_GET_VALIDATE[1]
+        # assert assert_login_page_mobile().text == validation_assert.LOGIN_GET_VALIDATE[0]
+        # assert assert_login_page_pwd().text == validation_assert.LOGIN_GET_VALIDATE[1]
 
-    def test_unverified_user(self):
-        mobile_no_input_field().send_keys(input_field.UNVERIFIED_USER_NUMBER)
-        password_input_field().send_keys(config.CORRECT_PASSWORD)
-        login_button().click()
-        assert assert_verify_with_otp().text == validation_assert.VERIFY_WITH_OTP
-        driver.quit()
+    # def test_unverified_user(self):
+    #     email_input_field().send_keys(input_field.UNVERIFIED_USER_EMAIL)
+    #     password_input_field().send_keys(config.CORRECT_PASSWORD)
+    #     login_button().click()
+    #     assert assert_verify_with_otp().text == validation_assert.VERIFY_WITH_OTP
+    #     driver.quit()
+
+    # def test_invalid_phone_no(self):
+    #     refresh_page()
+    #     mobile_no_input_field().send_keys(input_field.INVALID_PHONE_NO[0])
+    #     assert mobile_no_validation().text == validation_assert.INVALID_PHONE_NO_ASSERT
+    #     password_input_field().send_keys(config.CORRECT_PASSWORD)
+    #     login_button().click()
+    #
+    # def test_incorrect_pwd_length(self):
+    #     refresh_page()
+    #     mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
+    #     password_input_field().send_keys(input_field.WRONG_PASSWORD[1])
+    #     assert pwd_validation().text == validation_assert.PWD_LENGTH
+    #     login_button().click()
+
+
+
+    # def test_wrong_password(self):
+    #     refresh_page()
+    #     mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
+    #     password_input_field().send_keys(input_field.WRONG_PASSWORD[2])
+    #     login_button().click()
+    #     assert error_message().text == validation_assert.INVALID_CREDS
+
+

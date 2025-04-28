@@ -4,6 +4,7 @@
 SELECT_AGREE = "Warning: You must agree to the Privacy Policy!"
 EXIST_EMAIL= "Warning: E-Mail Address is already registered!"
 EMAIL_PASS_VALIDATION = "Warning: No match for E-Mail Address and/or Password."
+HOME_PAGE = "My Account"
 # PWD_LENGTH = "password should be of 15 characters"
 # INCORRECT_MOBILE_NO_VALIDATION = "enter valid mobile no."
 # INVALID_PHONE_NO_ASSERT = "enter numeric value only"
