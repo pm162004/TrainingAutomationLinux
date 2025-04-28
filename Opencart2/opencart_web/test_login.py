@@ -88,6 +88,9 @@ def click_login_button():
 class TestLogin:
     def test_blank_field_validation(self):
         MyAccountPage().click()
+        MyAccountPage().click()
+        if MyAccountPage().text == "Logout":
+            click_logout_button()
         login_page().click()
         login_button().click()
         assert email_pass_validation().text == validation_assert.EMAIL_PASS_VALIDATION

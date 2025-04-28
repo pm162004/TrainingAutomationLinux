@@ -125,6 +125,9 @@ class TestSignup:
 
     def test_validation(self):
         MyAccountPage().click()
+        MyAccountPage().click()
+        if MyAccountPage().text == "Logout":
+            click_logout_button()
         register().click()
         signup().click()
         assert first_name_validation().text == error.FIRST_NAME_VALIDATION
