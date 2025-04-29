@@ -22,37 +22,37 @@ driver.get(config.WEB_URL)
 time.sleep(3)
 wait = WebDriverWait(driver, 25)
 
-def MyAccountPage():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[normalize-space()='My Account']")))
+def MyFilesPage():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//b[@class='text-active text-xs font-bold sidebar-menu'][normalize-space()='My Files']")))
 
-def login_page():
-    return wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Login")))
+def email_input_field():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='md-input-z0sa3nmm']")))
 
+def password_input_field():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='md-input-7rqkxfcth']")))
 
 def login_button():
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@value='Login']")))
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-signin']")))
 
 
-def email_pass_validation():
-    email_pass = wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='alert alert-danger alert-dismissible']")))
-    return email_pass
+def email_blank_validation():
+    email = wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Email address is required')]")))
+    return email
 
-#
-# def pwd_validation():
-#     pwd = wait.until(EC.presence_of_element_located((By.ID, "error-password")))
-#     return pwd
+def pass_blank_validation():
+    passw = wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Password is required')]")))
+    return passw
 
+def email_blank_validation():
+    email = wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Email address is required')]")))
+    return email
 
 def refresh_page():
     return driver.refresh()
 
 
-def email_input_field():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='input-email']")))
 
 
-def password_input_field():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='input-password']")))
 
 
 def home_page_assert():
