@@ -114,6 +114,7 @@ class TestLogin:
         email_input_field().send_keys(config.CORRECT_EMAIL)
 
         password_input_field().send_keys(config.CORRECT_PASSWORD)
+        password_mask_button().click()
         login_button().click()
         assert MyFilesPage().text == validation_assert.MY_FILES
 
