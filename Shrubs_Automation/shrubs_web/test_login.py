@@ -119,51 +119,11 @@ class TestLogin:
 
 
 
-    # def test_login(self):
-    #     click_login_button().click()
-    #     refresh_page()
-    #
-    #     email_input_field().send_keys(config.CORRECT_EMAIL)
-    #     password_input_field().send_keys(config.CORRECT_PASSWORD)
-    #     login_button().click()
-    #     time.sleep(2)
-    #     assert home_page_assert().text == validation_assert.HOME_PAGE
-    #
     # def test_logout(self):
     #     # MyAccountPage().click()
     #     click_logout_button().click()
     #     driver.quit()
     #     # assert assert_login_page_mobile().text == validation_assert.LOGIN_GET_VALIDATE[0]
     #     # assert assert_login_page_pwd().text == validation_assert.LOGIN_GET_VALIDATE[1]
-
-    # def test_unverified_user(self):
-    #     email_input_field().send_keys(input_field.UNVERIFIED_USER_EMAIL)
-    #     password_input_field().send_keys(config.CORRECT_PASSWORD)
-    #     login_button().click()
-    #     assert assert_verify_with_otp().text == validation_assert.VERIFY_WITH_OTP
-    #     driver.quit()
-
-    # def test_invalid_phone_no(self):
-    #     refresh_page()
-    #     mobile_no_input_field().send_keys(input_field.INVALID_PHONE_NO[0])
-    #     assert mobile_no_validation().text == validation_assert.INVALID_PHONE_NO_ASSERT
-    #     password_input_field().send_keys(config.CORRECT_PASSWORD)
-    #     login_button().click()
-    #
-    # def test_incorrect_pwd_length(self):
-    #     refresh_page()
-    #     mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
-    #     password_input_field().send_keys(input_field.WRONG_PASSWORD[1])
-    #     assert pwd_validation().text == validation_assert.PWD_LENGTH
-    #     login_button().click()
-
-
-
-    # def test_wrong_password(self):
-    #     refresh_page()
-    #     mobile_no_input_field().send_keys(config.CORRECT_MOBILE)
-    #     password_input_field().send_keys(input_field.WRONG_PASSWORD[2])
-    #     login_button().click()
-    #     assert error_message().text == validation_assert.INVALID_CREDS
 
 
