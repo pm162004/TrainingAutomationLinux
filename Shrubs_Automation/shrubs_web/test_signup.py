@@ -1,5 +1,7 @@
 import time
-from selenium.webdriver.support.select import Select
+
+from selenium.common import TimeoutException
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
@@ -7,11 +9,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from Opencart2.opencart_setup.config import config
-from Opencart2.opencart_setup.randomeString import random_string_generator
-import Opencart2.constant
-from Opencart2.constant import creds, validation_assert
-from Opencart2.constant import error
+from Shrubs_Automation.shrubs_setup.config import config
+from Shrubs_Automation.shrubs_setup.randomeString import random_string_generator
+import Shrubs_Automation.constant
+from Shrubs_Automation.constant import creds, validation_assert,input_field
+from Shrubs_Automation.constant import error
 # from webdriver_manager.chrome import ChromeDriverManager
 # from webdriver_manager.core.os_manager import ChromeType
 # from selenium.webdriver.chrome.service import Service as ChromeService
@@ -20,192 +22,207 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 # Only run with the latest Chrome version
 driver = webdriver.Chrome()
-driver.set_window_size(1920, 1080)
+# driver.set_window_size(1920, 1080)
+driver.maximize_window()
 driver.get(config.WEB_URL)
-email = config.EMAIL
-password = config.PASSWORD
+# email = config.EMAIL
+# password = config.PASSWORD
 wait = WebDriverWait(driver, 25)
+driver.implicitly_wait(10)
 
-def MyAccountPage():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[normalize-space()='My Account']")))
 
 def register():
-    return wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Register")))
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[normalize-space()='Create Account']")))
 
-def login_button():
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@value='Login']")))
-
-def click_logout_button():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//aside[@id='column-right']//a[normalize-space()='Logout']")))
-
-
-def register_continue():
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[normalize-space()='Continue']")))
-
-def signup():
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@value='Continue']")))
-
-def signup_btn():
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@class='list-group-item'][normalize-space()='Register']")))
-
-def first_name_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'First Name must be between 1 and 32 characters!')]")))
-
-def last_name_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Last Name must be between 1 and 32 characters!')]")))
-
-def email_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")))
-
-def exist_email_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='alert alert-danger alert-dismissible']")))
-
-def mobile_no_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")))
-
-def set_password_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Password must be between 4 and 20 characters!')]")))
-
-def confirm_password_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Password confirmation does not match password!')]")))
-
-def agree_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[@class='alert alert-danger alert-dismissible']")))
-
-def first_name():
-    return wait.until(EC.presence_of_element_located((By.NAME, "firstname")))
-
-
-def last_name():
-    return wait.until(EC.presence_of_element_located((By.NAME, "lastname")))
+def username_input_field():
+    return wait.until(EC.presence_of_element_located((By.NAME, "username")))
 
 def email_input_field():
     return wait.until(EC.presence_of_element_located((By.NAME, "email")))
 
-def mobile():
-    return wait.until(EC.presence_of_element_located((By.NAME, "telephone")))
-
 def password_input_field():
     return wait.until(EC.presence_of_element_located((By.NAME, "password")))
 
-def confirm_password():
-    return wait.until(EC.presence_of_element_located((By.NAME, "confirm")))
+def register_btn():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-signup']")))
 
-def agree():
-    return wait.until(EC.presence_of_element_located((By.NAME, "agree")))
+def username_blank_validation():
+    username = wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Username is required')]")))
+    return username
 
-def btn_submit():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@value='Continue']")))
+def email_blank_validation():
+    email = wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Email address is required')]")))
+    return email
+
+def pass_blank_validation():
+    passw = wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Password is required')]")))
+    return passw
+
+def exist_username_test_validation():
+    # return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Username taken. Please choose another or try test8')]")))
+    return wait.until(EC.visibility_of_element_located(
+        (By.XPATH, "//span[contains(text(),'Username taken. Please choose another or try test8')]")
+    ))
+
+
+def exist_username_admin_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Username taken. Please choose another or try admin16')]")))
+
+
+def exist_email_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'The email has already been taken.')]")))
+
+
+
+def password_char_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'The Password field must be at least 8 characters')]")))
+
+def password_special_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'The Password field must be at least 8 characters')]")))
+
 
 def success_signup():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//p[contains(text(),'Congratulations! Your new account has been successfully created!')]")))
 
-# def verify_otp_validation():
-#     return wait.until(EC.presence_of_element_located((By.ID, "error-verify-otp")))
-#
-# def your_otp_validation():
-#     return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Your OTP is : ')]")))
-#
-# def verify():
-#     return wait.until(EC.presence_of_element_located((By.NAME, "verify")))
-#
-# def my_profile():
-#     return wait.until(EC.presence_of_element_located((By.XPATH, "//p[contains(text(),'My Profile')]")))
-#
-# def delete_account_button():
-#     return wait.until(EC.presence_of_element_located((By.ID, "btn-delete-account")))
-#
-# def yes_button():
-#     return wait.until(EC.presence_of_element_located((By.ID, "btn-yes")))
+def refresh_page():
+    return driver.refresh()
 
 def quit():
     return driver.quit()
 
 class TestSignup:
-
-    def test_validation(self):
-        MyAccountPage().click()
-        MyAccountPage().click()
-        if MyAccountPage().text == "Logout":
-            click_logout_button()
+    def test_blank_field_validation(self):
         register().click()
-        signup().click()
-        assert first_name_validation().text == error.FIRST_NAME_VALIDATION
-        assert last_name_validation().text == error.LAST_NAME_VALIDATION
-        assert email_validation().text == error.EMAIL_VALIDATION
-        assert mobile_no_validation().text == error.MOBILE_NO_VALIDATION
-        assert set_password_validation().text == error.SET_PASSWORD_VALIDATION
-        assert agree_validation().text == validation_assert.SELECT_AGREE
-
-    def test_negative_cases(self):
-        driver.refresh()
-        first_name().send_keys(creds.INCORRECT_FIRSTNAME)
-        last_name().send_keys(creds.INCORRECT_LASTNAME)
-        email_input_field().send_keys(creds.INCORRECT_EMAIL)
-        assert email_validation().text == error.EMAIL_VALIDATION
-        mobile().send_keys(creds.INCORRECT_MOBILE)
-        assert mobile_no_validation().text == error.MOBILE_NO_VALIDATION
-        password_input_field().send_keys(creds.INCORRECT_PASSWORD)
-        assert set_password_validation().text == error.SET_PASSWORD_VALIDATION
-        confirm_password().send_keys(creds.INCORRECT_CONFIRM_PASSWORD)
-        confirm_password().send_keys(Keys.BACKSPACE * 2)
-        # assert confirm_password_validation().text == error.CONFIRM_PASSWORD_VALIDATION
-
-        assert agree_validation().text == validation_assert.SELECT_AGREE
-        signup().click()
-
-    def test_email_validation(self):
-        driver.refresh()
-        signup_btn().click()
-        first_name().send_keys(creds.FIRSTNAME)
-        last_name().send_keys(creds.LASTNAME)
-        email_input_field().send_keys(creds.EXISTING_EMAIL)
-        mobile().send_keys(creds.MOBILE)
-        password_input_field().send_keys(password)
-        confirm_password().send_keys(password)
-        agree().click()
-        signup().click()
+        # wait.until(EC.invisibility_of_element_located((By.ID, "overlay-spinner")))
+        action = ActionChains(driver)
+        action.move_to_element(register_btn()).click().perform()
         time.sleep(1)
-        assert exist_email_validation().text == validation_assert.EXIST_EMAIL
+        assert username_blank_validation().text == validation_assert.ENTER_SIGNUP_USERNAME
+        assert email_blank_validation().text == validation_assert.ENTER_SIGNUP_EMAIL
+        assert pass_blank_validation().text == validation_assert.ENTER_SIGNUP_PASSWORD
 
-    def test_password_validation(self):
-        driver.refresh()
-        signup_btn().click()
-        first_name().send_keys(creds.FIRSTNAME)
-        last_name().send_keys(creds.LASTNAME)
-        email_input_field().send_keys(creds.EMAIL_ID)
-        mobile().send_keys(creds.MOBILE)
-        password_input_field().send_keys(creds.INCORRECT_PASSWORD)
-        confirm_password().send_keys(creds.INCORRECT_CONFIRM_PASSWORD)
-        agree().click()
-        btn_submit().click()
+    def test_exist_uname_test(self):
+        refresh_page()
+        # register().click()
+        username_input_field().send_keys(input_field.ALREADY_REGISTERED_UNAME_TEST)
+        time.sleep(4)
+        email_input_field().send_keys(input_field.VALID_EMAIL)
+
+        password_input_field().send_keys(input_field.SIGNUP_PASSWORD)
+
+        register_btn().click()
         time.sleep(1)
-        assert confirm_password_validation().text == error.CONFIRM_PASSWORD_VALIDATION
+        assert exist_username_test_validation().text == error.EXIST_USERNAME_TEST_ERROR
 
-
-    def test_positive_case(self):
-        driver.refresh()
-        signup_btn().click()
-        first_name().send_keys(creds.FIRSTNAME)
-        last_name().send_keys(creds.LASTNAME)
-        self.email = random_string_generator() + '@gmail.com'
-        print(self.email)
-        email_input_field().send_keys(self.email)
-        mobile().send_keys(creds.MOBILE)
-        password_input_field().send_keys(password)
-        confirm_password().send_keys(password)
-        agree().click()
-        # signup().click()
-        btn_submit().click()
-        # assert verify_otp_validation().text == error.VERIFY_OTP_VALIDATION
-        # otp = your_otp_validation().text
-        # verify().send_keys(otp)
-        # verify().send_keys(Keys.ARROW_LEFT * 4 + Keys.SHIFT + Keys.ARROW_LEFT * 14 + Keys.DELETE)
-
+    def test_exist_uname_admin(self):
+        refresh_page()
+        username_input_field().send_keys(input_field.ALREADY_REGISTERED_UNAME_ADMIN)
+        time.sleep(3)
+        email_input_field().send_keys(input_field.VALID_EMAIL)
+        password_input_field().send_keys(input_field.SIGNUP_PASSWORD)
+        register_btn().click()
         time.sleep(1)
-        assert success_signup().text == validation_assert.SUCCESS_MESSAGE
-        # delete_account_button().click()
-        # yes_button().click()
+        assert exist_username_admin_validation().text == error.EXIST_USERNAME_ADMIN_ERROR
+
+    def test_exist_email(self):
+        refresh_page()
+        username_input_field().send_keys(input_field.VALID_UNAME)
+        time.sleep(3)
+        email_input_field().send_keys(input_field.ALREADY_REGISTERED_EMAIL)
+        password_input_field().send_keys(input_field.SIGNUP_PASSWORD)
+        register_btn().click()
         time.sleep(1)
-        click_logout_button().click()
-        driver.quit()
+        assert exist_email_validation().text == error.EXIST_EMAIL_ERROR
+
+
+
+    # def test_exist_email(self):
+    #     email_input_field().send_keys(input_field.ALREADY_REGISTERED_EMAIL)
+    #     assert exist_email_validation()
+
+    # def test_validation(self):
+    #     MyAccountPage().click()
+    #     MyAccountPage().click()
+    #     if MyAccountPage().text == "Logout":
+    #         click_logout_button()
+    #     register().click()
+    #     signup().click()
+    #     assert first_name_validation().text == error.FIRST_NAME_VALIDATION
+    #     assert last_name_validation().text == error.LAST_NAME_VALIDATION
+    #     assert email_validation().text == error.EMAIL_VALIDATION
+    #     assert mobile_no_validation().text == error.MOBILE_NO_VALIDATION
+    #     assert set_password_validation().text == error.SET_PASSWORD_VALIDATION
+    #     assert agree_validation().text == validation_assert.SELECT_AGREE
+    #
+    # def test_negative_cases(self):
+    #     driver.refresh()
+    #     first_name().send_keys(creds.INCORRECT_FIRSTNAME)
+    #     last_name().send_keys(creds.INCORRECT_LASTNAME)
+    #     email_input_field().send_keys(creds.INCORRECT_EMAIL)
+    #     assert email_validation().text == error.EMAIL_VALIDATION
+    #     mobile().send_keys(creds.INCORRECT_MOBILE)
+    #     assert mobile_no_validation().text == error.MOBILE_NO_VALIDATION
+    #     password_input_field().send_keys(creds.INCORRECT_PASSWORD)
+    #     assert set_password_validation().text == error.SET_PASSWORD_VALIDATION
+    #     confirm_password().send_keys(creds.INCORRECT_CONFIRM_PASSWORD)
+    #     confirm_password().send_keys(Keys.BACKSPACE * 2)
+    #     # assert confirm_password_validation().text == error.CONFIRM_PASSWORD_VALIDATION
+    #
+    #     assert agree_validation().text == validation_assert.SELECT_AGREE
+    #     signup().click()
+    #
+    # def test_email_validation(self):
+    #     driver.refresh()
+    #     signup_btn().click()
+    #     first_name().send_keys(creds.FIRSTNAME)
+    #     last_name().send_keys(creds.LASTNAME)
+    #     email_input_field().send_keys(creds.EXISTING_EMAIL)
+    #     mobile().send_keys(creds.MOBILE)
+    #     password_input_field().send_keys(password)
+    #     confirm_password().send_keys(password)
+    #     agree().click()
+    #     signup().click()
+    #     time.sleep(1)
+    #     assert exist_email_validation().text == validation_assert.EXIST_EMAIL
+    #
+    # def test_password_validation(self):
+    #     driver.refresh()
+    #     signup_btn().click()
+    #     first_name().send_keys(creds.FIRSTNAME)
+    #     last_name().send_keys(creds.LASTNAME)
+    #     email_input_field().send_keys(creds.EMAIL_ID)
+    #     mobile().send_keys(creds.MOBILE)
+    #     password_input_field().send_keys(creds.INCORRECT_PASSWORD)
+    #     confirm_password().send_keys(creds.INCORRECT_CONFIRM_PASSWORD)
+    #     agree().click()
+    #     btn_submit().click()
+    #     time.sleep(1)
+    #     assert confirm_password_validation().text == error.CONFIRM_PASSWORD_VALIDATION
+    #
+    #
+    # def test_positive_case(self):
+    #     driver.refresh()
+    #     signup_btn().click()
+    #     first_name().send_keys(creds.FIRSTNAME)
+    #     last_name().send_keys(creds.LASTNAME)
+    #     self.email = random_string_generator() + '@gmail.com'
+    #     print(self.email)
+    #     email_input_field().send_keys(self.email)
+    #     mobile().send_keys(creds.MOBILE)
+    #     password_input_field().send_keys(password)
+    #     confirm_password().send_keys(password)
+    #     agree().click()
+    #     # signup().click()
+    #     btn_submit().click()
+    #     # assert verify_otp_validation().text == error.VERIFY_OTP_VALIDATION
+    #     # otp = your_otp_validation().text
+    #     # verify().send_keys(otp)
+    #     # verify().send_keys(Keys.ARROW_LEFT * 4 + Keys.SHIFT + Keys.ARROW_LEFT * 14 + Keys.DELETE)
+    #
+    #     time.sleep(1)
+    #     assert success_signup().text == validation_assert.SUCCESS_MESSAGE
+    #     # delete_account_button().click()
+    #     # yes_button().click()
+    #     time.sleep(1)
+    #     click_logout_button().click()
+    #     driver.quit()

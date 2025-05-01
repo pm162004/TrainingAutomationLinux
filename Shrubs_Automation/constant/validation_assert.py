@@ -1,6 +1,11 @@
 MY_FILES = "My Files"
 ENTER_EMAIL = "Email address is required"
 ENTER_PASSWORD = "Password is required"
+
+ENTER_SIGNUP_EMAIL = "Email address is required"
+ENTER_SIGNUP_PASSWORD = "Password is required"
+ENTER_SIGNUP_USERNAME = "Username is required"
+
 # ENTER_MOBILE_NO = "enter mobile no."
 # ENTER_PASSWORD = "enter a password"
 # SELECT_AGREE = "Warning: You must agree to the Privacy Policy!"

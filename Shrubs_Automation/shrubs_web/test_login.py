@@ -24,7 +24,7 @@ password = config.PASSWORD
 # driver.set_window_size(1920, 1080)
 driver.get(config.WEB_URL)
 time.sleep(3)
-wait = WebDriverWait(driver, 35)
+wait = WebDriverWait(driver, 25)
 
 def MyFilesPage():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//b[@class='text-active text-xs font-bold sidebar-menu'][normalize-space()='My Files']")))
