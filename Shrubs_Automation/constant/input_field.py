@@ -1,7 +1,7 @@
 from cryptography.exceptions import AlreadyUpdated
 
 INCORRECT_EMAIL = "abc"
-# INVALID_EMAIL = "modip89@gmail.com"
+INVALID_EMAIL = "modip89@gmail.com"
 INCORRECT_PASSWORD = "00"
 INVALID_PASSWORD = "TEST"
 SIGNUP_PASSWORD = "Test@123"
