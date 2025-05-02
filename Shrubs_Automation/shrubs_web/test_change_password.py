@@ -1,4 +1,6 @@
 import time
+
+from selenium.common import TimeoutException
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -25,6 +27,8 @@ email = config.CORRECT_EMAIL
 password = config.PASSWORD
 new_password = config.RESET_PASSWORD
 wait = WebDriverWait(driver, 25)
+wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
+
 
 def forgot_password_button():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//span[@class='custom-link']")))
@@ -49,15 +53,43 @@ def resend_link_button():
     return btn
 
 def open_new_tab():
-    return driver.execute_script("window.open('https://yopmail.com/en/');")
+
+    # return driver.execute_script("window.open('https://www.mailinator.com/');")
+    return driver.get("https://www.mailinator.com/")
+
 
 def yopmail_email_input_field():
-    return wait.until(EC.presence_of_element_located((By.NAME, "email")))
-# def valid_mobile():
-#     return wait.until(EC.presence_of_element_located((By.ID, "mobile")))
-#
-# def valid_password():
-#     return wait.until(EC.presence_of_element_located((By.ID, "password")))
+
+        # Wait for the email input field to be clickable inside the iframe
+       return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='search']")))
+
+
+def select_mail():
+    # Wait for the email input field to be clickable inside the iframe
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//td[contains(text(),'🛠️ Did You Lose Your Password… Again?')]")))
+
+def select_reset_btn():
+    # Switch to the iframe with the specified id
+    driver.switch_to.frame("html_msg_body")
+
+    # Wait until the reset button is present and clickable
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(text(),'🔗 Reset My Password')]")))
+
+def select_reset_btn():
+        # Switch to the iframe with the specified id
+    driver.switch_to.frame("html_msg_body")
+
+    # Wait until the reset button is present and clickable
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(text(),'🔗 Reset My Password')]")))
+
+def reset_password_link():
+    return wait.until(EC.element_to_be_clickable((By.XPATH,"//button[@type='submit']")))
+    # return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter your inbox here']")))
+def valid_password():
+    return wait.until(EC.presence_of_element_located((By.NAME, "new-password")))
+
+def valid_confirm_password():
+    return wait.until(EC.presence_of_element_located((By.NAME, "confirm-password")))
 #
 # def btn_login():
 #     return wait.until(EC.presence_of_element_located((By.ID, "btn-login")))
@@ -74,11 +106,11 @@ def yopmail_email_input_field():
 # def current_password_validation():
 #     return wait.until(EC.presence_of_element_located((By.ID, "error-password")))
 #
-# def new_password_validation():
-#     return wait.until(EC.presence_of_element_located((By.ID, "error-new-password")))
-#
-# def confirm_password_validation():
-#     return wait.until(EC.presence_of_element_located((By.ID, "error-confirm-password")))
+def new_password_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'New Password is required')]")))
+
+def confirm_password_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Repeat New Password is required')]")))
 #
 # def valid_new_password():
 #     return wait.until(EC.presence_of_element_located((By.ID, "new-password")))
@@ -142,21 +174,19 @@ class TestChangePassword:
         open_new_tab()
 
     def test_resend_link(self):
+        time.sleep(3)
         yopmail_email_input_field().send_keys(email)
-        # driver.quit()
+        yopmail_email_input_field().send_keys(Keys.ENTER)
+        time.sleep(3)
+        select_mail().click()
+        time.sleep(3)
+        select_reset_btn().click()
 
-        # login_button().click()
-        # valid_mobile().send_keys(creds.CHANGE_MOBILE)
-        # valid_password().send_keys(password)
-        # btn_login().click()
-        # forget_password().click()
-        # change_password().click()
-    #
-    # def test_password_validation(self):
-    #     btn_change_password().click()
-    #     assert current_password_validation().text == error.CURRENT_PASSWORD_VALIDATION
-    #     assert new_password_validation().text == error.NEW_PASSWORD_VALIDATION
-    #     assert confirm_password_validation().text == error.SET_CONFIRM_PASSWORD_VALIDATION
+    def test_password_validation(self):
+        reset_password_link().click()
+
+        assert new_password_validation().text == validation_assert.ENTER_NEW_PASSWORD
+        assert confirm_password_validation().text == validation_assert.ENTER_CONFIRM_PASSWORD
     #
     # def test_confirm_validation(self):
     #     valid_password().send_keys(password)

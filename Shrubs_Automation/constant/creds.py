@@ -9,6 +9,7 @@ INCORRECT_PASSWORD = "we"
 INCORRECT_CONFIRM_PASSWORD = "wer123"
 INCORRECT_EMAIL = "abc@gmail"
 EMAIL_ID = "aqw07@gmail.com"
+CORRECT_EMAIL='testp567@yopmail.com'
 COMPANY_NAME = "test"
 ADDRESS1 = "test"
 ADDRESS2 = "test"
