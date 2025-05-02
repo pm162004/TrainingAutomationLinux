@@ -75,22 +75,28 @@ def select_reset_btn():
     # Wait until the reset button is present and clickable
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(text(),'🔗 Reset My Password')]")))
 
-def select_reset_btn():
-        # Switch to the iframe with the specified id
-    driver.switch_to.frame("html_msg_body")
-
-    # Wait until the reset button is present and clickable
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(text(),'🔗 Reset My Password')]")))
 
 def reset_password_link():
-    return wait.until(EC.element_to_be_clickable((By.XPATH,"//button[@type='submit']")))
-    # return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter your inbox here']")))
+    try:
+        driver.refresh()
+        # If a new tab is opened, switch to the new tab
+        driver.switch_to.window(driver.window_handles[-1])  # Switch to the latest tab
+
+        return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']")))
+    except TimeoutException:
+        print("Reset password link not found.")
+        raise
+
 def valid_password():
     return wait.until(EC.presence_of_element_located((By.NAME, "new-password")))
 
 def valid_confirm_password():
     return wait.until(EC.presence_of_element_located((By.NAME, "confirm-password")))
-#
+
+def refresh_page():
+    driver.refresh()
+    wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))  # Wait for the body to load after refresh
+
 # def btn_login():
 #     return wait.until(EC.presence_of_element_located((By.ID, "btn-login")))
 #
@@ -136,8 +142,7 @@ def confirm_password_validation():
 # def logout_validation():
 #     return wait.until(EC.presence_of_element_located((By.XPATH, "//a[contains(text(),'Logout')]")))
 #
-def refresh_page():
-    return driver.refresh()
+
 
 class TestChangePassword:
 
@@ -183,17 +188,18 @@ class TestChangePassword:
         select_reset_btn().click()
 
     def test_password_validation(self):
+        time.sleep(3)
         reset_password_link().click()
 
         assert new_password_validation().text == validation_assert.ENTER_NEW_PASSWORD
         assert confirm_password_validation().text == validation_assert.ENTER_CONFIRM_PASSWORD
-    #
-    # def test_confirm_validation(self):
-    #     valid_password().send_keys(password)
-    #     valid_new_password().send_keys(new_password)
-    #     invalid_confirm_password().send_keys(password)
-    #     assert error_confirm_password().text == error.CONFIRM_PASSWORD_ERROR
-    #
+
+    def test_confirm_validation(self):
+        valid_password().send_keys(password)
+        valid_confirm_password().send_keys(new_password)
+        # invalid_confirm_password().send_keys(password)
+        assert error_confirm_password().text == error.CONFIRM_PASSWORD_ERROR
+
     # def test_current_validation(self):
     #     valid_password().send_keys(Keys.BACKSPACE * 3)
     #     assert current_password_validation().text == error.CURRENT_PASSWORD_ERROR
