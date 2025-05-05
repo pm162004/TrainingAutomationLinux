@@ -126,6 +126,9 @@ def password_char_validation():
 def password_special_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'The New Password Must include uppercase, lowercase, number, and special character')]")))
 
+def MyFilesPage():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//b[@class='text-active text-xs font-bold sidebar-menu'][normalize-space()='My Files']")))
+
 #
 # def valid_new_password():
 #     return wait.until(EC.presence_of_element_located((By.ID, "new-password")))
@@ -142,6 +145,9 @@ def error_confirm_password():
 def hide_password():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//*[name()='path' and contains(@d,'M12 7c2.76')]")))
 
+def password_validation():
+    email = wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Invalid credentials')]")))
+    return email
 
 # def success_message():
 #     return wait.until(EC.presence_of_element_located((By.XPATH, "//p[contains(text(),'Your password has been changed')]")))
@@ -211,6 +217,9 @@ class TestChangePassword:
         # invalid_confirm_password().send_keys(password)
         assert error_confirm_password().text == error.CONFIRM_PASSWORD_VALIDATION
 
+        # time.sleep(1)
+
+    reset_password_link().click()
     def test_character_pass(self):
         refresh_page()
         valid_password().send_keys(input_field.INVALID_PASSWORD)
@@ -218,9 +227,6 @@ class TestChangePassword:
         # time.sleep(1)
         assert password_char_validation().text == error.CHARACTER_8_NEW_PASSWORD
         reset_password_link().click()
-        # time.sleep(1)
-
-    reset_password_link().click()
 
     def test_invalid_pass(self):
         refresh_page()
@@ -233,7 +239,8 @@ class TestChangePassword:
         driver.refresh()
         valid_password().send_keys(password)
         hide_password().click()
-        valid_password().send_keys(Keys.CONTROL + 'A' + Keys.CONTROL + 'C')
+        valid_password().send_keys(Keys.CONTROL + 'a')
+        valid_password().send_keys(Keys.CONTROL + 'c')
         valid_confirm_password().send_keys(Keys.CONTROL + 'v')
         reset_password_link().click()
 
@@ -247,6 +254,13 @@ class TestChangePassword:
 
         # assert success_message().text == error.PASSWORD_SUCCESS_MESSAGE
         # close_popup().click()
+    def test_old_login(self):
+        driver.refresh()
+        email_input_field().send_keys(email)
+        login_password().send_keys(creds.OLD_PASSWORD)
+        assert password_validation().text == error.PASS_VALIDATION
+        btn_login = wait.until(EC.element_to_be_clickable((By.NAME, "btn-signin")))
+        btn_login.click()
 
     def test_login(self):
         driver.refresh()
@@ -254,6 +268,7 @@ class TestChangePassword:
         login_password().send_keys(password)
         btn_login = wait.until(EC.element_to_be_clickable((By.NAME, "btn-signin")))
         btn_login.click()
+        assert MyFilesPage().text == validation_assert.MY_FILES
     # def test_sign_out_login_case(self):
     #     forget_password().click()
     #     logout_validation().click()

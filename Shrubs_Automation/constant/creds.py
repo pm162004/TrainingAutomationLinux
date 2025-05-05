@@ -22,7 +22,7 @@ CONFIRM_PASSWORD = "we"
 EMAIL = "test@gmail.com"
 MOBILE_NUMBER = "9090909090"
 REGION = "gujarat"
-
+OLD_PASSWORD = "Test@123"
 # VERIFIED_EMAIL = "pot@mailinator.com"
 # CHANGE_MOBILE = "9111112222"
 # INVALID_CURRENT_PRICE = "e34r"
