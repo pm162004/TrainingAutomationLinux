@@ -87,6 +87,9 @@ def reset_password_link():
         print("Reset password link not found.")
         raise
 
+def login_password():
+    return wait.until(EC.presence_of_element_located((By.NAME, "password")))
+
 def valid_password():
     return wait.until(EC.presence_of_element_located((By.NAME, "new-password")))
 
@@ -106,9 +109,9 @@ def refresh_page():
 # def change_password():
 #     return wait.until(EC.presence_of_element_located((By.XPATH, "//a[contains(text(),'Change Password')]")))
 #
-# def btn_change_password():
-#     return wait.until(EC.element_to_be_clickable((By.ID, "btn-change-password")))
-#
+def back_to_login():
+    return wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[name='btn-reset'][type='button']")))
+
 # def current_password_validation():
 #     return wait.until(EC.presence_of_element_located((By.ID, "error-password")))
 #
@@ -117,6 +120,12 @@ def new_password_validation():
 
 def confirm_password_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Repeat New Password is required')]")))
+def password_char_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'The New Password field must be at least 8 characters')]")))
+
+def password_special_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'The New Password Must include uppercase, lowercase, number, and special character')]")))
+
 #
 # def valid_new_password():
 #     return wait.until(EC.presence_of_element_located((By.ID, "new-password")))
@@ -124,15 +133,16 @@ def confirm_password_validation():
 # def invalid_confirm_password():
 #     return wait.until(EC.presence_of_element_located((By.ID, "confirm-password")))
 #
-# def error_confirm_password():
-#     return wait.until(EC.presence_of_element_located((By.ID, "error-confirm-password")))
-#
+def error_confirm_password():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[@class='md-error'][normalize-space()='Repeat New Password field does not match New Password']")))
+
 # def same_password():
 #     return wait.until(EC.presence_of_element_located((By.ID, "error-msg")))
 #
-# def hide_password():
-#     return wait.until(EC.element_to_be_clickable((By.ID, "hide-password")))
-#
+def hide_password():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//*[name()='path' and contains(@d,'M12 7c2.76')]")))
+
+
 # def success_message():
 #     return wait.until(EC.presence_of_element_located((By.XPATH, "//p[contains(text(),'Your password has been changed')]")))
 #
@@ -169,6 +179,7 @@ class TestChangePassword:
 
         email_input_field().send_keys(creds.EXISTING_EMAIL)
         resend_link_button().click()
+        time.sleep(1)
         assert nonexist_email_validation().text == error.NON_EXIST_EMAIL
 
     def test_valid_email(self):
@@ -198,44 +209,51 @@ class TestChangePassword:
         valid_password().send_keys(password)
         valid_confirm_password().send_keys(new_password)
         # invalid_confirm_password().send_keys(password)
-        assert error_confirm_password().text == error.CONFIRM_PASSWORD_ERROR
+        assert error_confirm_password().text == error.CONFIRM_PASSWORD_VALIDATION
 
-    # def test_current_validation(self):
-    #     valid_password().send_keys(Keys.BACKSPACE * 3)
-    #     assert current_password_validation().text == error.CURRENT_PASSWORD_ERROR
-    #
-    # def test_new_password_validation(self):
-    #     driver.refresh()
-    #     valid_password().send_keys(password)
-    #     valid_new_password().send_keys(password)
-    #     invalid_confirm_password().send_keys(password)
-    #     btn_change_password().click()
-    #     assert same_password().text == error.SAME_PASSWORD_ERROR
-    #
-    # def test_old_password_validation(self):
-    #     driver.refresh()
-    #     valid_password().send_keys(new_password)
-    #     valid_new_password().send_keys(password)
-    #     invalid_confirm_password().send_keys(password)
-    #     btn_change_password().click()
-    #     assert same_password().text == error.OLD_PASSWORD_ERROR
-    #
-    # def test_copy_password(self):
-    #     driver.refresh()
-    #     valid_password().send_keys(password)
-    #     hide_password().click()
-    #     valid_password().send_keys(Keys.CONTROL + 'A' + Keys.CONTROL + 'C')
-    #     valid_new_password().send_keys(Keys.CONTROL + 'v')
-    #
-    # def test_positive_validation(self):
-    #     driver.refresh()
-    #     valid_password().send_keys(password)
-    #     valid_new_password().send_keys(new_password)
-    #     invalid_confirm_password().send_keys(new_password)
-    #     btn_change_password().click()
-    #     assert success_message().text == error.PASSWORD_SUCCESS_MESSAGE
-    #     close_popup().click()
-    #
+    def test_character_pass(self):
+        refresh_page()
+        valid_password().send_keys(input_field.INVALID_PASSWORD)
+        valid_confirm_password().send_keys(input_field.INVALID_PASSWORD)
+        # time.sleep(1)
+        assert password_char_validation().text == error.CHARACTER_8_NEW_PASSWORD
+        reset_password_link().click()
+        # time.sleep(1)
+
+    reset_password_link().click()
+
+    def test_invalid_pass(self):
+        refresh_page()
+        valid_password().send_keys(input_field.WRONG_PASSWORD[1])
+        valid_confirm_password().send_keys(input_field.WRONG_PASSWORD[1])
+        assert password_special_validation().text == error.LOWERCASE_NEW_PASSWORD
+        reset_password_link().click()
+
+    def test_copy_password(self):
+        driver.refresh()
+        valid_password().send_keys(password)
+        hide_password().click()
+        valid_password().send_keys(Keys.CONTROL + 'A' + Keys.CONTROL + 'C')
+        valid_confirm_password().send_keys(Keys.CONTROL + 'v')
+        reset_password_link().click()
+
+    def test_positive_validation(self):
+        driver.refresh()
+        valid_password().send_keys(password)
+        valid_confirm_password().send_keys(password)
+
+        reset_password_link().click()
+        back_to_login().click()
+
+        # assert success_message().text == error.PASSWORD_SUCCESS_MESSAGE
+        # close_popup().click()
+
+    def test_login(self):
+        driver.refresh()
+        email_input_field().send_keys(email)
+        login_password().send_keys(password)
+        btn_login = wait.until(EC.element_to_be_clickable((By.NAME, "btn-signin")))
+        btn_login.click()
     # def test_sign_out_login_case(self):
     #     forget_password().click()
     #     logout_validation().click()
