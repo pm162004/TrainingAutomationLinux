@@ -77,6 +77,7 @@ class TestLogin:
 
         password_input_field().send_keys(config.CORRECT_PASSWORD)
         login_button().click()
+        time.sleep(2)
         assert nonexist_email_validation().text == error.NON_EXIST_EMAIL
 
     def test_invalid_password(self):

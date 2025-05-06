@@ -1,33 +1,14 @@
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service
-from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.common.by import By
+import time
 
+firefox_options = Options()
+service = Service(executable_path='/snap/bin/geckodriver')
 
-def main():
-    # Get the geckodriver executable path using GeckoDriverManager
-    geckodriver_path = GeckoDriverManager().install()
+driver = webdriver.Firefox(service=service, options=firefox_options)
+driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+time.sleep(5)
+print(driver.title)
 
-    # Initialize the Firefox service
-    service = Service(geckodriver_path)
-
-    # Set up Firefox options (if needed)
-    options = webdriver.FirefoxOptions()
-    options.headless = True  # If you want the browser to run in headless mode
-
-    # Initialize the Firefox WebDriver
-    driver = webdriver.Firefox(service=service, options=options)
-
-    # Navigate to Google
-    driver.get("https://www.google.com")
-
-    # Print the title of the page
-    print(driver.title)
-
-    # Quit the driver
-    driver.quit()
-
-
-if __name__ == "__main__":
-    main()
-
+driver.quit()
