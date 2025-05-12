@@ -103,10 +103,10 @@ def test_blank_shrubs():
 def test_valid_shrubs():
     refresh_page()
     shrubs_title_input_field().send_keys(input_field.VALID_SHRUBS)
-    show_title().click()
+    # show_title().click()
     shrubs_btn().click()
     shrubs_view_only().click()
-    hide_thumbnail().click()
+    # hide_thumbnail().click()
     select_type().click()
     select_icon().click()
     close_btn().click()

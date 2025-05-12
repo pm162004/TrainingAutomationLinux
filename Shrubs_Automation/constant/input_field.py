@@ -1,3 +1,7 @@
+import random
+import requests
+from Shrubs_Automation.shrubs_setup.randomeString import *
+from Shrubs_Automation.shrubs_setup import randomeString
 from cryptography.exceptions import AlreadyUpdated
 
 INCORRECT_EMAIL = "abc"
@@ -15,7 +19,11 @@ ALREADY_REGISTERED_UNAME_TEST = "test"
 ALREADY_REGISTERED_UNAME_ADMIN= "admin"
 VALID_EMAIL = "testp5@yopmail.com"
 VALID_UNAME = "Admin34"
-VALID_SHRUBS = "NEWS"
+# response = requests.get("https://random-word-api.herokuapp.com/word?number=10")
+# words = response.json()
+# random_word = random.choice(words)
+VALID_SHRUBS = randomeString.get_random_word_from_datamuse()
+EXISTING_SHRUBS = "1234567890"
 # INCORRECT_FIRST_NAME = "P"
 # INVALID_FIRST_NAME = "532"
 # INCORRECT_LAST_NAME = "S"

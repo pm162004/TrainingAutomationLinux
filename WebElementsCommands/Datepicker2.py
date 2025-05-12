@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -25,3 +27,5 @@ for date in alldates:
     if date.text=="25":
         date.click()
         break
+
+time.sleep(5)

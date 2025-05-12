@@ -1,5 +1,6 @@
 import random
 import string
+import requests
 
 def random_string_generator(size=5, chars=string.ascii_lowercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
@@ -17,11 +18,24 @@ def random_username_generator(length=8):
         username = random.choice(string.ascii_letters) + username[1:]
 
     return username
-
-
 # Example usage: Generate a random username of length 10
 random_username = random_username_generator(10)
 
+
+def get_random_word_from_datamuse():
+    try:
+        response = requests.get("https://api.datamuse.com/words?ml=meaning_like&max=100")
+        response.raise_for_status()
+        words = [item["word"] for item in response.json()]
+        return random.choice(words)
+    except requests.RequestException as e:
+        print("Datamuse API request failed:", e)
+        return None
+
+# Example
+print("Random word:", get_random_word_from_datamuse())
+
+# random_word = get_random_word_from_api(10)
 
 def random_password_generator(length=12):
     # Ensure the length is at least 8
