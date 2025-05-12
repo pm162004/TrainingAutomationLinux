@@ -87,6 +87,8 @@ def progress_spinner():
 # Wait until the overlay (spinner) is no longer visible
 
 def shrubs_ALREADY_EXIST_validation():
+
+    progress_spinner()
     try:
         # Click the save button
         driver.find_element(By.NAME, "btn-save").click()
@@ -198,7 +200,7 @@ def add_link():
     progress_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-upload-image']//div[@class='md-ripple md-disabled']")))
 def link_input_field():
-    overlay_spinner()
+
     progress_spinner()
     return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Link']")))
 def link_validation():
@@ -330,8 +332,12 @@ def test_link():
 
 
     assert success_msg.text == validation_assert.SAVE_SUCCESS_LINK
+    time.sleep(2)
     back_link().click()
+    time.sleep(2)
     link_save_btn().click()
+    time.sleep(2)
     back_branch().click()
+    time.sleep(2)
 
         # You can add more error handling here if necessary
