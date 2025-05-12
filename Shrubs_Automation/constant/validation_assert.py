@@ -11,6 +11,8 @@ ENTER_CONFIRM_PASSWORD = "Repeat New Password is required"
 ENTER_SHRUBS_TITLE = "Shrub Title is required"
 ENTER_SHRUBS_PERMISSIONS = "Permissions field is required"
 ENTER_SHRUBS_THUMBNAIL = "Thumbnail type field is required"
+EXISTS_SHRUBS_TITLE = "Project already exist with the given slug"
+ENTER_LIST_BRANCH = "Title field is required"
 
 # SELECT_AGREE = "Warning: You must agree to the Privacy Policy!"
 # EXIST_EMAIL= "Warning: E-Mail Address is already registered!"
