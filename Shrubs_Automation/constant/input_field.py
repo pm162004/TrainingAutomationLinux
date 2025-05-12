@@ -24,6 +24,7 @@ VALID_UNAME = "Admin34"
 # random_word = random.choice(words)
 VALID_SHRUBS = randomeString.get_random_word_from_datamuse()
 EXISTING_SHRUBS = "NEWS 3"
+LINK = "https://www.google.com"
 # INCORRECT_FIRST_NAME = "P"
 # INVALID_FIRST_NAME = "532"
 # INCORRECT_LAST_NAME = "S"

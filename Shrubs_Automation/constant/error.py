@@ -14,6 +14,7 @@ LOWERCASE_NEW_PASSWORD = "The New Password Must include uppercase, lowercase, nu
 # MOBILE_NO_VALIDATION = "Telephone must be between 3 and 32 characters!"
 # SET_PASSWORD_VALIDATION = "Password must be between 4 and 20 characters!"
 CONFIRM_PASSWORD_VALIDATION = "Repeat New Password field does not match New Password"
+LINK_ERROR = "The Link is not valid"
 # ADDRESS_VALIDATION = "Address 1 must be between 3 and 128 characters!"
 # POSTCODE_VALIDATION = "Postcode must be between 2 and 10 characters!"
 # CITY_VALIDATION = "City must be between 2 and 128 characters!"

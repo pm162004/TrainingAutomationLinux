@@ -74,6 +74,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
+def overlay_spinner():
+    btn =  WebDriverWait(driver, 10).until(
+        EC.invisibility_of_element_located((By.ID, "overlay-spinner"))  # Adjust ID if necessary
+    )
+    return btn
+def progress_spinner():
+    btn =   WebDriverWait(driver, 30).until(
+        EC.invisibility_of_element_located((By.ID, "progress-spinner"))  # Wait for the spinner to disappear
+    )
+    return btn
+# Wait until the overlay (spinner) is no longer visible
+
 def shrubs_ALREADY_EXIST_validation():
     try:
         # Click the save button
@@ -126,6 +138,7 @@ def shrubs_Thumbnail_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//span[normalize-space()='Thumbnail type field is required']")))
 
 def new_branch():
+    overlay_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-new-branch']")))
 def shrubs_btn():
     # Wait until the overlay (spinner) is no longer visible
@@ -177,23 +190,53 @@ def list_branch_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//small[@class='text-danger']")))
 def save_branch():
     # Wait until the overlay (spinner) is no longer visible
-    WebDriverWait(driver, 10).until(
-        EC.invisibility_of_element_located((By.ID, "overlay-spinner"))  # Adjust ID if necessary
-    )
-
+    overlay_spinner()
     # Wait for the button to be clickable
     button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-primary h50 w-100 font-size-16']//div[@class='md-ripple md-disabled']")))
     return button
 def add_link():
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-upload-image']")))
+    progress_spinner()
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-upload-image']//div[@class='md-ripple md-disabled']")))
 def link_input_field():
+    overlay_spinner()
+    progress_spinner()
     return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Link']")))
 def link_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//span[@class='md-error']")))
+def link_error():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[@class='md-error']")))
 def link_save_btn():
+    progress_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-primary h50 w-100 font-size-16']")))
-def link_save_msg():
-    return wait.until(EC.presence_of_element_located((By.LINK_TEXT, "Link has been saved")))
+def back_branch():
+    progress_spinner()
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Back')]")))
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+
+def link_save_msg(driver):
+    try:
+        # Wait until the success message with class 'text-success' is visible
+        success_message = WebDriverWait(driver, 60).until(
+            EC.visibility_of_element_located((By.XPATH, "//span[@class='text-success']"))
+        )
+        return success_message
+    except TimeoutException:
+        print("Timeout: Success message with class 'text-success' not found!")
+        # Log the page source for debugging
+        print(driver.page_source)
+        return None
+    except Exception as e:
+        # Catch any other unexpected exceptions and log the error
+        print(f"An error occurred: {e}")
+        return None
+
+def back_link():
+    progress_spinner()
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-danger h50 w-100 font-size-16 mr1']//div[@class='md-ripple md-disabled']")))
 
 def test_login():
 
@@ -256,8 +299,39 @@ def test_background():
 
     save_branch().click()
 
+
 def test_link():
     add_link().click()
-    link_input_field().send_keys(input_field.VALID_SHRUBS)
+    link_input_field().send_keys(Keys.ENTER)
+    time.sleep(2)
+    link_save_btn().click()
+    time.sleep(2)
 
-    add_link().click()
+    assert link_validation().text == validation_assert.ENTER_LINK
+
+    link_input_field().send_keys(input_field.VALID_SHRUBS)
+    time.sleep(2)
+    link_save_btn().click()
+    time.sleep(2)
+
+    assert link_error().text == error.LINK_ERROR
+
+    link_input_field().send_keys(Keys.CONTROL, "a")
+    link_input_field().send_keys(Keys.DELETE)
+    link_input_field().send_keys(input_field.LINK)
+    link_input_field().send_keys(Keys.ENTER)
+
+    time.sleep(5)
+    link_save_btn().click()
+    time.sleep(5)
+
+    # Now wait for the success message and assert it
+    success_msg = link_save_msg(driver)
+
+
+    assert success_msg.text == validation_assert.SAVE_SUCCESS_LINK
+    back_link().click()
+    link_save_btn().click()
+    back_branch().click()
+
+        # You can add more error handling here if necessary
