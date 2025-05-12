@@ -88,7 +88,7 @@ def progress_spinner():
 
 def shrubs_ALREADY_EXIST_validation():
 
-    progress_spinner()
+    # progress_spinner()
     try:
         # Click the save button
         driver.find_element(By.NAME, "btn-save").click()
