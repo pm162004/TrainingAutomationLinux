@@ -15,5 +15,5 @@ str2 = "priya"
 assert str1==str2 , "Strings Matching Failed"
 print("Validation 2 Passed")
 
-assert "Selenium" in ["Selenium","Python","Java"],"VALIDATION_ERR"
+assert "Seleniu" in ["Selenium","Python","Java"],"VALIDATION_ERR"
 print("Validation 3 passed")
