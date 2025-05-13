@@ -51,8 +51,8 @@ def myShrubs():
 
 
 def new_shrub():
-    # overlay_spinner()
-    return wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".md-button-content")))
+    overlay_spinner()
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='md-button-content']")))
 
 
 def shrubs_title_input_field():
@@ -73,6 +73,7 @@ def shrubs_icon_color():
 
 
 def shrubs_icon_type():
+    progress_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@aria-label='Color:#BD10E0']")))
 
 
@@ -195,6 +196,8 @@ def hide_thumbnail():
 def select_type():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//label[normalize-space()='Thumbnail Image']")))
 
+def select_thumbnail():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='cursor-pointer relative box-square-50 profile-bg br6']")))
 
 # def select_image():
 #     # Wait for the file input to be clickable before interacting
@@ -207,32 +210,40 @@ def select_type():
 #     # file_upload = file_input.send_keys(image_path)
 #     # Optional: Return wait for another element if needed after the upload
 #     return file_input
-# image_paths = [
-#     "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image1.png",
-#     "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image2.png",
-#     "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image3.png"
-# ]
+image_paths = [
+    # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image1.png"
+    # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image2.png"
+    # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image3.png"
+      "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/Shrubs_Automation/shrubs_web/images/i1.jpg"
+]
 
 
 def upload_images():
-
+    overlay_spinner()
     wait.until(
         EC.element_to_be_clickable((By.XPATH, "//div[@class='white-action-icon font-size-16 font-weight-700']")))
-    # file_input.click()
 
-    # Select the image for upload
-    # select_image() # Assuming select_image function is handling the image upload
-    image_paths = [
-        # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image1.png",
-        # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image2.png",
-        "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image3.png"
-    ]
+
     for image_path in image_paths:
-        # Wait for the file input field to be clickable
-        file_input = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@name='upload-image']")))
+        try:
+            # Wait for the file input field to be clickable before interacting with it
+            file_input = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@name='upload-image']")))
 
-        # Upload the image by sending the file path to the input field
-        file_input.send_keys(image_path)
+            # # Optional: Clear the input field before sending the next file (in case the file is not accepted otherwise)
+            # file_input.send_keys(Keys.CONTROL + "a")
+            #
+            # file_input.send_keys(Keys.DELETE)
+
+            # Upload the image by sending the file path to the input field
+            file_input.send_keys(image_path)
+
+            # You might need to add some delay to ensure each image is processed before moving to the next one.
+            time.sleep(1)  # Optional: Adjust the sleep time if necessary to ensure image uploads are complete
+
+        except Exception as e:
+            print(f"Error uploading image {image_path}: {e}")
+
+
 
 
 def keep_both():
@@ -249,8 +260,9 @@ def close_btn():
 
 
 def save_style():
+    overlay_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                  "//button[@class='md-button all-button-height br6 font-size-16 md-theme-default md-ripple-off md-primary mt1 mr1 h50']")))
+                                                  "(//div[@class='md-button-content'][normalize-space()='Save'])[2]")))
 
 
 def save_shrubs():
@@ -346,13 +358,22 @@ def back_link():
     return wait.until(EC.element_to_be_clickable((By.XPATH,
                                                   "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-danger h50 w-100 font-size-16 mr1']//div[@class='md-ripple md-disabled']")))
 
+def save_as_template():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Save As Template')]")))
 
-# @pytest.fixture
-# def driver():
-#     driver = webdriver.Chrome()
-#     yield driver
-#     driver.quit()
+def add_style_template_btn():
+    # overlay_spinner()
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-primary font-weight-700 font-size-16 button-width']//div[@class='md-ripple md-disabled']")))
 
+def add_style_validation():
+    overlay_spinner()
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[normalize-space()='Template Name is required']")))
+
+def add_style_input_field():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "(//input[contains(@id, 'md-input')])[5]")))
+
+def remove_background():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='flex cursor-pointer box-square-50']//img[@alt='thumbnail']")))
 
 def test_login():
     email_input_field().send_keys(email)
@@ -406,10 +427,24 @@ def test_valid_shrubs():
     shrubs_btn().click()
     # time.sleep(10)
 
+
 def test_background():
     shrubs_background_color().click()
     shrubs_icon_color().click()
     shrubs_icon_type().click()
+    select_thumbnail().click()
+    upload_images()
+    keep_both().click()
+    ok_btn().click()
+    next_btn().click()
+    save_media().click()
+    remove_background().click()
+    save_as_template().click()
+    add_style_template_btn().click()
+    time.sleep(5)
+    assert add_style_validation().text == validation_assert.ENTER_TEMPLATE_NAME
+    add_style_input_field().send_keys(input_field.VALID_SHRUBS)
+    add_style_template_btn().click()
 
     save_style().click()
     save_header().click()

@@ -2,7 +2,7 @@ import random
 import requests
 from Shrubs_Automation.shrubs_setup.randomeString import *
 from Shrubs_Automation.shrubs_setup import randomeString
-from cryptography.exceptions import AlreadyUpdated
+# from cryptography.exceptions import AlreadyUpdated
 
 INCORRECT_EMAIL = "abc"
 INVALID_EMAIL = "modip89@gmail.com"
