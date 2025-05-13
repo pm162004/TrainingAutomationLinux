@@ -15,6 +15,7 @@ EXISTS_SHRUBS_TITLE = "Project already exist with the given slug"
 ENTER_LIST_BRANCH = "Title field is required"
 ENTER_LINK = "Link is required"
 SAVE_SUCCESS_LINK = "Link has been saved"
+ENTER_TEMPLATE_NAME = "Template Name is required"
 
 # SELECT_AGREE = "Warning: You must agree to the Privacy Policy!"
 # EXIST_EMAIL= "Warning: E-Mail Address is already registered!"
