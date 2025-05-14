@@ -362,7 +362,7 @@ def save_as_template():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Save As Template')]")))
 
 def add_style_template_btn():
-    # overlay_spinner()
+    overlay_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-primary font-weight-700 font-size-16 button-width']//div[@class='md-ripple md-disabled']")))
 
 def add_style_validation():
