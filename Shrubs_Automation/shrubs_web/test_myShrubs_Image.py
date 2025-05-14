@@ -163,7 +163,7 @@ def shrubs_Thumbnail_validation():
 
 
 def new_branch():
-    overlay_spinner()
+
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-new-branch']")))
 
 
@@ -300,8 +300,8 @@ def save_branch():
     # Wait until the overlay (spinner) is no longer visible
     # overlay_spinner()
     # Wait for the button to be clickable
-    progress_spinner()
-    button = wait.until(EC.element_to_be_clickable((By.XPATH,"//button[@name='btn-save' and @type='submit' and contains(@class, 'md-button') and .//div[normalize-space()='Save']]")))
+    # progress_spinner()
+    button = wait.until(EC.element_to_be_clickable((By.XPATH,"(//button[contains(@class, 'md-button') and .//div[normalize-space()='Save']])[1]")))
     return button
 
 
