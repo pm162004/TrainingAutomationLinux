@@ -263,7 +263,7 @@ def close_btn():
 def save_style():
     overlay_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                  "(//div[@class='md-button-content'][normalize-space()='Save'])[2]")))
+                                                  "(//button[contains(@class, 'md-button') and .//div[normalize-space()='Save']])[2]")))
 
 
 def save_shrubs():
@@ -298,10 +298,10 @@ def list_branch_validation():
 
 def save_branch():
     # Wait until the overlay (spinner) is no longer visible
-    overlay_spinner()
+    # overlay_spinner()
     # Wait for the button to be clickable
-    button = wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                    "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-primary h50 w-100 font-size-16']//div[@class='md-ripple md-disabled']")))
+    progress_spinner()
+    button = wait.until(EC.element_to_be_clickable((By.XPATH,"//button[@name='btn-save' and @type='submit' and contains(@class, 'md-button') and .//div[normalize-space()='Save']]")))
     return button
 
 
@@ -362,9 +362,10 @@ def back_link():
 def save_as_template():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Save As Template')]")))
 
-def add_style_template_btn():
-    overlay_spinner()
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='md-button all-button-height br6 md-theme-default md-ripple-off md-primary font-weight-700 font-size-16 button-width']//div[@class='md-ripple md-disabled']")))
+# def add_style_template_btn():
+#     overlay_spinner()
+#
+#     return wait.until(EC.element_to_be_clickable((By.XPATH, "(//button[contains(@class, 'md-button') and .//div[text()[normalize-space()='Save']]])[1]")))
 
 def add_style_validation():
     overlay_spinner()
@@ -381,6 +382,7 @@ def test_login():
     login_password().send_keys(password)
     btn_login = wait.until(EC.element_to_be_clickable((By.NAME, "btn-signin")))
     btn_login.click()
+    time.sleep(5)
     assert MyFilesPage().text == validation_assert.MY_FILES
 
 
@@ -439,24 +441,29 @@ def test_background():
     ok_btn().click()
     next_btn().click()
     save_media().click()
+    time.sleep(2)
     remove_background().click()
     save_as_template().click()
-    add_style_template_btn().click()
+
+    add_style_input_field().send_keys(Keys.ENTER)
     time.sleep(5)
     assert add_style_validation().text == validation_assert.ENTER_TEMPLATE_NAME
     add_style_input_field().send_keys(input_field.VALID_SHRUBS)
-    add_style_template_btn().click()
-
+    add_style_input_field().send_keys(Keys.ENTER)
+    time.sleep(5)
     save_style().click()
     save_header().click()
+    time.sleep(5)
     new_branch().click()
     create_link().click()
+    time.sleep(5)
     save_branch().click()
+    time.sleep(5)
     assert list_branch_validation().text == validation_assert.ENTER_LIST_BRANCH
     list_branch_list().send_keys(input_field.VALID_SHRUBS)
-
+    time.sleep(5)
     save_branch().click()
-
+#
 
 # def test_link():
 #     add_link().click()
