@@ -24,7 +24,7 @@ driver.get(config.WEB_URL)
 email = config.CORRECT_EMAIL
 password = config.PASSWORD
 new_password = config.RESET_PASSWORD
-wait = WebDriverWait(driver, 25)
+wait = WebDriverWait(driver, 35)
 wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
 
 
