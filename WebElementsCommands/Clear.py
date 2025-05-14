@@ -7,6 +7,7 @@ driver.get("https://practice.automationtesting.in/")
 driver.maximize_window()
 dr = driver.find_element(By.XPATH,"//input[@type='email']").click()
 dr.clear
+
 time.sleep(5)
 
 driver.quit()

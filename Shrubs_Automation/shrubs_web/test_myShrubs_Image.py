@@ -64,6 +64,7 @@ def shrubs_title_validation():
 
 
 def shrubs_background_color():
+    overlay_spinner()
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//span[normalize-space()='Background']")))
 
 
@@ -425,7 +426,7 @@ def test_valid_shrubs():
     save_media().click()
     # close_btn().click()
     shrubs_btn().click()
-    # time.sleep(10)
+    time.sleep(10)
 
 
 def test_background():
