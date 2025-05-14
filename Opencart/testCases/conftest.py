@@ -41,8 +41,8 @@ from datetime import datetime
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
     # Define the path for the report folder
-    report_dir = "/home/web-h-028/PycharmProjects/TrainingAutomation/reports"
-
+    # report_dir = "/home/web-h-028/PycharmProjects/TrainingAutomation/reports"
+    report_dir = "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/reports"
     # Check if the reports directory exists, if not, create it
     if not os.path.exists(report_dir):
         os.makedirs(report_dir)

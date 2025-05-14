@@ -15,7 +15,8 @@ from Opencart.utilities.customLogger import LogGen
 class Test_Login_DDT():
     baseURL = ReadConfig.getApplicationURL()
     logger = LogGen.loggen()  # Logger
-    path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/testdata/Opencart_LoginData.xlsx"
+    # path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/testdata/Opencart_LoginData.xlsx"
+    path = "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/Opencart/testdata/Opencart_LoginData.xlsx"
 
     def test_login_ddt(self, setup):
         self.logger.info("**** Starting test_003_login_Datadriven *******")

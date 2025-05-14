@@ -214,7 +214,8 @@ def select_thumbnail():
 image_paths = [
     # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image1.png"
     # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image2.png"
-    "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image3.png"
+    # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image3.png"
+      "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/Shrubs_Automation/shrubs_web/images/i1.jpg"
 ]
 
 
