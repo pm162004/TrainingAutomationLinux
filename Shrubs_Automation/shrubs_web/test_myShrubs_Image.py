@@ -212,10 +212,10 @@ def select_thumbnail():
 #     # Optional: Return wait for another element if needed after the upload
 #     return file_input
 image_paths = [
-    # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image1.png"
+     "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image1.png"
     # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image2.png"
     # "/home/web-h-028/PycharmProjects/TrainingAutomation/Shrubs_Automation/shrubs_web/image/image3.png"
-      "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/Shrubs_Automation/shrubs_web/images/i1.jpg"
+    #   "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/Shrubs_Automation/shrubs_web/images/i1.jpg"
 ]
 
 
@@ -470,42 +470,42 @@ def test_background():
     save_branch().click()
 #
 
-# def test_link():
-#     add_link().click()
-#     link_input_field().send_keys(Keys.ENTER)
-#     time.sleep(2)
-#     link_save_btn().click()
-#     time.sleep(2)
-#
-#     assert link_validation().text == validation_assert.ENTER_LINK
-#
-#     link_input_field().send_keys(input_field.VALID_SHRUBS)
-#     time.sleep(2)
-#     link_save_btn().click()
-#     time.sleep(2)
-#
-#     assert link_error().text == error.LINK_ERROR
-#
-#     link_input_field().send_keys(Keys.CONTROL, "a")
-#     link_input_field().send_keys(Keys.DELETE)
-#     link_input_field().send_keys(input_field.LINK)
-#     link_input_field().send_keys(Keys.ENTER)
-#
-#     time.sleep(5)
-#     link_save_btn().click()
-#     time.sleep(5)
-#
-#     # Now wait for the success message and assert it
-#     success_msg = link_save_msg(driver)
-#
-#
-#     assert success_msg.text == validation_assert.SAVE_SUCCESS_LINK
-#     time.sleep(2)
-#     back_link().click()
-#     time.sleep(2)
-#     link_save_btn().click()
-#     time.sleep(2)
-#     back_branch().click()
-#     time.sleep(2)
-#
-#         # You can add more error handling here if necessary
+def test_link():
+    add_link().click()
+    link_input_field().send_keys(Keys.ENTER)
+    time.sleep(2)
+    link_save_btn().click()
+    time.sleep(2)
+
+    assert link_validation().text == validation_assert.ENTER_LINK
+
+    link_input_field().send_keys(input_field.VALID_SHRUBS)
+    time.sleep(2)
+    link_save_btn().click()
+    time.sleep(2)
+
+    assert link_error().text == error.LINK_ERROR
+
+    link_input_field().send_keys(Keys.CONTROL, "a")
+    link_input_field().send_keys(Keys.DELETE)
+    link_input_field().send_keys(input_field.LINK)
+    link_input_field().send_keys(Keys.ENTER)
+
+    time.sleep(5)
+    link_save_btn().click()
+    time.sleep(5)
+
+    # Now wait for the success message and assert it
+    success_msg = link_save_msg(driver)
+
+
+    assert success_msg.text == validation_assert.SAVE_SUCCESS_LINK
+    time.sleep(2)
+    back_link().click()
+    time.sleep(2)
+    link_save_btn().click()
+    time.sleep(2)
+    back_branch().click()
+    time.sleep(2)
+
+        # You can add more error handling here if necessary

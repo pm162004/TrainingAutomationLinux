@@ -185,7 +185,8 @@ class TestSignup:
         username_input_field().send_keys(randomeString.random_username)
 
         time.sleep(1)
-        email_input_field().send_keys(randomeString.email)
+        em = email_input_field().send_keys(randomeString.email)
+        print(em)
         password_input_field().send_keys(randomeString.random_password)
         # assert password_special_validation().text == error.LOWERCASE_PASSWORD
 

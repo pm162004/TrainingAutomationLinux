@@ -1,19 +1,20 @@
-{"timestamp":19517896,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"path_key":"clean","glean_timestamp":"1747216398052","can_load":"true","loadfail_reason":"N/A"}}
-{"timestamp":19517897,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"loadfail_reason":"N/A","glean_timestamp":"1747216398052","path_key":"clean","can_load":"true"}}
-{"timestamp":19517897,"category":"session_restore","name":"shutdown_success_session_startup","extra":{"shutdown_reason":"N/A","glean_timestamp":"1747216398052","shutdown_ok":"false"}}
-{"timestamp":19518819,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"required","glean_timestamp":"1747216398974"}}
-{"timestamp":19519393,"category":"jsonfile","name":"load_autofillprofiles","extra":{"value":"","glean_timestamp":"1747216399549"}}
-{"timestamp":19519616,"category":"doh","name":"state_rollback","extra":{"glean_timestamp":"1747216399771","value":"null"}}
-{"timestamp":19519971,"category":"jsonfile","name":"load_logins","extra":{"glean_timestamp":"1747216400127","value":""}}
-{"timestamp":19519972,"category":"upgrade_dialog","name":"trigger_reason","extra":{"value":"not-major","glean_timestamp":"1747216400127"}}
-{"timestamp":19520237,"category":"normandy","name":"validation_failed_nimbus_experiment","extra":{"value":"whats-new-notification-sidebarvertical-tabs","reason":"unsupported-feature","feature_ids":"backgroundTaskMessage","glean_timestamp":"1747216400393"}}
-{"timestamp":19520237,"category":"nimbus_events","name":"validation_failed","extra":{"experiment":"whats-new-notification-sidebarvertical-tabs","feature_ids":"backgroundTaskMessage","reason":"unsupported-feature","glean_timestamp":"1747216400393"}}
-{"timestamp":19520318,"category":"normandy","name":"enroll_failed_nimbus_experiment","extra":{"value":"recommend-bookmark-toolbar-existing-user-rollout","reason":"feature-conflict","glean_timestamp":"1747216400473"}}
-{"timestamp":19520318,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","glean_timestamp":"1747216400473","experiment":"recommend-bookmark-toolbar-existing-user-rollout"}}
-{"timestamp":19520429,"category":"normandy","name":"validation_failed_nimbus_experiment","extra":{"value":"whats-new-notification-tab-groups","glean_timestamp":"1747216400584","feature_ids":"backgroundTaskMessage","reason":"unsupported-feature"}}
-{"timestamp":19520429,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"unsupported-feature","feature_ids":"backgroundTaskMessage","glean_timestamp":"1747216400584","experiment":"whats-new-notification-tab-groups"}}
-{"timestamp":19520435,"category":"normandy","name":"enroll_nimbus_experiment","extra":{"value":"simplified-chatbot-onboarding","experimentType":"nimbus","glean_timestamp":"1747216400591","branch":"treatment-c-short-copy-1-step"}}
-{"timestamp":19520435,"category":"nimbus_events","name":"enrollment","extra":{"glean_timestamp":"1747216400591","branch":"treatment-c-short-copy-1-step","experiment":"simplified-chatbot-onboarding","experiment_type":"nimbus"}}
-{"timestamp":19520449,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1747216400604"}}
-{"timestamp":19519644,"category":"media.playback","name":"first_frame_loaded","extra":{"total_waiting_data_time":"0","is_hdr":"false","playback_type":"Non-MSE playback","first_frame_loaded_time":"598","video_codec":"video/vp8","decoder_name":"ffvpx video decoder (RDD remote)","is_hardware_decoding":"true","metadata_loaded_time":"6","buffering_time":"0","glean_timestamp":"1747216404946","resolution":"V,720<h<=1080"}}
-{"timestamp":19524897,"category":"doh","name":"state_shutdown","extra":{"value":"null","glean_timestamp":"1747216405053"}}
+{"timestamp":87640173,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"glean_timestamp":"1747284521011","can_load":"true","loadfail_reason":"N/A","path_key":"clean"}}
+{"timestamp":87640173,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"path_key":"clean","glean_timestamp":"1747284521011","can_load":"true","loadfail_reason":"N/A"}}
+{"timestamp":87640173,"category":"session_restore","name":"shutdown_success_session_startup","extra":{"shutdown_reason":"N/A","shutdown_ok":"false","glean_timestamp":"1747284521012"}}
+{"timestamp":87640799,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"required","glean_timestamp":"1747284521638"}}
+{"timestamp":87641167,"category":"jsonfile","name":"load_autofillprofiles","extra":{"value":"","glean_timestamp":"1747284522005"}}
+{"timestamp":87641395,"category":"doh","name":"state_rollback","extra":{"glean_timestamp":"1747284522233","value":"null"}}
+{"timestamp":87641854,"category":"normandy","name":"validation_failed_nimbus_experiment","extra":{"value":"whats-new-notification-sidebarvertical-tabs","glean_timestamp":"1747284522692","feature_ids":"backgroundTaskMessage","reason":"unsupported-feature"}}
+{"timestamp":87641854,"category":"nimbus_events","name":"validation_failed","extra":{"glean_timestamp":"1747284522692","experiment":"whats-new-notification-sidebarvertical-tabs","reason":"unsupported-feature","feature_ids":"backgroundTaskMessage"}}
+{"timestamp":87641864,"category":"normandy","name":"enroll_failed_nimbus_experiment","extra":{"glean_timestamp":"1747284522702","reason":"feature-conflict","value":"recommend-bookmark-toolbar-existing-user-rollout"}}
+{"timestamp":87641864,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","glean_timestamp":"1747284522703","experiment":"recommend-bookmark-toolbar-existing-user-rollout"}}
+{"timestamp":87641938,"category":"normandy","name":"validation_failed_nimbus_experiment","extra":{"value":"whats-new-notification-tab-groups","glean_timestamp":"1747284522776","reason":"unsupported-feature","feature_ids":"backgroundTaskMessage"}}
+{"timestamp":87641938,"category":"nimbus_events","name":"validation_failed","extra":{"feature_ids":"backgroundTaskMessage","experiment":"whats-new-notification-tab-groups","reason":"unsupported-feature","glean_timestamp":"1747284522776"}}
+{"timestamp":87641957,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1747284522795"}}
+{"timestamp":87641962,"category":"jsonfile","name":"load_logins","extra":{"value":"","glean_timestamp":"1747284522800"}}
+{"timestamp":87641963,"category":"upgrade_dialog","name":"trigger_reason","extra":{"glean_timestamp":"1747284522801","value":"not-major"}}
+{"timestamp":87641435,"category":"media.playback","name":"first_frame_loaded","extra":{"metadata_loaded_time":"20","buffering_time":"0","video_codec":"video/vp8","decoder_name":"ffvpx video decoder (RDD remote)","is_hardware_decoding":"true","is_hdr":"false","first_frame_loaded_time":"397","total_waiting_data_time":"0","glean_timestamp":"1747284530531","playback_type":"Non-MSE playback","resolution":"V,720<h<=1080"}}
+{"timestamp":87647082,"category":"media.playback","name":"first_frame_loaded","extra":{"is_hardware_decoding":"true","is_hdr":"false","video_codec":"video/vp8","metadata_loaded_time":"19","first_frame_loaded_time":"41","resolution":"V,720<h<=1080","total_waiting_data_time":"0","playback_type":"Non-MSE playback","decoder_name":"ffvpx video decoder (RDD remote)","buffering_time":"0","glean_timestamp":"1747284530531"}}
+{"timestamp":87647297,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"true","glean_timestamp":"1747284530531"}}
+{"timestamp":87648094,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"true","glean_timestamp":"1747284530531"}}
+{"timestamp":87649716,"category":"doh","name":"state_shutdown","extra":{"value":"null","glean_timestamp":"1747284530554"}}
