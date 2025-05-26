@@ -1,6 +1,5 @@
 import os
 from dotenv import load_dotenv
-# from Opencart2.opencart_setup.randomeString import random_string_generator
 
 # Load environment variables from .env file
 load_dotenv()

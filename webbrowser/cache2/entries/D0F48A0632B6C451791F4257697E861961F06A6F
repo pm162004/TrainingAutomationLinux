@@ -10,13 +10,12 @@
     <link rel="localization" href="branding/brand.ftl" />
     <link rel="localization" href="toolkit/branding/brandings.ftl" />
     <link rel="localization" href="browser/newtab/newtab.ftl" />
-    <link rel="localization" href="preview/reportContentTemporary.ftl" />
     <link rel="localization" href="toolkit/global/mozMessageBar.ftl" />
     <link rel="stylesheet" href="chrome://global/skin/design-system/tokens-brand.css">
     <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css" />
     <link rel="stylesheet" href="chrome://newtab/content/css/activity-stream.css" />
   </head>
-  <!-- Cached: Thu, 15 May 2025 04:48:47 GMT -->
+  <!-- Cached: Fri, 06 Jun 2025 12:07:03 GMT -->
   <body class="activity-stream">
     <div id="header-asrouter-container" role="presentation"></div>
     <div id="root">
@@ -26,103 +25,103 @@
     [native code]
 }" data-preference="feeds.topsites" data-eventSource="TOP_SITES" data-l10n-id="newtab-custom-shortcuts-toggle"><div slot="nested"><div class="more-info-top-wrapper"><div class="more-information"><select id="row-selector" class="selector" name="row-count" data-preference="topSitesRows" aria-labelledby="custom-shortcuts-title"><option selected="" value="1" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 1}"></option><option value="2" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 2}"></option><option value="3" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 3}"></option><option value="4" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 4}"></option></select></div></div></div></moz-toggle></div><div id="pocket-section" class="section"><moz-toggle id="pocket-toggle" pressed="true" onToggle="function() {
     [native code]
-}" aria-describedby="custom-pocket-subtitle" data-preference="feeds.section.topstories" data-eventSource="TOP_STORIES" data-l10n-id="newtab-custom-stories-toggle"><div slot="nested"></div></moz-toggle></div></div><span class="divider" role="separator"></span><div><button id="settings-link" class="external-link" data-l10n-id="newtab-custom-settings"></button></div></div></div></span></menu><div class="weatherWrapper"><div class="weather"><div class="weatherCard"><a data-l10n-id="newtab-weather-see-forecast" data-l10n-args="{&quot;provider&quot;: &quot;AccuWeather&quot;}" href="https://www.accuweather.com/en/in/ahmedabad/202438/daily-weather-forecast/202438?lang=en-us&amp;partner=web_mozilla_adc" class="weatherInfoLink"><div class="weatherIconCol"><span class="weatherIcon iconId5"></span></div><div class="weatherText"><div class="weatherForecastRow"><span class="weatherTemperature">33<!-- -->°<!-- -->c</span></div><div class="weatherCityRow"><span class="weatherCity">Ahmedabad</span></div></div></a><div class="weatherButtonContextMenuWrapper"><button aria-haspopup="true" data-l10n-id="newtab-menu-section-tooltip" class="weatherButtonContextMenu"></button></div></div><span class="weatherSponsorText"><span data-l10n-id="newtab-weather-sponsored" data-l10n-args="{&quot;provider&quot;: &quot;AccuWeather&quot;}"></span></span></div></div><div class="outer-wrapper ds-outer-wrapper-search-alignment ds-outer-wrapper-breakpoint-override visible-logo"><main class="newtab-main"><div class="non-collapsible-section"><div class="search-wrapper"><h1 class="logo-and-wordmark-wrapper"><div class="logo-and-wordmark" role="img" data-l10n-id="newtab-logo-and-wordmark"><div class="logo"></div><div class="wordmark"></div></div></h1><div class="search-inner-wrapper"><button class="search-handoff-button" tabindex="-1"><div class="fake-textbox"></div><input type="search" class="fake-editable" tabindex="-1" aria-hidden="true"/><div class="fake-caret"></div></button></div></div></div><div class="body-wrapper on"><div class="discovery-stream ds-layout ds-layout-topsites"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="ds-top-sites"><section class="collapsible-section top-sites" data-section-id="topsites"><div class="section-top-bar"><h2 class="section-title-container " style="visibility:hidden"><span class="section-title"><span data-l10n-id="newtab-section-header-topsites"></span></span></h2></div><div><div class="top-sites-list-wrapper"><ul role="group" aria-label="Shortcuts" class="top-sites-list"><li class="top-site-outer placeholder  "><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false" title=""><div class="tile" aria-hidden="true"><div class="icon-wrapper"><div class=""></div></div></div><div class="title"><span class="title-label" dir="auto"><br/></span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.wikipedia.org/" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="Wikipedia"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="W"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Wikipedia</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Wikipedia&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.youtube.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="YouTube"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="Y"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">YouTube</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="http://ndtv.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="NDTV"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="N"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/ndtv@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">NDTV</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;NDTV&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.reddit.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="Reddit"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="R"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Reddit</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer placeholder  add-button"><div class="top-site-inner"><a class="top-site-button" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="newtab-topsites-add-shortcut-label"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="n"><div class=""></div></div></div><div class="title"><span class="title-label" dir="auto" data-l10n-id="newtab-topsites-add-shortcut-label">newtab-topsites-add-shortcut-label</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li></ul></div><div class="edit-topsites-wrapper"></div></div></section></div></div></div></div><style data-styles="[[null]]"></style></div><section class="collapsible-section ds-layout" data-section-id="topstories"><div class="section-top-bar"><h2 class="section-title-container "><span class="section-title"><span data-l10n-id="newtab-section-header-stories"></span></span></h2></div><div><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div><div class="ds-card-grid    ds-card-grid-include-descriptions  "><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.bbc.com/news/articles/cp857gryxn1o?utm_source=firefox-newtab-en-intl" title="The Heartbeat of a Billion: What Virat Kohli Meant to India" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+}" aria-describedby="custom-pocket-subtitle" data-preference="feeds.section.topstories" data-eventSource="TOP_STORIES" data-l10n-id="newtab-custom-stories-toggle"><div slot="nested"></div></moz-toggle></div></div><span class="divider" role="separator"></span><div><button id="settings-link" class="external-link" data-l10n-id="newtab-custom-settings"></button></div></div></div></span></menu><div class="weatherWrapper"><div class="weather"><div class="weatherCard"><a data-l10n-id="newtab-weather-see-forecast" data-l10n-args="{&quot;provider&quot;: &quot;AccuWeather®&quot;}" href="https://www.accuweather.com/en/in/vadodara/202439/daily-weather-forecast/202439?lang=en-us&amp;partner=web_mozilla_adc" class="weatherInfoLink"><div class="weatherIconCol"><span class="weatherIcon iconId2"></span></div><div class="weatherText"><div class="weatherForecastRow"><span class="weatherTemperature">41<!-- -->°<!-- -->c</span></div><div class="weatherCityRow"><span class="weatherCity">Vadodara</span></div></div></a><div class="weatherButtonContextMenuWrapper"><button aria-haspopup="true" data-l10n-id="newtab-menu-section-tooltip" class="weatherButtonContextMenu"></button></div></div><span class="weatherSponsorText"><span data-l10n-id="newtab-weather-sponsored" data-l10n-args="{&quot;provider&quot;: &quot;AccuWeather®&quot;}"></span></span></div></div><div class="mobileDownloadPromoWrapper "></div><div class="outer-wrapper ds-outer-wrapper-search-alignment ds-outer-wrapper-breakpoint-override visible-logo"><main class="newtab-main"><div class="non-collapsible-section"><div class="search-wrapper"><h1 class="logo-and-wordmark-wrapper"><div class="logo-and-wordmark" role="img" data-l10n-id="newtab-logo-and-wordmark"><div class="logo"></div><div class="wordmark"></div></div></h1><div class="search-inner-wrapper"><button class="search-handoff-button" tabindex="-1"><div class="fake-textbox"></div><input type="search" class="fake-editable" tabindex="-1" aria-hidden="true"/><div class="fake-caret"></div></button></div></div></div><div class="body-wrapper on"><div class="discovery-stream ds-layout ds-layout-topsites"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="ds-top-sites"><section class="collapsible-section top-sites" data-section-id="topsites"><div class="section-top-bar"><h2 class="section-title-container " style="visibility:hidden"><span class="section-title"><span data-l10n-id="newtab-section-header-topsites"></span></span></h2></div><div><div class="top-sites-list-wrapper"><ul role="group" aria-label="Shortcuts" class="top-sites-list"><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.wikipedia.org/" tabindex="0" draggable="true" data-is-sponsored-link="false" title="Wikipedia"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="W"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Wikipedia</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Wikipedia&quot;}" class="context-menu-button icon" tabindex="0"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.youtube.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="YouTube"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="Y"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">YouTube</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="http://ndtv.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="NDTV"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="N"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/ndtv@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">NDTV</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;NDTV&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.reddit.com/" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="Reddit"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="R"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png)"></div></div></div><div class="title"><span class="title-label" dir="auto">Reddit</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}" class="context-menu-button icon" tabindex="-1"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer placeholder  add-button"><div class="top-site-inner"><a class="top-site-button" tabindex="-1" draggable="true" data-is-sponsored-link="false" title="newtab-topsites-add-shortcut-label"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="n"><div class=""></div></div></div><div class="title"><span class="title-label" dir="auto" data-l10n-id="newtab-topsites-add-shortcut-label">newtab-topsites-add-shortcut-label</span><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></div></a><div class="topsite-impression-observer"></div></div></li></ul></div><div class="edit-topsites-wrapper"></div></div></section></div></div></div></div><style data-styles="[[null]]"></style></div><section class="collapsible-section ds-layout" data-section-id="topstories"><div class="section-top-bar"><h2 class="section-title-container "><span class="section-title"><span data-l10n-id="newtab-section-header-stories"></span></span></h2></div><div><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div><div class="ds-card-grid    ds-card-grid-include-descriptions  "><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.sciencealert.com/a-super-tiny-star-gave-birth-to-a-giant-planet-and-we-dont-know-how?utm_source=firefox-newtab-en-intl" title="A Super-Tiny Star Gave Birth to a Giant Planet and We Don’t Know How" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/e5d8/live/77f71040-2fe2-11f0-b108-379830faf149.jpg.webp" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fnews%2F1536%2Fcpsprodpb%2Fe5d8%2Flive%2F77f71040-2fe2-11f0-b108-379830faf149.jpg.webp 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fichef.bbci.co.uk%2Fnews%2F1536%2Fcpsprodpb%2Fe5d8%2Flive%2F77f71040-2fe2-11f0-b108-379830faf149.jpg.webp 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">BBC</p><h3 class="title clamp">The Heartbeat of a Billion: What Virat Kohli Meant to India</h3><p class="excerpt clamp">Legendary India batter Virat Kohli announced retirement from international Test cricket on Monday.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Heartbeat of a Billion: What Virat Kohli Meant to India&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2025-new-schedule-why-ipl-playoffs-have-been-moved-out-of-kolkatas-eden-gardens/articleshow/121152657.cms?utm_source=firefox-newtab-en-intl" title="IPL 2025 New Schedule: Why IPL Playoffs Have Been Moved Out of Kolkata’s Eden Gardens?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/0b1f1931-91b6-404f-b203-8871e43f6836.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0b1f1931-91b6-404f-b203-8871e43f6836.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0b1f1931-91b6-404f-b203-8871e43f6836.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">ScienceAlert</p></div><h3 class="title clamp">A Super-Tiny Star Gave Birth to a Giant Planet and We Don’t Know How</h3><p class="excerpt clamp">A giant conundrum has been found orbiting a teeny tiny red dwarf star just a fifth of the size of the Sun.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;A Super-Tiny Star Gave Birth to a Giant Planet and We Don’t Know How&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.discovermagazine.com/planet-earth/dogs-do-dream-and-its-most-likely-about-their-toys-food-and-you?utm_source=firefox-newtab-en-intl" title="Dogs Do Dream, and It’s Most Likely About Their Toys, Food, and You" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ebca3846-3bdb-4208-bc0a-cb04a5ae3917.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febca3846-3bdb-4208-bc0a-cb04a5ae3917.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Febca3846-3bdb-4208-bc0a-cb04a5ae3917.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The Times of India</p><h3 class="title clamp">IPL 2025 New Schedule: Why IPL Playoffs Have Been Moved Out of Kolkata’s Eden Gardens?</h3><p class="excerpt clamp">The final stretch of the 2025 Indian Premier League (IPL) is set to commence on the 17th of May. After a brief suspension following cross-border tensions between India and Pakistan, the premier competition is set to return after a nine day hiatus.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;IPL 2025 New Schedule: Why IPL Playoffs Have Been Moved Out of Kolkata’s Eden Gardens?&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.dw.com/en/how-the-kashmir-conflict-impacts-indian-pakistani-politics/a-72516887?utm_source=firefox-newtab-en-intl" title="How the Kashmir Conflict Impacts Indian, Pakistani Politics" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://images.ctfassets.net/cnu0m8re1exe/1BlFG600hO8cMKpEa34CJW/39653dcb0253eb4d3faa0d73f595363d/sleeping-dog.jpg?fm=jpg&amp;fl=progressive&amp;w=660&amp;h=433&amp;fit=fill" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages.ctfassets.net%2Fcnu0m8re1exe%2F1BlFG600hO8cMKpEa34CJW%2F39653dcb0253eb4d3faa0d73f595363d%2Fsleeping-dog.jpg%3Ffm%3Djpg%26fl%3Dprogressive%26w%3D660%26h%3D433%26fit%3Dfill 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fimages.ctfassets.net%2Fcnu0m8re1exe%2F1BlFG600hO8cMKpEa34CJW%2F39653dcb0253eb4d3faa0d73f595363d%2Fsleeping-dog.jpg%3Ffm%3Djpg%26fl%3Dprogressive%26w%3D660%26h%3D433%26fit%3Dfill 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Discover</p></div><h3 class="title clamp">Dogs Do Dream, and It’s Most Likely About Their Toys, Food, and You</h3><p class="excerpt clamp">Do dogs dream? Sleep research shows what’s (likely) going on in your pet’s minds while they doze.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Dogs Do Dream, and It’s Most Likely About Their Toys, Food, and You&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://frontline.thehindu.com/the-nation/politicsbjp-operation-sindoor-anti-muslim-politics-analysis/article69655974.ece?utm_source=firefox-newtab-en-intl" title="BJP Is Turning Operation Sindoor Into a Tool to Vilify Muslims " class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/55fa746a-beaa-435d-96ca-adcbc3b28868.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F55fa746a-beaa-435d-96ca-adcbc3b28868.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F55fa746a-beaa-435d-96ca-adcbc3b28868.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">DW</p><h3 class="title clamp">How the Kashmir Conflict Impacts Indian, Pakistani Politics</h3><p class="excerpt clamp">Now that India and Pakistan have agreed to a ceasefire after days of missile and drone strikes, there are certain players in the two countries that can use the crisis to bolster their domestic support.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How the Kashmir Conflict Impacts Indian, Pakistani Politics&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.fastcompany.com/91331131/simple-trick-to-conquer-uncertainty?utm_source=firefox-newtab-en-intl" title="This Simple Trick Can Help You Conquer Uncertainty" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8a20160f-1f13-47de-abc2-00aa3cba28ea.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8a20160f-1f13-47de-abc2-00aa3cba28ea.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8a20160f-1f13-47de-abc2-00aa3cba28ea.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The Hindu</p></div><h3 class="title clamp">BJP Is Turning Operation Sindoor Into a Tool to Vilify Muslims </h3><p class="excerpt clamp">Home Minister Amit Shah’s factually incorrect statements about TMC and Operation Sindoor reveal the ruling party’s strategy of using military operations for domestic political gain against Muslim communities, even as opposition MPs promote India’s position globally.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;BJP Is Turning Operation Sindoor Into a Tool to Vilify Muslims &quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.vogue.com/article/retinol-rich-foods?utm_source=firefox-newtab-en-intl" title="15 Retinol-Rich Foods to Stimulate Collagen" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f81b8040-fb01-4fbc-8dbe-6e93807dd271.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff81b8040-fb01-4fbc-8dbe-6e93807dd271.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff81b8040-fb01-4fbc-8dbe-6e93807dd271.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Fast Company</p><h3 class="title clamp">This Simple Trick Can Help You Conquer Uncertainty</h3><p class="excerpt clamp">The secret is to be more curious than afraid.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;This Simple Trick Can Help You Conquer Uncertainty&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://scroll.in/article/1082304/india-hyphen-pakistan-us-rhetoric-revives-new-delhis-nightmare?utm_source=firefox-newtab-en-intl" title="India Hyphen Pakistan: US Rhetoric Revives New Delhi’s Nightmare" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/830678a8-0b17-4023-950f-ae933211b481.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F830678a8-0b17-4023-950f-ae933211b481.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F830678a8-0b17-4023-950f-ae933211b481.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Vogue</p></div><h3 class="title clamp">15 Retinol-Rich Foods to Stimulate Collagen</h3><p class="excerpt clamp">Can you eat your way to younger skin? </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;15 Retinol-Rich Foods to Stimulate Collagen&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.livemint.com/money/personal-finance/what-does-your-credit-score-really-say-about-you-uncover-the-habits-behind-the-number-11749013846763.html?utm_source=firefox-newtab-en-intl" title="What Does Your Credit Score Really Say About You? Uncover the Habits Behind the Number" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/17c4cec4-b064-403e-9691-d18509bad3aa.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F17c4cec4-b064-403e-9691-d18509bad3aa.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F17c4cec4-b064-403e-9691-d18509bad3aa.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Scroll</p><h3 class="title clamp">India Hyphen Pakistan: US Rhetoric Revives New Delhi’s Nightmare</h3><p class="excerpt clamp">Decades of Indian efforts to rise above comparisons or being slotted with Islamabad have been undermined.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;India Hyphen Pakistan: US Rhetoric Revives New Delhi’s Nightmare&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.hindustantimes.com/lifestyle/art-culture/from-garden-to-room-nature-inspired-home-decor-interior-design-trends-that-feel-alive-101747147915008.html?utm_source=firefox-newtab-en-intl" title="From Garden to Room: Nature-Inspired Home Decor, Interior Design Trends That Feel Alive" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3faeaaa6-a7b1-4a25-ae40-8b04462bea32.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3faeaaa6-a7b1-4a25-ae40-8b04462bea32.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3faeaaa6-a7b1-4a25-ae40-8b04462bea32.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Mint</p></div><h3 class="title clamp">What Does Your Credit Score Really Say About You? Uncover the Habits Behind the Number</h3><p class="excerpt clamp">It is crucial to understand how habits like timely repayments, low credit utilisation, and regular report checks impact your credit score, highlighting recent RBI reforms and their implications for borrowers and lenders.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;What Does Your Credit Score Really Say About You? Uncover the Habits Behind the Number&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://fortune.com/well/2025/06/04/silent-treatment-punishment-parenting/?utm_source=firefox-newtab-en-intl" title="Here’s Why Giving Your Kid the Silent Treatment Is ‘One of the Worst Types of Punishment’" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/879c077e-ec1f-4261-a887-f3ecae78e128.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F879c077e-ec1f-4261-a887-f3ecae78e128.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F879c077e-ec1f-4261-a887-f3ecae78e128.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Hindustan Times</p><h3 class="title clamp">From Garden to Room: Nature-Inspired Home Decor, Interior Design Trends That Feel Alive</h3><p class="excerpt clamp">This nature-loving interior decor and design trend will turn your home into a peaceful oasis.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;From Garden to Room: Nature-Inspired Home Decor, Interior Design Trends That Feel Alive&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.zdnet.com/article/who-wants-to-be-a-chief-ai-officer-a-new-career-path-emerges/?utm_source=firefox-newtab-en-intl" title="Who Wants to Be a Chief AI Officer? a New Career Path Emerges" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/73e22cf8-2eb1-4e11-88e9-8f84102859f2.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F73e22cf8-2eb1-4e11-88e9-8f84102859f2.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F73e22cf8-2eb1-4e11-88e9-8f84102859f2.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Fortune</p></div><h3 class="title clamp">Here’s Why Giving Your Kid the Silent Treatment Is ‘One of the Worst Types of Punishment’</h3><p class="excerpt clamp">“It teaches them not only to be conflict-avoidant, but makes them conflict-terrified.&quot;</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Here’s Why Giving Your Kid the Silent Treatment Is ‘One of the Worst Types of Punishment’&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.hindustantimes.com/india-news/rcb-event-turns-deadly-what-led-to-the-bengaluru-stampede-killing-11-cricket-fans-101749087650141.html?utm_source=firefox-newtab-en-intl" title="RCB Event Turns Deadly: What Led to the Bengaluru Stampede Killing 11 Cricket Fans?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/5777d628-da6a-4ed5-be2b-175ee524bd68.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F5777d628-da6a-4ed5-be2b-175ee524bd68.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F5777d628-da6a-4ed5-be2b-175ee524bd68.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">ZDNet</p><h3 class="title clamp">Who Wants to Be a Chief AI Officer? a New Career Path Emerges</h3><p class="excerpt clamp">AWS research shows more than eight in 10 companies either have a CAIO or are seeking one. However, these organizations are scrambling to fill their ranks with AI talent.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Who Wants to Be a Chief AI Officer? a New Career Path Emerges&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.fastcompany.com/91333220/how-to-handle-interviewing-with-more-than-one-company?utm_source=firefox-newtab-en-intl" title="How to Handle Interviewing With More Than One Company" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9d5ebfb8-d8d8-4418-ae9c-430baead2dad.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9d5ebfb8-d8d8-4418-ae9c-430baead2dad.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9d5ebfb8-d8d8-4418-ae9c-430baead2dad.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Hindustan Times</p></div><h3 class="title clamp">RCB Event Turns Deadly: What Led to the Bengaluru Stampede Killing 11 Cricket Fans?</h3><p class="excerpt clamp">Police said around 50,000 people had gathered within a 1-km radius of the stadium, and many tried to push through gates or climb over barriers.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;RCB Event Turns Deadly: What Led to the Bengaluru Stampede Killing 11 Cricket Fans?&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.architecturaldigest.in/gallery/beautiful-colleges-attended-by-the-modern-royals-of-india/?utm_source=firefox-newtab-en-intl" title="5 Beautiful Colleges Attended by the Modern Royals of India" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a73b7082-1f68-4de5-bc3b-3cee7e4529b7.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa73b7082-1f68-4de5-bc3b-3cee7e4529b7.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa73b7082-1f68-4de5-bc3b-3cee7e4529b7.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Fast Company</p><h3 class="title clamp">How to Handle Interviewing With More Than One Company</h3><p class="excerpt clamp">After weeks of searching and applying, you’ve made it to the interview stage, a victory in and of itself. But what happens if you land multiple interviews with different companies at the same time? </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How to Handle Interviewing With More Than One Company&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.cnbctv18.com/personal-finance/home-purchase-buying-property-laddering-strategy-how-it-works-risks-benefits-19604348.htm?utm_source=firefox-newtab-en-intl" title="This Strategy Helps You Buy Bigger Homes Sooner — But It’s Not Risk-Free" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a9501abe-c3ae-4e6e-ae4a-dcf14aed9e86.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa9501abe-c3ae-4e6e-ae4a-dcf14aed9e86.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa9501abe-c3ae-4e6e-ae4a-dcf14aed9e86.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">AD India</p></div><h3 class="title clamp">5 Beautiful Colleges Attended by the Modern Royals of India</h3><p class="excerpt clamp">From the Mayo College in Ajmer to the University of Cambridge in England, here is a list of beautiful colleges that are the alma maters of Indian Royalty.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;5 Beautiful Colleges Attended by the Modern Royals of India&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.theguardian.com/us-news/2025/jun/04/what-is-trump-travel-ban-countries?utm_source=firefox-newtab-en-intl" title="What Is Trump’s New Travel Ban, and Which Countries Are Affected?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/354ec0b8-8952-40ee-a7cf-390f6f131615.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F354ec0b8-8952-40ee-a7cf-390f6f131615.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F354ec0b8-8952-40ee-a7cf-390f6f131615.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">CNBC</p><h3 class="title clamp">This Strategy Helps You Buy Bigger Homes Sooner — But It’s Not Risk-Free</h3><p class="excerpt clamp">Property laddering is a step-by-step homebuying strategy that helps buyers start small and move up to bigger, better homes over time. It offers a practical way to build wealth through real estate—but only if you&#x27;re mindful of the risks, from market fluctuations to hidden costs.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;This Strategy Helps You Buy Bigger Homes Sooner — But It’s Not Risk-Free&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.theatlantic.com/family/archive/2025/05/default-parent-mother-father/682727/?utm_source=firefox-newtab-en-intl" title="Why So Many People Still Assume That Mom Knows Best" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bc7b17b1-2d4c-43df-8c59-894d0fe68db3.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc7b17b1-2d4c-43df-8c59-894d0fe68db3.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbc7b17b1-2d4c-43df-8c59-894d0fe68db3.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The Guardian</p></div><h3 class="title clamp">What Is Trump’s New Travel Ban, and Which Countries Are Affected?</h3><p class="excerpt clamp">President’s sweeping proclamation targets citizens of many countries and would dramatically reshape US border policy</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;What Is Trump’s New Travel Ban, and Which Countries Are Affected?&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.travelandleisure.com/lost-cultures-living-legacies-podcast-season-2-episode-3-kolkata-11746214?utm_source=firefox-newtab-en-intl" title="How a Once-Thriving Jewish Community Helped Shape Kolkata, India" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b0a09f9d-0008-4efd-abdb-094a1f6e9117.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0a09f9d-0008-4efd-abdb-094a1f6e9117.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb0a09f9d-0008-4efd-abdb-094a1f6e9117.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The Atlantic</p><h3 class="title clamp">Why So Many People Still Assume That Mom Knows Best</h3><p class="excerpt clamp">Why do so many people assume that Mom knows what’s going on with the kids, and that Dad does not?</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Why So Many People Still Assume That Mom Knows Best&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.bloomberg.com/news/articles/2025-05-12/india-s-top-cinema-chain-banks-on-bollywood-recovery-as-movie-goers-dip?utm_source=firefox-newtab-en-intl" title="India’s Top Cinema Chain Banks on Bollywood Recovery As Movie-Goers Dip" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f13c4fd6-b5cf-4912-a051-c87dfad15d3c.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff13c4fd6-b5cf-4912-a051-c87dfad15d3c.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff13c4fd6-b5cf-4912-a051-c87dfad15d3c.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Travel + Leisure Asia</p></div><h3 class="title clamp">How a Once-Thriving Jewish Community Helped Shape Kolkata, India</h3><p class="excerpt clamp">The Baghdadi Jewish community in Kolkata, India, built synagogues, schools, and a lasting legacy.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How a Once-Thriving Jewish Community Helped Shape Kolkata, India&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.entrepreneur.com/en-in/news-and-trends/not-just-hype-what-investors-really-think-about-ai-in/492738?utm_source=firefox-newtab-en-intl" title="Not Just Hype : What Investors Really Think About AI in Indian Education" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a4b8ac3f-dbcd-4fbf-993b-d202a04e8eeb.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa4b8ac3f-dbcd-4fbf-993b-d202a04e8eeb.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fa4b8ac3f-dbcd-4fbf-993b-d202a04e8eeb.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Bloomberg</p><h3 class="title clamp">India’s Top Cinema Chain Banks on Bollywood Recovery As Movie-Goers Dip</h3><p class="excerpt clamp">India’s top cinema chain PVR Inox Ltd. is betting on a slew of Hollywood and Bollywood releases to bring back moviegoers after a lackluster year.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;India’s Top Cinema Chain Banks on Bollywood Recovery As Movie-Goers Dip&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.gq.com/story/body-weight-workouts-strength-2?utm_source=firefox-newtab-en-intl" title="How to Get Strong With Old-School Calisthenics" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/71383462-3e77-42fc-b635-52983a5cf1df.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F71383462-3e77-42fc-b635-52983a5cf1df.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F71383462-3e77-42fc-b635-52983a5cf1df.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Entrepreneur</p></div><h3 class="title clamp">Not Just Hype : What Investors Really Think About AI in Indian Education</h3><p class="excerpt clamp">At a time when Artificial Intelligence (AI) continues to dominate many facets of life, the education technology sector is emerging as one of the more promising ones.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Not Just Hype : What Investors Really Think About AI in Indian Education&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.moneycontrol.com/news/business/personal-finance/personal-finance-investing-for-tax-savings-is-now-passe-13097127.html?utm_source=firefox-newtab-en-intl" title="Investing for Tax Savings Is Now Passe" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://media.gq.com/photos/670026b7aa94e29782fc0b94/16:9/w_1280,c_limit/calisthenics.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.gq.com%2Fphotos%2F670026b7aa94e29782fc0b94%2F16%3A9%2Fw_1280%2Cc_limit%2Fcalisthenics.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fmedia.gq.com%2Fphotos%2F670026b7aa94e29782fc0b94%2F16%3A9%2Fw_1280%2Cc_limit%2Fcalisthenics.jpg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">GQ</p><h3 class="title clamp">How to Get Strong With Old-School Calisthenics</h3><p class="excerpt clamp">Simple body-weight exercises can improve just about any workout routine.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How to Get Strong With Old-School Calisthenics&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://odishatv.in/news/opinion/the-caste-on-your-plate-how-food-became-india-s-silent-divide-263011?utm_source=firefox-newtab-en-intl" title="The Caste on Your Plate: How Food Became India’s Silent Divide" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/6a809e03-ce21-4264-a800-eaf1bab6bce2.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F6a809e03-ce21-4264-a800-eaf1bab6bce2.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F6a809e03-ce21-4264-a800-eaf1bab6bce2.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Moneycontrol</p></div><h3 class="title clamp">Investing for Tax Savings Is Now Passe</h3><p class="excerpt clamp">Many individuals start restructuring investments closer to when they think they are likely to hang up their boots</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Investing for Tax Savings Is Now Passe&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://theprint.in/education-2/shrewsburys-472-year-legacy-comes-to-india-with-cambridge-curriculum-50-international-faculty/2647306/?utm_source=firefox-newtab-en-intl" title="Shrewsbury’s 472-Year Legacy Comes to India With Cambridge Curriculum &amp; 50% International Faculty" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/927dd617-47cd-4650-806f-4d39caf2a1b1.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F927dd617-47cd-4650-806f-4d39caf2a1b1.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F927dd617-47cd-4650-806f-4d39caf2a1b1.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Odisha TV</p><h3 class="title clamp">The Caste on Your Plate: How Food Became India’s Silent Divide</h3><p class="excerpt clamp">Delve into India&#x27;s culinary caste dynamics as Dalit chefs like Asha Kowtal reshape traditions. Explore events, social media impacts, and changing perceptions.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Caste on Your Plate: How Food Became India’s Silent Divide&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.timeout.com/travel/worlds-best-cities-for-culture?utm_source=firefox-newtab-en-intl" title="The World’s 20 Best Cities for Culture Right Now" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d80c4809-6881-4f58-846d-aa46333c70a3.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd80c4809-6881-4f58-846d-aa46333c70a3.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd80c4809-6881-4f58-846d-aa46333c70a3.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The Print</p></div><h3 class="title clamp">Shrewsbury’s 472-Year Legacy Comes to India With Cambridge Curriculum &amp; 50% International Faculty</h3><p class="excerpt clamp">UK-based school to open campus with strong Indian identity in Bhopal, set to enroll around 650 students across grades 6 to 11.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Shrewsbury’s 472-Year Legacy Comes to India With Cambridge Curriculum &amp; 50% International Faculty&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://indianexpress.com/article/lifestyle/food-wine/fathers-experts-approved-measures-heart-kidneys-liver-brain-prostate-cholesterol-levels-9994255/?utm_source=firefox-newtab-en-intl" title="Fathers, Here Are Some Health Measures for Your Heart, Kidneys, Liver, Brain, Prostate, and Cholesterol Levels" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/03516835-4300-449c-979f-4a2995bb5b68.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F03516835-4300-449c-979f-4a2995bb5b68.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F03516835-4300-449c-979f-4a2995bb5b68.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Time Out </p><h3 class="title clamp">The World’s 20 Best Cities for Culture Right Now</h3><p class="excerpt clamp">18,500 city-dwellers rated their city’s culture scene – and the results are in.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The World’s 20 Best Cities for Culture Right Now&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://scroll.in/article/1082262/by-tearing-off-the-skin-with-your-teeth-the-right-way-to-eat-mangoes-according-to-victorian-women?utm_source=firefox-newtab-en-intl" title="‘By Tearing Off the Skin With Your Teeth’: The Right Way to Eat Mangoes According to Victorian Women" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/2ad01686-2756-40b8-910b-a2d4d6047816.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2ad01686-2756-40b8-910b-a2d4d6047816.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2ad01686-2756-40b8-910b-a2d4d6047816.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The Indian Express</p></div><h3 class="title clamp">Fathers, Here Are Some Health Measures for Your Heart, Kidneys, Liver, Brain, Prostate, and Cholesterol Levels</h3><p class="excerpt clamp">To help you get the right information, we asked experts about some specific nutrient-rich foods and lifestyle measures that, when incorporated into one&#x27;s life, can be highly beneficial</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Fathers, Here Are Some Health Measures for Your Heart, Kidneys, Liver, Brain, Prostate, and Cholesterol Levels&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.firstpost.com/explainers/india-population-caste-census-beginning-2026-13894467.html?utm_source=firefox-newtab-en-intl" title="Why India Will Hold Census After 15 Years, Beginning in 2026" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4f04f1a9-84b2-4e88-9830-a850f0390451.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f04f1a9-84b2-4e88-9830-a850f0390451.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f04f1a9-84b2-4e88-9830-a850f0390451.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Scroll</p><h3 class="title clamp">‘By Tearing Off the Skin With Your Teeth’: The Right Way to Eat Mangoes According to Victorian Women</h3><p class="excerpt clamp">An excerpt from ‘Mango: A Global History’, by Constance L Kirker and Mary Newman.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;‘By Tearing Off the Skin With Your Teeth’: The Right Way to Eat Mangoes According to Victorian Women&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.livemint.com/news/india/50-travel-bookings-for-turkey-azerbaijan-from-india-cancelled-over-pakistan-support-amid-boycott-calls-11747225993837.html?utm_source=firefox-newtab-en-intl" title="‘50% Travel Bookings’ for Turkey, Azerbaijan From India Cancelled Over Pakistan Support Amid Boycott Calls" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/91f4affb-f42f-448c-bac7-9f8f2fe77939.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F91f4affb-f42f-448c-bac7-9f8f2fe77939.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F91f4affb-f42f-448c-bac7-9f8f2fe77939.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Firstpost</p></div><h3 class="title clamp">Why India Will Hold Census After 15 Years, Beginning in 2026</h3><p class="excerpt clamp">India will carry out its overdue population census, along with caste enumeration, in two phases, starting from snowy states and UTs of Ladakh, Jammu and Kashmir, Himachal Pradesh, and Uttarakhand in October 2026. For the rest of the country, the exercise will begin from March 2027. Supposed to be held in 2021, the process was deferred. Here’s why</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Why India Will Hold Census After 15 Years, Beginning in 2026&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.socialketchup.in/binge-lens/hindi-film-hero-8946885?utm_source=firefox-newtab-en-intl" title="The Vanishing Act of the Hindi Film Hero Is Bollywood’s Biggest Silent Tragedy!" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3f1dabab-4329-4131-9f33-3ad0ebbd05f9.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f1dabab-4329-4131-9f33-3ad0ebbd05f9.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f1dabab-4329-4131-9f33-3ad0ebbd05f9.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Mint</p><h3 class="title clamp">‘50% Travel Bookings’ for Turkey, Azerbaijan From India Cancelled Over Pakistan Support Amid Boycott Calls</h3><p class="excerpt clamp">Turkey and Azerbaijan had openly supported Pakistan after India launched air strikes under Operation Sindoor on nine terror sites in Pakistan and Pakistan-occupied Kashmir.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;‘50% Travel Bookings’ for Turkey, Azerbaijan From India Cancelled Over Pakistan Support Amid Boycott Calls&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.bustle.com/life/do-not-disturb-iphone-emo-aim-away-message-nostalgia?utm_source=firefox-newtab-en-intl" title="“Do Not Disturb” Is Basically the Modern-Day Emo Away Message" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/02ff0d35-1b88-4506-a042-b1b4c3e34ee0.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F02ff0d35-1b88-4506-a042-b1b4c3e34ee0.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F02ff0d35-1b88-4506-a042-b1b4c3e34ee0.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Social Ketchup</p></div><h3 class="title clamp">The Vanishing Act of the Hindi Film Hero Is Bollywood’s Biggest Silent Tragedy!</h3><p class="excerpt clamp">In the noise of chasing trends and hyper-masculinity, once a symbol of hope, today’s Hindi film heroes are nowhere to be found, both on screen and in spirit.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Vanishing Act of the Hindi Film Hero Is Bollywood’s Biggest Silent Tragedy!&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.homesandgardens.com/interior-design/rug-colors-going-out-of-style-in-2025?utm_source=firefox-newtab-en-intl" title="These 5 Rug Colors Are Going Out of Style for 2025, According to Interior Designers" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/40f0eb37-d3cd-48ea-a7e1-4bda2a9a334d.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F40f0eb37-d3cd-48ea-a7e1-4bda2a9a334d.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F40f0eb37-d3cd-48ea-a7e1-4bda2a9a334d.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Bustle</p><h3 class="title clamp">“Do Not Disturb” Is Basically the Modern-Day Emo Away Message</h3><p class="excerpt clamp">Using my iPhone&#x27;s &quot;Do Not Disturb&quot; feature gives me the same petty satisfaction as a Y2K emo AIM away message.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;“Do Not Disturb” Is Basically the Modern-Day Emo Away Message&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.entrepreneur.com/growing-a-business/why-small-business-success-comes-down-to-these-7-things/490809?utm_source=firefox-newtab-en-intl" title="Why Small Business Success Comes Down to These 7 Things" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/17ebdc80-a190-4a1c-ac41-5e3873c49390.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F17ebdc80-a190-4a1c-ac41-5e3873c49390.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F17ebdc80-a190-4a1c-ac41-5e3873c49390.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Homes &amp; Gardens</p></div><h3 class="title clamp">These 5 Rug Colors Are Going Out of Style for 2025, According to Interior Designers</h3><p class="excerpt clamp">The rug colors that are out – and what to pick instead – are right here</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;These 5 Rug Colors Are Going Out of Style for 2025, According to Interior Designers&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.the74million.org/zero2eight/whats-the-sad-beige-parenting-trend-and-does-it-affect-infant-development/?utm_source=firefox-newtab-en-intl" title="What’s the ‘Sad Beige’ Parenting Trend — and Does It Affect Infant Development?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/30240be7-144a-4045-978c-3295ca888796.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F30240be7-144a-4045-978c-3295ca888796.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F30240be7-144a-4045-978c-3295ca888796.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Entrepreneur</p><h3 class="title clamp">Why Small Business Success Comes Down to These 7 Things</h3><p class="excerpt clamp">Stay curious, stay committed and keep showing up — your success story is still unfolding.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Why Small Business Success Comes Down to These 7 Things&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://economictimes.indiatimes.com/nri/study/france-expands-educational-opportunities-for-indian-students-aims-to-welcome-30000-students-by-2030/articleshow/121163365.cms?utm_source=firefox-newtab-en-intl" title="France Expands Educational Opportunities for Indian Students; Aims to Welcome 30,000 Students by 2030" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bcaad6af-e9c7-466f-8f32-9718f5fcb728.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbcaad6af-e9c7-466f-8f32-9718f5fcb728.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fbcaad6af-e9c7-466f-8f32-9718f5fcb728.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The 74</p></div><h3 class="title clamp">What’s the ‘Sad Beige’ Parenting Trend — and Does It Affect Infant Development?</h3><p class="excerpt clamp">Are neutral colors influencing your baby’s growth?</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;What’s the ‘Sad Beige’ Parenting Trend — and Does It Affect Infant Development?&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.deccanchronicle.com/lifestyle/food/the-red-miracle-how-watermelon-became-indias-summertime-salvation-1883308?utm_source=firefox-newtab-en-intl" title="The Red Miracle: How Watermelon Became India’s Summertime Salvation" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/7437787b-f5bc-4aa7-9913-8989102d49ed.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7437787b-f5bc-4aa7-9913-8989102d49ed.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7437787b-f5bc-4aa7-9913-8989102d49ed.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The Economic Times</p><h3 class="title clamp">France Expands Educational Opportunities for Indian Students; Aims to Welcome 30,000 Students by 2030</h3><p class="excerpt clamp">France is actively seeking to deepen its strategic partnership with India by aiming to host 30,000 Indian students by 2030, a significant increase from the current 8,000. To achieve this, France is introducing unique initiatives like special one-year programs at 35 universities and streamlining visa procedures to attract top Indian talent and foster stronger bilateral ties.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;France Expands Educational Opportunities for Indian Students; Aims to Welcome 30,000 Students by 2030&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.livemint.com/money/personal-finance/personal-loans-how-rbi-s-latest-rules-on-digital-lending-are-likely-to-impact-borrowers-11747146533073.html?utm_source=firefox-newtab-en-intl" title="How RBI’s Latest Rules on Digital Lending Are Likely to Impact Borrowers?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/86f40fbb-1985-4641-9345-2f5b5266a05d.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F86f40fbb-1985-4641-9345-2f5b5266a05d.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F86f40fbb-1985-4641-9345-2f5b5266a05d.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Deccan Chronicle</p></div><h3 class="title clamp">The Red Miracle: How Watermelon Became India’s Summertime Salvation</h3><p class="excerpt clamp">From Mughal cravings to colonial ice houses, the watermelon has been more than a fruit — it’s been a cultural balm for centuries of Indian summers.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The Red Miracle: How Watermelon Became India’s Summertime Salvation&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://hbr.org/2025/06/employee-stress-is-a-business-risk-not-an-hr-problem?utm_source=firefox-newtab-en-intl" title="Employee Stress Is a Business Risk—Not an HR Problem" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9abf2950-386f-43b1-bb41-31a12416073e.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9abf2950-386f-43b1-bb41-31a12416073e.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9abf2950-386f-43b1-bb41-31a12416073e.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Mint</p><h3 class="title clamp">How RBI’s Latest Rules on Digital Lending Are Likely to Impact Borrowers?</h3><p class="excerpt clamp">The banking regulator issued (Digital Lending) Directions, 2025 last week which address issues relating to multiple lenders</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How RBI’s Latest Rules on Digital Lending Are Likely to Impact Borrowers?&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.architecturaldigest.in/story/diwiks-studio-in-bikaner-is-rooted-in-craftsmanship-audio-engineering-and-art-deco/?utm_source=firefox-newtab-en-intl" title="Diwiks Studio in Bikaner Is Rooted in Craftsmanship, Audio Engineering, and Art Deco" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/80362e60-1aa2-4503-b449-691e68002086.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F80362e60-1aa2-4503-b449-691e68002086.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F80362e60-1aa2-4503-b449-691e68002086.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">Harvard Business Review</p></div><h3 class="title clamp">Employee Stress Is a Business Risk—Not an HR Problem</h3><p class="excerpt clamp">Workplace stress, on the rise for decades, has been treated by many organizations as a personal issue instead of a business-critical risk that merits executive oversight. This is likely due in part to the fact that companies have not effectively quantified and tracked the cost stress poses to integral business outcomes. </p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Employee Stress Is a Business Risk—Not an HR Problem&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://timesofindia.indiatimes.com/world/middle-east/high-tech-hajj-more-safety-but-less-privacy-spirituality/articleshow/121620878.cms?utm_source=firefox-newtab-en-intl" title="High-Tech Hajj: More Safety but Less Privacy, Spirituality?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b5161555-5285-4aef-b9b5-2275598a04d0.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb5161555-5285-4aef-b9b5-2275598a04d0.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb5161555-5285-4aef-b9b5-2275598a04d0.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">AD India</p><h3 class="title clamp">Diwiks Studio in Bikaner Is Rooted in Craftsmanship, Audio Engineering, and Art Deco</h3><p class="excerpt clamp">Diwiks, the cult radios, are crafted in a historic pink sandstone studio in Bikaner, rooted in the region’s art deco legacy.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Diwiks Studio in Bikaner Is Rooted in Craftsmanship, Audio Engineering, and Art Deco&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://analyticsindiamag.com/global-tech/big-tech-uses-ai-as-an-excuse-to-fire-thousands-2/?utm_source=firefox-newtab-en-intl" title="Big Tech Uses AI As an Excuse to Fire Thousands" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ffb328b7-d2da-4f43-8f3e-b0facdea0425.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fffb328b7-d2da-4f43-8f3e-b0facdea0425.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fffb328b7-d2da-4f43-8f3e-b0facdea0425.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The Times of India</p></div><h3 class="title clamp">High-Tech Hajj: More Safety but Less Privacy, Spirituality?</h3><p class="excerpt clamp">The annual Hajj pilgrimage in Saudi Arabia is increasingly incorporating technology to manage the massive crowds and ensure safety. Drones with therma</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;High-Tech Hajj: More Safety but Less Privacy, Spirituality?&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.news18.com/lifestyle/circular-goals-lasting-impact-how-businesses-are-building-a-sustainable-tomorrow-9368997.html?utm_source=firefox-newtab-en-intl" title="Circular Goals, Lasting Impact: How Businesses Are Building a Sustainable Tomorrow" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4bbcad29-199b-41d0-8243-b5cb1829146e.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4bbcad29-199b-41d0-8243-b5cb1829146e.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4bbcad29-199b-41d0-8243-b5cb1829146e.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Analytics India Magazine</p><h3 class="title clamp">Big Tech Uses AI As an Excuse to Fire Thousands</h3><p class="excerpt clamp">While some say AI-driven efficiency is behind the layoffs, others cite the cost of building AI infrastructure that is making companies reduce headcount.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Big Tech Uses AI As an Excuse to Fire Thousands&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://bigthink.com/books/is-english-a-killer-language/?utm_source=firefox-newtab-en-intl" title="Is English a “Killer” Language — or Is It Dying?" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4e52e289-ed7b-42b3-9782-8bcbe2a58550.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4e52e289-ed7b-42b3-9782-8bcbe2a58550.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4e52e289-ed7b-42b3-9782-8bcbe2a58550.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">News18</p></div><h3 class="title clamp">Circular Goals, Lasting Impact: How Businesses Are Building a Sustainable Tomorrow</h3><p class="excerpt clamp">From organic farms to commercial campuses, Indian enterprises are rewriting the playbook on sustainable growth.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Circular Goals, Lasting Impact: How Businesses Are Building a Sustainable Tomorrow&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.theguardian.com/world/2025/jun/04/indian-students-shock-trump-international-study-visa?utm_source=firefox-newtab-en-intl" title="‘They Are in Shock’: Indian Students Fear Trump Has Ended Their American Dream" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://bigthink.com/wp-content/uploads/2025/05/Proto-Excerpt.jpg?resize=1200,630" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fbigthink.com%2Fwp-content%2Fuploads%2F2025%2F05%2FProto-Excerpt.jpg%3Fresize%3D1200%2C630 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fbigthink.com%2Fwp-content%2Fuploads%2F2025%2F05%2FProto-Excerpt.jpg%3Fresize%3D1200%2C630 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">Big Think</p><h3 class="title clamp">Is English a “Killer” Language — or Is It Dying?</h3><p class="excerpt clamp">English could settle into a state of diglossia where a gulf exists between the written form and the spoken varieties.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Is English a “Killer” Language — or Is It Dying?&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://www.the-independent.com/arts-entertainment/films/news/trump-tariffs-foreign-films-bollywood-india-box-office-b2750592.html?utm_source=firefox-newtab-en-intl" title="Bollywood Fears Huge Impact of Trump’s Tariffs on Foreign Films" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3cece7a5-d03e-4a22-a80b-2727365ee91e.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3cece7a5-d03e-4a22-a80b-2727365ee91e.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3cece7a5-d03e-4a22-a80b-2727365ee91e.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The Guardian</p></div><h3 class="title clamp">‘They Are in Shock’: Indian Students Fear Trump Has Ended Their American Dream</h3><p class="excerpt clamp">Those hoping to study in US are in limbo or looking elsewhere after president’s targeting of foreign students</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;‘They Are in Shock’: Indian Students Fear Trump Has Ended Their American Dream&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article><article class="ds-card   sections-card-ui    ds-card-title-lines-3 ds-card-desc-lines-3   "><a href="https://economictimes.indiatimes.com/news/international/us/james-bond-video-game-007-first-light-announced-at-playstation-event-what-to-expect/articleshow/121635850.cms?utm_source=firefox-newtab-en-intl" title="James Bond Video Game 007 First Light Announced at PlayStation Event, What to Expect" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
        img
       
       
-    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/10dbab9b-27f7-442e-b946-69dc79555bb5.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F10dbab9b-27f7-442e-b946-69dc79555bb5.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F10dbab9b-27f7-442e-b946-69dc79555bb5.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><p class="source clamp">The Independent</p><h3 class="title clamp">Bollywood Fears Huge Impact of Trump’s Tariffs on Foreign Films</h3><p class="excerpt clamp">US president wants to impose 100 per cent levy on all films made outside US</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Bollywood Fears Huge Impact of Trump’s Tariffs on Foreign Films&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article></div></div></div><div><div class="ds-navigation ds-navigation-left-align "><ul></ul><a href="https://www.mozilla.org/privacy/firefox/#recommend-relevant-content" class="ds-navigation-privacy"><span data-l10n-id="newtab-section-menu-privacy-notice"></span></a></div></div></div></div><style data-styles="[[null,{&quot;.ds-navigation&quot;:&quot;margin-top: -10px;&quot;}]]"></style></div></div></section><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div></div></main><aside></aside></div></div>
+    "><img loading="lazy" crossorigin="anonymous" sizes="default 296px,296px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/7bb2e832-2ec4-46bf-adea-89c430f3d252.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7bb2e832-2ec4-46bf-adea-89c430f3d252.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/smart/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F7bb2e832-2ec4-46bf-adea-89c430f3d252.jpeg 592w"/></picture></div><div class="impression-observer"></div><div class="meta"><div class="info-wrap"><div class="source-wrapper"><p class="source clamp">The Economic Times</p></div><h3 class="title clamp">James Bond Video Game 007 First Light Announced at PlayStation Event, What to Expect</h3><p class="excerpt clamp">The IO Interactive has revealed its first new James Bond video game 007 First Light. The game will explore Bond&#x27;s early days with MI6. It is expected in 2026 and will be available on PS5, Xbox, PC, and Switch 2. The IO Interactive also revealed that it began working on this project in 2020.</p></div></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;James Bond Video Game 007 First Light Announced at PlayStation Event, What to Expect&quot;}" class="context-menu-button icon" tabindex="0"></button></div></div></div></article></div></div></div><div><div class="ds-navigation ds-navigation-left-align "><ul></ul><a href="https://www.mozilla.org/privacy/firefox/#recommend-relevant-content" class="ds-navigation-privacy"><span data-l10n-id="newtab-section-menu-privacy-notice"></span></a></div></div></div></div><style data-styles="[[null,{&quot;.ds-navigation&quot;:&quot;margin-top: -10px;&quot;}]]"></style></div></div></section><div class="discovery-stream ds-layout "><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div></div></main><aside></aside></div></div>
     </div>
     <div id="footer-asrouter-container" role="presentation"></div>
     <script src="about:home?jscache"></script>
@@ -139,23 +138,6 @@ window.__STARTUP_STATE__ = {
 	"TopSites": {
 		"initialized": true,
 		"rows": [
-			{
-				"isDefault": true,
-				"url": "https://www.amazon.in/?tag=admpdesktopin-21&ref=pd_sl_6eb854b5886618a624187d749002e28b3183661dd4bf7a6c8fc73858&mfadid=adm",
-				"hostname": "amazon",
-				"sendAttributionRequest": false,
-				"label": "Amazon",
-				"show_sponsored_label": true,
-				"sponsored_position": 1,
-				"sponsored_click_url": "https://ads.mozilla.org/v1/t?data=CpAKEgU3NDM1NxoMCLXilcEGEKjx1J4DIgwIquSVwQYQ4_CKoAIqBkFtYXpvbjImezg0MmMzYzAzLTdjNGMtNDlkNy1iYjgyLTg0NzMyZWI5N2QxMH06AklOcg1uZXd0YWJfdGlsZV8xegJHSoIBTk1vemlsbGEvNS4wIChYMTE7IFVidW50dTsgTGludXggeDg2XzY0OyBydjoxMzguMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8xMzguMJgBAqABAagBA7ABA7gBAsIBJGNlOWVhMGQ1LTBiOTYtNDgxOS1hN2UwLWNmNDBiYmI4Y2VmOcgBAZIBmAgKlQhodHRwczovL2JyaWRnZS5wZHgxLmFkbWFya2V0cGxhY2UubmV0L2N0cD92ZXJzaW9uPTEuMC4wJmVuY3A9am5FWXhtd1ZKUWtYNVFiVWZ0SU5JJTNEd3FnQ2xueEdFa2dDbHI0cHhZMXBmcmZRTFkxcERuSG53cUklM0RFWUQlM0RjWUhGZFpnRjQ5RG5JUWZSTm5DbmRGaUR6bEVDZUlpd0RrQ2szSWZxZERpJTNETjFpcXFXQ0UzUmZkdmxIWmVnRWxjckNGZEVzRHo5Qkd2NEUlM0RqUENudklzY3Y5RENlSUpFcVpGRTNpaXF6OUZudjFzcWtrQ3czUjdSZU9nQ2xXZnRhVzdSRWtpQ2tZN1JFUmlDa1k3bmRaajllS2lGM2FnQ2JuaXJqdklwa1o0Q3hYZkNMVzRReG54R0V3eFJ3dklwa1gxcGxZNFFmWTRDeGtmUWZkMXBxWjRaSG5KRzRranBrVzdSN2tIbld6SW5jVHhtRG54OTNraUYyemZ0SXF4JTNENHZJcGtXN25jV2ZaZDEzY2xYQ1J2Y2psZENmOXdmRWNsV0N3M1FzbFhDZnBlZkVjY2tDRWZXc2xYQ2Y5TjQzbHdfQ3czUmZEZGxER2o0allJUWo5d3ZJcGtYZkJJUXhuRXZJcGtyNHBmbnglM0RYdklwa1hmcGJyN24zWnglM0Q3dklwa1hmcGxfN24zWnglM0RjcWpud3FnQ2xXZnBxbkk5NFdIR0Vxam53cWdDbFc0UWZuSTk0V2lGenZJcGtYNHB4bTduY3F4bVh2SXBrWDFwbFk0UWZZNEN4azRwYlo0WmJtMUNmbnhtWFZqJTNEX2RKQ2tYN253dkhaa3VmQ1R1ZkNUdWZDVHVmQ1R1ZkJJd0p3RUJDcGRmQmxsWkl3SURpcE5HNG5fWEJkSWZ4bUUxREcyWkRwSXFKJTNETFk3Qzd0aSUzRDdkRlJORXNsNGlJdzdHQ1o3MUNrRWFGQ2M2am0zT0ZGTjYxRTRFaXE4ZElxZFhJd0RrQ2t6OGpaamRGR2ZXc2w3V3NRYllCbF8yNDljWkYlM0RqNHhkNGMzJTNEejI3QzclM0RqcXZrM21qQmZDN0RmbDdvRWt6X2paY0Mza191aWxmWkNESTFzOUVmM240WTR3STFFUmJXSFo4WWZGWHdKRjczNGxjdUhHRUYzR05CZmw0bjNDakVCR0kxSlE0dGltalY3QzclM0RpZDdWRDlibUpHbGtDa2Nfc1FqZkZRNGRqblRueFIzVnhaa1MxWSUyRk02UVRTN240V2dDYlVmcGxrZnRXVzVwbFdmUUxUZnRXVzVwbFdmcHhUNXRXVDU5M3ZKJTNERVp4dFhPSEY0b0lud1RKY3pRSm1fcWpGNHZqbkR5EiCWfER8sEO8GVnipmx31d4zCrsulkPjr2otdjnOtGZFIw",
-				"sponsored_impression_url": "https://ads.mozilla.org/v1/t?data=CsQDEgU3NDM1NxoMCLXilcEGEKjx1J4DIgwIquSVwQYQ4_CKoAIqBkFtYXpvbjImezg0MmMzYzAzLTdjNGMtNDlkNy1iYjgyLTg0NzMyZWI5N2QxMH06AklOcg1uZXd0YWJfdGlsZV8xegJHSoIBTk1vemlsbGEvNS4wIChYMTE7IFVidW50dTsgTGludXggeDg2XzY0OyBydjoxMzguMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8xMzguMJgBAaABAagBA7ABA7gBAsIBJGNlOWVhMGQ1LTBiOTYtNDgxOS1hN2UwLWNmNDBiYmI4Y2VmOcgBAZIBzAEKyQFodHRwczovL2ltcC5tdDQ4Lm5ldC9zdGF0aWM_aWQ9N1JIemZPSVhqRkVZc0Jkdklwa1gxcGxZNFFmWTRDeGtmUWZkMXBxWjRaSG5qOXdXSUJkdklwa1k3bjRZSUZja2lHSXc1RndxZ0N4a2ZZSVdKJTNEY1FJRmR3SlIydWlGMnpmQ2JXNFlJTkl0ZFpJRlh3SHIzdkptYXVpRjJ6ZkNMWGZRSFpmUURyNHAyV2ZaeFc0UXFaN1I0VEpyMnVKUkV1SG5FWWdDbHkSIBdCg-v6-y4YyHHFRUgXV1ma-XaFadwN6c73AvhtFj_M",
-				"sponsored_tile_id": "CAMSBmFtYXpvbg",
-				"partner": "amp",
-				"block_key": "CAMSBmFtYXpvbg",
-				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CnAKbmh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xMDA5L2U1Y2JiODkxY2VlODQyMTI4ZjJhMzJjMjMyYjA4ZDg5Y2ZhN2I0ZmU2OTllMmY5YWY3OTYyY2Q2NmQ0MzRlMmYuSlBHEiB2tUyBPQI59PHRMtzI2KgW6uYtgY3XIflTk2YYEY1nWQ",
-				"faviconSize": 200,
-				"typedBonus": true
-			},
 			{
 				"isDefault": true,
 				"url": "https://www.wikipedia.org/",
@@ -237,69 +219,11 @@ window.__STARTUP_STATE__ = {
 	"App": {
 		"initialized": true,
 		"locale": "en-US",
-		"isForStartupCache": true,
-		"customizeMenuVisible": false,
-		"lastUpdated": 1744713126611,
-		"spocs": {},
-		"links": [
-			{
-				"isDefault": true,
-				"url": "https://www.amazon.in/?tag=admpdesktopin-21&ref=pd_sl_6eb854b5886618a624187d749002e28b3183661dd4bf7a6c8fc73858&mfadid=adm",
-				"hostname": "amazon",
-				"sendAttributionRequest": false,
-				"label": "Amazon",
-				"show_sponsored_label": true,
-				"sponsored_position": 1,
-				"sponsored_click_url": "https://ads.mozilla.org/v1/t?data=CpAKEgU3NDM1NxoMCLXilcEGEKjx1J4DIgwIquSVwQYQ4_CKoAIqBkFtYXpvbjImezg0MmMzYzAzLTdjNGMtNDlkNy1iYjgyLTg0NzMyZWI5N2QxMH06AklOcg1uZXd0YWJfdGlsZV8xegJHSoIBTk1vemlsbGEvNS4wIChYMTE7IFVidW50dTsgTGludXggeDg2XzY0OyBydjoxMzguMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8xMzguMJgBAqABAagBA7ABA7gBAsIBJGNlOWVhMGQ1LTBiOTYtNDgxOS1hN2UwLWNmNDBiYmI4Y2VmOcgBAZIBmAgKlQhodHRwczovL2JyaWRnZS5wZHgxLmFkbWFya2V0cGxhY2UubmV0L2N0cD92ZXJzaW9uPTEuMC4wJmVuY3A9am5FWXhtd1ZKUWtYNVFiVWZ0SU5JJTNEd3FnQ2xueEdFa2dDbHI0cHhZMXBmcmZRTFkxcERuSG53cUklM0RFWUQlM0RjWUhGZFpnRjQ5RG5JUWZSTm5DbmRGaUR6bEVDZUlpd0RrQ2szSWZxZERpJTNETjFpcXFXQ0UzUmZkdmxIWmVnRWxjckNGZEVzRHo5Qkd2NEUlM0RqUENudklzY3Y5RENlSUpFcVpGRTNpaXF6OUZudjFzcWtrQ3czUjdSZU9nQ2xXZnRhVzdSRWtpQ2tZN1JFUmlDa1k3bmRaajllS2lGM2FnQ2JuaXJqdklwa1o0Q3hYZkNMVzRReG54R0V3eFJ3dklwa1gxcGxZNFFmWTRDeGtmUWZkMXBxWjRaSG5KRzRranBrVzdSN2tIbld6SW5jVHhtRG54OTNraUYyemZ0SXF4JTNENHZJcGtXN25jV2ZaZDEzY2xYQ1J2Y2psZENmOXdmRWNsV0N3M1FzbFhDZnBlZkVjY2tDRWZXc2xYQ2Y5TjQzbHdfQ3czUmZEZGxER2o0allJUWo5d3ZJcGtYZkJJUXhuRXZJcGtyNHBmbnglM0RYdklwa1hmcGJyN24zWnglM0Q3dklwa1hmcGxfN24zWnglM0RjcWpud3FnQ2xXZnBxbkk5NFdIR0Vxam53cWdDbFc0UWZuSTk0V2lGenZJcGtYNHB4bTduY3F4bVh2SXBrWDFwbFk0UWZZNEN4azRwYlo0WmJtMUNmbnhtWFZqJTNEX2RKQ2tYN253dkhaa3VmQ1R1ZkNUdWZDVHVmQ1R1ZkJJd0p3RUJDcGRmQmxsWkl3SURpcE5HNG5fWEJkSWZ4bUUxREcyWkRwSXFKJTNETFk3Qzd0aSUzRDdkRlJORXNsNGlJdzdHQ1o3MUNrRWFGQ2M2am0zT0ZGTjYxRTRFaXE4ZElxZFhJd0RrQ2t6OGpaamRGR2ZXc2w3V3NRYllCbF8yNDljWkYlM0RqNHhkNGMzJTNEejI3QzclM0RqcXZrM21qQmZDN0RmbDdvRWt6X2paY0Mza191aWxmWkNESTFzOUVmM240WTR3STFFUmJXSFo4WWZGWHdKRjczNGxjdUhHRUYzR05CZmw0bjNDakVCR0kxSlE0dGltalY3QzclM0RpZDdWRDlibUpHbGtDa2Nfc1FqZkZRNGRqblRueFIzVnhaa1MxWSUyRk02UVRTN240V2dDYlVmcGxrZnRXVzVwbFdmUUxUZnRXVzVwbFdmcHhUNXRXVDU5M3ZKJTNERVp4dFhPSEY0b0lud1RKY3pRSm1fcWpGNHZqbkR5EiCWfER8sEO8GVnipmx31d4zCrsulkPjr2otdjnOtGZFIw",
-				"sponsored_impression_url": "https://ads.mozilla.org/v1/t?data=CsQDEgU3NDM1NxoMCLXilcEGEKjx1J4DIgwIquSVwQYQ4_CKoAIqBkFtYXpvbjImezg0MmMzYzAzLTdjNGMtNDlkNy1iYjgyLTg0NzMyZWI5N2QxMH06AklOcg1uZXd0YWJfdGlsZV8xegJHSoIBTk1vemlsbGEvNS4wIChYMTE7IFVidW50dTsgTGludXggeDg2XzY0OyBydjoxMzguMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8xMzguMJgBAaABAagBA7ABA7gBAsIBJGNlOWVhMGQ1LTBiOTYtNDgxOS1hN2UwLWNmNDBiYmI4Y2VmOcgBAZIBzAEKyQFodHRwczovL2ltcC5tdDQ4Lm5ldC9zdGF0aWM_aWQ9N1JIemZPSVhqRkVZc0Jkdklwa1gxcGxZNFFmWTRDeGtmUWZkMXBxWjRaSG5qOXdXSUJkdklwa1k3bjRZSUZja2lHSXc1RndxZ0N4a2ZZSVdKJTNEY1FJRmR3SlIydWlGMnpmQ2JXNFlJTkl0ZFpJRlh3SHIzdkptYXVpRjJ6ZkNMWGZRSFpmUURyNHAyV2ZaeFc0UXFaN1I0VEpyMnVKUkV1SG5FWWdDbHkSIBdCg-v6-y4YyHHFRUgXV1ma-XaFadwN6c73AvhtFj_M",
-				"sponsored_tile_id": "CAMSBmFtYXpvbg",
-				"partner": "amp",
-				"block_key": "CAMSBmFtYXpvbg",
-				"favicon": "https://ads-img.mozilla.org/v1/images?image_data=CnAKbmh0dHBzOi8vYW1wLWFzc2V0LjQ1dHUxYzAuY29tL2Fzc2V0cy8xMDA5L2U1Y2JiODkxY2VlODQyMTI4ZjJhMzJjMjMyYjA4ZDg5Y2ZhN2I0ZmU2OTllMmY5YWY3OTYyY2Q2NmQ0MzRlMmYuSlBHEiB2tUyBPQI59PHRMtzI2KgW6uYtgY3XIflTk2YYEY1nWQ",
-				"faviconSize": 200,
-				"typedBonus": true
-			},
-			{
-				"isDefault": true,
-				"url": "https://www.wikipedia.org/",
-				"hostname": "wikipedia",
-				"sendAttributionRequest": false,
-				"label": "Wikipedia",
-				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
-				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico",
-				"typedBonus": true
-			},
-			{
-				"isDefault": true,
-				"url": "https://www.youtube.com/",
-				"hostname": "youtube",
-				"sendAttributionRequest": false,
-				"label": "YouTube",
-				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
-				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
-				"typedBonus": true
-			},
-			{
-				"isDefault": true,
-				"url": "http://ndtv.com/",
-				"hostname": "ndtv",
-				"sendAttributionRequest": false,
-				"label": "NDTV",
-				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/ndtv@2x.png",
-				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/ndtv.png",
-				"typedBonus": true
-			},
-			{
-				"isDefault": true,
-				"url": "https://www.reddit.com/",
-				"hostname": "reddit",
-				"sendAttributionRequest": false,
-				"label": "Reddit",
-				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
-				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
-				"typedBonus": true
-			}
-		]
+		"isForStartupCache": {
+			"App": true,
+			"Wallpaper": true
+		},
+		"customizeMenuVisible": false
 	},
 	"Ads": {
 		"initialized": false,
@@ -316,6 +240,10 @@ window.__STARTUP_STATE__ = {
 			"showSponsored": true,
 			"system.showSponsored": false,
 			"showSponsoredTopSites": true,
+			"mobileDownloadModal.enabled": false,
+			"mobileDownloadModal.variant-a": false,
+			"mobileDownloadModal.variant-b": false,
+			"mobileDownloadModal.variant-c": false,
 			"unifiedAds.adsFeed.enabled": false,
 			"unifiedAds.adsFeed.tiles.enabled": false,
 			"unifiedAds.adsFeed.spocs.enabled": false,
@@ -337,6 +265,7 @@ window.__STARTUP_STATE__ = {
 			"telemetry": true,
 			"telemetry.ut.events": false,
 			"telemetry.structuredIngestion.endpoint": "https://incoming.telemetry.mozilla.org/submit",
+			"telemetry.privatePing.enabled": false,
 			"section.highlights.includeVisited": true,
 			"section.highlights.includeBookmarks": true,
 			"section.highlights.includePocket": true,
@@ -367,9 +296,11 @@ window.__STARTUP_STATE__ = {
 			"discoverystream.sections.customizeMenuPanel.enabled": false,
 			"discoverystream.sections.cards.enabled": true,
 			"discoverystream.sections.personalization.inferred.enabled": false,
+			"discoverystream.sections.personalization.inferred.position": "1",
+			"discoverystream.sections.personalization.inferred.blocked": false,
 			"discoverystream.sections.personalization.inferred.user.enabled": true,
 			"discoverystream.sections.cards.thumbsUpDown.enabled": true,
-			"discoverystream.reportContent.enabled": false,
+			"discoverystream.reportAds.enabled": false,
 			"discoverystream.sections.following": "",
 			"discoverystream.sections.blocked": "",
 			"discoverystream.sections.interestPicker.enabled": false,
@@ -424,7 +355,7 @@ window.__STARTUP_STATE__ = {
 			"discoverystream.contextualContent.fakespot.ctaCopy": "",
 			"discoverystream.contextualContent.fakespot.ctaUrl": "",
 			"discoverystream.publisherFavicon.enabled": false,
-			"support.url": "https://support.mozilla.org/1/firefox/138.0.3/Linux/en-US/new-tab",
+			"support.url": "https://support.mozilla.org/1/firefox/139.0.1/Linux/en-US/new-tab",
 			"caretBlinkCount": 5,
 			"caretBlinkTime": 1200,
 			"feeds.aboutpreferences": true,
@@ -432,6 +363,7 @@ window.__STARTUP_STATE__ = {
 			"feeds.places": true,
 			"feeds.prefs": true,
 			"feeds.sections": true,
+			"feeds.startupcacheinit": true,
 			"feeds.section.highlights": false,
 			"feeds.system.topstories": true,
 			"feeds.systemtick": true,
@@ -500,8 +432,8 @@ window.__STARTUP_STATE__ = {
 				"regionSpocsConfig": "US,CA,DE,GB,FR,IT,ES",
 				"topSitesContileSovEnabled": true,
 				"pocketFeedParameters": "",
-				"regionWeatherConfig": "IN, BD, PK, TR",
 				"localeWeatherConfig": "hi-IN, kn, mr, pa-IN, ta, te, tr, ur, en-US, en-CA, en-GB, bn",
+				"regionWeatherConfig": "IN, BD, PK, TR",
 				"weatherLocationSearch": true,
 				"pocketStoriesHeadlineId": "newtab-section-header-stories"
 			},
@@ -818,434 +750,463 @@ window.__STARTUP_STATE__ = {
 		"feeds": {
 			"data": {
 				"https://merino.services.mozilla.com/api/v1/curated-recommendations": {
-					"lastUpdated": 1747284522402,
-					"personalized": false,
+					"lastUpdated": 1749211618201,
+					"personalized": true,
 					"data": {
 						"settings": {},
 						"sections": [],
 						"interestPicker": {},
 						"recommendations": [
 							{
-								"id": "eca2e82f-c5ec-44bc-8c08-2e983a7df12b",
-								"scheduled_corpus_item_id": "0e82e2c0-6cc2-4d52-997c-18ff09d311d7",
-								"corpus_item_id": "eca2e82f-c5ec-44bc-8c08-2e983a7df12b",
-								"url": "https://www.bbc.com/news/articles/cp857gryxn1o?utm_source=firefox-newtab-en-intl",
-								"title": "The Heartbeat of a Billion: What Virat Kohli Meant to India",
-								"topic": "sports",
-								"excerpt": "Legendary India batter Virat Kohli announced retirement from international Test cricket on Monday.",
-								"publisher": "BBC",
-								"raw_image_src": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/e5d8/live/77f71040-2fe2-11f0-b108-379830faf149.jpg.webp",
+								"id": "367514b3-a853-48dc-a991-46e4d7c995b4",
+								"scheduled_corpus_item_id": "0c521da5-17ba-464e-9802-c8038df9766f",
+								"corpus_item_id": "367514b3-a853-48dc-a991-46e4d7c995b4",
+								"url": "https://www.sciencealert.com/a-super-tiny-star-gave-birth-to-a-giant-planet-and-we-dont-know-how?utm_source=firefox-newtab-en-intl",
+								"title": "A Super-Tiny Star Gave Birth to a Giant Planet and We Don’t Know How",
+								"topic": "education-science",
+								"excerpt": "A giant conundrum has been found orbiting a teeny tiny red dwarf star just a fifth of the size of the Sun.",
+								"publisher": "ScienceAlert",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/0b1f1931-91b6-404f-b203-8871e43f6836.jpeg",
 								"received_rank": 0,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/388231ac048528715ffc2aebad84b58c19231d92156179d21c94d0b98d4f1d9b_751.svg",
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/ca8ce1e7bc30f8bb459a74b0dce5016057b8f05cc495f0f8173dab3a41586c43_19958.png",
+								"isTimeSensitive": false,
 								"score": 1
 							},
 							{
-								"id": "876102f2-460c-4d73-aa5e-7ba96122be60",
-								"scheduled_corpus_item_id": "2ace1743-7215-43c0-ba67-69b5aa55f067",
-								"corpus_item_id": "876102f2-460c-4d73-aa5e-7ba96122be60",
-								"url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2025-new-schedule-why-ipl-playoffs-have-been-moved-out-of-kolkatas-eden-gardens/articleshow/121152657.cms?utm_source=firefox-newtab-en-intl",
-								"title": "IPL 2025 New Schedule: Why IPL Playoffs Have Been Moved Out of Kolkata’s Eden Gardens?",
-								"topic": "sports",
-								"excerpt": "The final stretch of the 2025 Indian Premier League (IPL) is set to commence on the 17th of May. After a brief suspension following cross-border tensions between India and Pakistan, the premier competition is set to return after a nine day hiatus.",
-								"publisher": "The Times of India",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ebca3846-3bdb-4208-bc0a-cb04a5ae3917.jpeg",
+								"id": "351d3500-1342-4136-bebf-265dec6df793",
+								"scheduled_corpus_item_id": "b6dfd083-7ef6-4738-a1a9-43eb7ce1a068",
+								"corpus_item_id": "351d3500-1342-4136-bebf-265dec6df793",
+								"url": "https://www.discovermagazine.com/planet-earth/dogs-do-dream-and-its-most-likely-about-their-toys-food-and-you?utm_source=firefox-newtab-en-intl",
+								"title": "Dogs Do Dream, and It’s Most Likely About Their Toys, Food, and You",
+								"topic": "education-science",
+								"excerpt": "Do dogs dream? Sleep research shows what’s (likely) going on in your pet’s minds while they doze.",
+								"publisher": "Discover",
+								"raw_image_src": "https://images.ctfassets.net/cnu0m8re1exe/1BlFG600hO8cMKpEa34CJW/39653dcb0253eb4d3faa0d73f595363d/sleeping-dog.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
 								"received_rank": 1,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/65622cc0ca236f7fd12212e4feb2e937172330ff1c5c8dc1cace4f3041b42af1_1030.svg",
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/acd88ea75092531a60c7b9d8faffc50b5299a50984fb02824b961917b9ba897d_3234.png",
+								"isTimeSensitive": false,
 								"score": 1
 							},
 							{
-								"id": "02496b2e-5368-4d06-8604-5cef86b787d4",
-								"scheduled_corpus_item_id": "2b6739c8-74c2-412b-b85b-a2c70b743686",
-								"corpus_item_id": "02496b2e-5368-4d06-8604-5cef86b787d4",
-								"url": "https://www.dw.com/en/how-the-kashmir-conflict-impacts-indian-pakistani-politics/a-72516887?utm_source=firefox-newtab-en-intl",
-								"title": "How the Kashmir Conflict Impacts Indian, Pakistani Politics",
+								"id": "73754955-c749-4728-83f7-0b00eb2740a6",
+								"scheduled_corpus_item_id": "4c5ea9b0-a673-4daf-9d32-9e5a6ab24bf3",
+								"corpus_item_id": "73754955-c749-4728-83f7-0b00eb2740a6",
+								"url": "https://frontline.thehindu.com/the-nation/politicsbjp-operation-sindoor-anti-muslim-politics-analysis/article69655974.ece?utm_source=firefox-newtab-en-intl",
+								"title": "BJP Is Turning Operation Sindoor Into a Tool to Vilify Muslims ",
 								"topic": "government",
-								"excerpt": "Now that India and Pakistan have agreed to a ceasefire after days of missile and drone strikes, there are certain players in the two countries that can use the crisis to bolster their domestic support.",
-								"publisher": "DW",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/55fa746a-beaa-435d-96ca-adcbc3b28868.jpeg",
+								"excerpt": "Home Minister Amit Shah’s factually incorrect statements about TMC and Operation Sindoor reveal the ruling party’s strategy of using military operations for domestic political gain against Muslim communities, even as opposition MPs promote India’s position globally.",
+								"publisher": "The Hindu",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8a20160f-1f13-47de-abc2-00aa3cba28ea.jpeg",
 								"received_rank": 2,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/f93f619edb3ef719362f843224591bfdbbf9bcef1c5f69fa09d6c10c04a6643c_10165.png",
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/f70ad35f75bf5e6dcc13a06743b0bc3e1f7d0d1a3622451c8d83034cb0d82afd_986.webp",
+								"isTimeSensitive": true,
 								"score": 1
 							},
 							{
-								"id": "9165740f-47b5-465d-ab84-0def83d17088",
-								"scheduled_corpus_item_id": "0bc91710-e7ac-40ae-b56d-d227c430403e",
-								"corpus_item_id": "9165740f-47b5-465d-ab84-0def83d17088",
-								"url": "https://www.fastcompany.com/91331131/simple-trick-to-conquer-uncertainty?utm_source=firefox-newtab-en-intl",
-								"title": "This Simple Trick Can Help You Conquer Uncertainty",
-								"topic": "society",
-								"excerpt": "The secret is to be more curious than afraid.",
-								"publisher": "Fast Company",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f81b8040-fb01-4fbc-8dbe-6e93807dd271.jpeg",
+								"id": "156d1f33-ae08-48bc-91e9-77529c8d6772",
+								"scheduled_corpus_item_id": "3e6c1458-e139-45a3-adaf-5cfa08ef39b9",
+								"corpus_item_id": "156d1f33-ae08-48bc-91e9-77529c8d6772",
+								"url": "https://www.vogue.com/article/retinol-rich-foods?utm_source=firefox-newtab-en-intl",
+								"title": "15 Retinol-Rich Foods to Stimulate Collagen",
+								"topic": "food",
+								"excerpt": "Can you eat your way to younger skin? ",
+								"publisher": "Vogue",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/830678a8-0b17-4023-950f-ae933211b481.jpeg",
 								"received_rank": 3,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/f34e78b810bd94f252615246cee3141c4883a6866542ffc8cc496308ab1c24d3_2933.png",
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/82a83b00f1e03a653755ce89f3da2acab1fe5fe3cff3acf17774d657d87a0ec5_34494.oct",
+								"isTimeSensitive": false,
 								"score": 1
 							},
 							{
-								"id": "031dbc79-34a2-44bb-ae47-519cf257141f",
-								"scheduled_corpus_item_id": "e3d6760a-a515-466e-8771-13fe4a489cd8",
-								"corpus_item_id": "031dbc79-34a2-44bb-ae47-519cf257141f",
-								"url": "https://scroll.in/article/1082304/india-hyphen-pakistan-us-rhetoric-revives-new-delhis-nightmare?utm_source=firefox-newtab-en-intl",
-								"title": "India Hyphen Pakistan: US Rhetoric Revives New Delhi’s Nightmare",
-								"topic": "government",
-								"excerpt": "Decades of Indian efforts to rise above comparisons or being slotted with Islamabad have been undermined.",
-								"publisher": "Scroll",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/17c4cec4-b064-403e-9691-d18509bad3aa.jpeg",
+								"id": "1f677f34-39fd-4b52-93c4-a2f3c8d40eb1",
+								"scheduled_corpus_item_id": "3069c6b4-9194-4f27-b021-123309fee527",
+								"corpus_item_id": "1f677f34-39fd-4b52-93c4-a2f3c8d40eb1",
+								"url": "https://www.livemint.com/money/personal-finance/what-does-your-credit-score-really-say-about-you-uncover-the-habits-behind-the-number-11749013846763.html?utm_source=firefox-newtab-en-intl",
+								"title": "What Does Your Credit Score Really Say About You? Uncover the Habits Behind the Number",
+								"topic": "finance",
+								"excerpt": "It is crucial to understand how habits like timely repayments, low credit utilisation, and regular report checks impact your credit score, highlighting recent RBI reforms and their implications for borrowers and lenders.",
+								"publisher": "Mint",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3faeaaa6-a7b1-4a25-ae40-8b04462bea32.jpeg",
 								"received_rank": 4,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/c60d4321c5330939855ea75b23282edd997410b439c0284b713fdd490f1336a5_1326.png",
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/94c90954b82767e8ce3b1f993339f22ae526e2568ceaf59585988c0d61b0e0fd_1318.svg",
+								"isTimeSensitive": false,
 								"score": 1
 							},
 							{
-								"id": "9741c1e2-88f3-48a6-9812-7c797a4e4579",
-								"scheduled_corpus_item_id": "dab2228d-9801-4beb-b94a-607e3ed4bd6f",
-								"corpus_item_id": "9741c1e2-88f3-48a6-9812-7c797a4e4579",
-								"url": "https://www.hindustantimes.com/lifestyle/art-culture/from-garden-to-room-nature-inspired-home-decor-interior-design-trends-that-feel-alive-101747147915008.html?utm_source=firefox-newtab-en-intl",
-								"title": "From Garden to Room: Nature-Inspired Home Decor, Interior Design Trends That Feel Alive",
-								"topic": "home",
-								"excerpt": "This nature-loving interior decor and design trend will turn your home into a peaceful oasis.",
-								"publisher": "Hindustan Times",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/879c077e-ec1f-4261-a887-f3ecae78e128.jpeg",
+								"id": "88a4767c-8de3-498a-89d8-1eabca38cdb7",
+								"scheduled_corpus_item_id": "88439159-cd7f-4920-af24-4666af47e492",
+								"corpus_item_id": "88a4767c-8de3-498a-89d8-1eabca38cdb7",
+								"url": "https://fortune.com/well/2025/06/04/silent-treatment-punishment-parenting/?utm_source=firefox-newtab-en-intl",
+								"title": "Here’s Why Giving Your Kid the Silent Treatment Is ‘One of the Worst Types of Punishment’",
+								"topic": "society-parenting",
+								"excerpt": "“It teaches them not only to be conflict-avoidant, but makes them conflict-terrified.\"",
+								"publisher": "Fortune",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/73e22cf8-2eb1-4e11-88e9-8f84102859f2.jpeg",
 								"received_rank": 5,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/f6e337a4d6af6278eaae9aeba4d94daee40cc417985c456bda8b40505423f87a_1808.png",
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/f18c2fa3692f773baf02a6a6f3f2e55a41cb93df06393522b904cb4019afe12c_248894.ico",
+								"isTimeSensitive": false,
 								"score": 1
 							},
 							{
-								"id": "17787cca-dbd3-4db3-82cd-e35fe30a1b9a",
-								"scheduled_corpus_item_id": "150f76db-0df7-4ee0-8990-de71c5302381",
-								"corpus_item_id": "17787cca-dbd3-4db3-82cd-e35fe30a1b9a",
-								"url": "https://www.zdnet.com/article/who-wants-to-be-a-chief-ai-officer-a-new-career-path-emerges/?utm_source=firefox-newtab-en-intl",
-								"title": "Who Wants to Be a Chief AI Officer? a New Career Path Emerges",
-								"topic": "career",
-								"excerpt": "AWS research shows more than eight in 10 companies either have a CAIO or are seeking one. However, these organizations are scrambling to fill their ranks with AI talent.",
-								"publisher": "ZDNet",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/5777d628-da6a-4ed5-be2b-175ee524bd68.jpeg",
-								"received_rank": 6,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/74c51bd706f4bc5729692349d5c9983f9b138a42c587db6444df7328cc5a6d60_5691.png",
-								"score": 1
-							},
-							{
-								"id": "c59316f7-616a-49cc-a276-df19bbf300b3",
-								"scheduled_corpus_item_id": "e9f8506d-5bb6-4973-aa5c-55d1f560598e",
-								"corpus_item_id": "c59316f7-616a-49cc-a276-df19bbf300b3",
-								"url": "https://www.fastcompany.com/91333220/how-to-handle-interviewing-with-more-than-one-company?utm_source=firefox-newtab-en-intl",
-								"title": "How to Handle Interviewing With More Than One Company",
-								"topic": "career",
-								"excerpt": "After weeks of searching and applying, you’ve made it to the interview stage, a victory in and of itself. But what happens if you land multiple interviews with different companies at the same time? ",
-								"publisher": "Fast Company",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a73b7082-1f68-4de5-bc3b-3cee7e4529b7.jpeg",
-								"received_rank": 7,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/f34e78b810bd94f252615246cee3141c4883a6866542ffc8cc496308ab1c24d3_2933.png",
-								"score": 1
-							},
-							{
-								"id": "cb5a7f0d-9af8-4439-b047-1b7daad2fdb1",
-								"scheduled_corpus_item_id": "79d6f760-c488-4c14-8df3-a38ad72cd3fa",
-								"corpus_item_id": "cb5a7f0d-9af8-4439-b047-1b7daad2fdb1",
-								"url": "https://www.cnbctv18.com/personal-finance/home-purchase-buying-property-laddering-strategy-how-it-works-risks-benefits-19604348.htm?utm_source=firefox-newtab-en-intl",
-								"title": "This Strategy Helps You Buy Bigger Homes Sooner — But It’s Not Risk-Free",
-								"topic": "finance",
-								"excerpt": "Property laddering is a step-by-step homebuying strategy that helps buyers start small and move up to bigger, better homes over time. It offers a practical way to build wealth through real estate—but only if you're mindful of the risks, from market fluctuations to hidden costs.",
-								"publisher": "CNBC",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/354ec0b8-8952-40ee-a7cf-390f6f131615.jpeg",
-								"received_rank": 8,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/29ea464a2f319e7a495b0d565c8fc305c0c3bb72a7b2ef2841f367c6cdc4e390_58706.ico",
-								"score": 1
-							},
-							{
-								"id": "106ab097-1c6c-4dca-85b3-16f30294f747",
-								"scheduled_corpus_item_id": "334a16a0-97b8-4fc5-b44c-82178adb3a20",
-								"corpus_item_id": "106ab097-1c6c-4dca-85b3-16f30294f747",
-								"url": "https://www.theatlantic.com/family/archive/2025/05/default-parent-mother-father/682727/?utm_source=firefox-newtab-en-intl",
-								"title": "Why So Many People Still Assume That Mom Knows Best",
-								"topic": "society-parenting",
-								"excerpt": "Why do so many people assume that Mom knows what’s going on with the kids, and that Dad does not?",
-								"publisher": "The Atlantic",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b0a09f9d-0008-4efd-abdb-094a1f6e9117.jpeg",
-								"received_rank": 9,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/be51ae18a8eef2024d43939444d387d010b94cb958609dfe265de46cee3fbaa3_2172.png",
-								"score": 1
-							},
-							{
-								"id": "393a85f4-067c-4868-a800-c0d3a444c697",
-								"scheduled_corpus_item_id": "23b735e1-a6f3-41a8-8d3b-ec27c4874d2b",
-								"corpus_item_id": "393a85f4-067c-4868-a800-c0d3a444c697",
-								"url": "https://www.bloomberg.com/news/articles/2025-05-12/india-s-top-cinema-chain-banks-on-bollywood-recovery-as-movie-goers-dip?utm_source=firefox-newtab-en-intl",
-								"title": "India’s Top Cinema Chain Banks on Bollywood Recovery As Movie-Goers Dip",
-								"topic": "business",
-								"excerpt": "India’s top cinema chain PVR Inox Ltd. is betting on a slew of Hollywood and Bollywood releases to bring back moviegoers after a lackluster year.",
-								"publisher": "Bloomberg",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a4b8ac3f-dbcd-4fbf-993b-d202a04e8eeb.jpeg",
-								"received_rank": 10,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/fd1ace0f3033ff036069e86ffec8806531ed3465ccb7d16d27dea0f6d368cbbb_15406.ico",
-								"score": 1
-							},
-							{
-								"id": "1ee3025f-d9d6-4623-95fc-8b7b4007582c",
-								"scheduled_corpus_item_id": "d014df45-2b6c-435f-9550-0444afad1db6",
-								"corpus_item_id": "1ee3025f-d9d6-4623-95fc-8b7b4007582c",
-								"url": "https://www.gq.com/story/body-weight-workouts-strength-2?utm_source=firefox-newtab-en-intl",
-								"title": "How to Get Strong With Old-School Calisthenics",
-								"topic": "health",
-								"excerpt": "Simple body-weight exercises can improve just about any workout routine.",
-								"publisher": "GQ",
-								"raw_image_src": "https://media.gq.com/photos/670026b7aa94e29782fc0b94/16:9/w_1280,c_limit/calisthenics.jpg",
-								"received_rank": 11,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/7ff4f2d1fb97e9a8b3b9ccd4e9cd572211be6d9721097f70a8f4a2754f3754e3_15086.oct",
-								"score": 1
-							},
-							{
-								"id": "dad7d8c4-b247-45b4-8136-6fcf474559b0",
-								"scheduled_corpus_item_id": "23a90172-27bb-42ba-834f-cc59aff1ff0d",
-								"corpus_item_id": "dad7d8c4-b247-45b4-8136-6fcf474559b0",
-								"url": "https://odishatv.in/news/opinion/the-caste-on-your-plate-how-food-became-india-s-silent-divide-263011?utm_source=firefox-newtab-en-intl",
-								"title": "The Caste on Your Plate: How Food Became India’s Silent Divide",
-								"topic": "food",
-								"excerpt": "Delve into India's culinary caste dynamics as Dalit chefs like Asha Kowtal reshape traditions. Explore events, social media impacts, and changing perceptions.",
-								"publisher": "Odisha TV",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/927dd617-47cd-4650-806f-4d39caf2a1b1.jpeg",
-								"received_rank": 12,
-								"recommended_at": 1747284522185,
-								"icon_src": null,
-								"score": 1
-							},
-							{
-								"id": "375acc64-e111-45d6-a8b8-68ac977c6177",
-								"scheduled_corpus_item_id": "834965b0-4ae2-4b42-8057-0005186d11e0",
-								"corpus_item_id": "375acc64-e111-45d6-a8b8-68ac977c6177",
-								"url": "https://www.timeout.com/travel/worlds-best-cities-for-culture?utm_source=firefox-newtab-en-intl",
-								"title": "The World’s 20 Best Cities for Culture Right Now",
-								"topic": "travel",
-								"excerpt": "18,500 city-dwellers rated their city’s culture scene – and the results are in.",
-								"publisher": "Time Out ",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/03516835-4300-449c-979f-4a2995bb5b68.jpeg",
-								"received_rank": 13,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/254cacf91f9aab16c3640cf513b3d975ee43dd3a82d26b461be228f991977c5f_1556.png",
-								"score": 1
-							},
-							{
-								"id": "78fbd499-e4b7-478c-9390-7a86fc916f6f",
-								"scheduled_corpus_item_id": "734c8d4a-f51e-4375-9487-a3827746226d",
-								"corpus_item_id": "78fbd499-e4b7-478c-9390-7a86fc916f6f",
-								"url": "https://scroll.in/article/1082262/by-tearing-off-the-skin-with-your-teeth-the-right-way-to-eat-mangoes-according-to-victorian-women?utm_source=firefox-newtab-en-intl",
-								"title": "‘By Tearing Off the Skin With Your Teeth’: The Right Way to Eat Mangoes According to Victorian Women",
-								"topic": "food",
-								"excerpt": "An excerpt from ‘Mango: A Global History’, by Constance L Kirker and Mary Newman.",
-								"publisher": "Scroll",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4f04f1a9-84b2-4e88-9830-a850f0390451.jpeg",
-								"received_rank": 14,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/c60d4321c5330939855ea75b23282edd997410b439c0284b713fdd490f1336a5_1326.png",
-								"score": 1
-							},
-							{
-								"id": "3ab4bf3a-bb9d-4498-965f-831ed9e0261d",
-								"scheduled_corpus_item_id": "171ed03e-438a-4e22-b907-9ea6d9b272be",
-								"corpus_item_id": "3ab4bf3a-bb9d-4498-965f-831ed9e0261d",
-								"url": "https://www.livemint.com/news/india/50-travel-bookings-for-turkey-azerbaijan-from-india-cancelled-over-pakistan-support-amid-boycott-calls-11747225993837.html?utm_source=firefox-newtab-en-intl",
-								"title": "‘50% Travel Bookings’ for Turkey, Azerbaijan From India Cancelled Over Pakistan Support Amid Boycott Calls",
-								"topic": "travel",
-								"excerpt": "Turkey and Azerbaijan had openly supported Pakistan after India launched air strikes under Operation Sindoor on nine terror sites in Pakistan and Pakistan-occupied Kashmir.",
-								"publisher": "Mint",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3f1dabab-4329-4131-9f33-3ad0ebbd05f9.jpeg",
-								"received_rank": 15,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/94c90954b82767e8ce3b1f993339f22ae526e2568ceaf59585988c0d61b0e0fd_1318.svg",
-								"score": 1
-							},
-							{
-								"id": "6cde1af4-3c98-4255-9b6c-376393c71938",
-								"scheduled_corpus_item_id": "d1f3fa1d-bb20-4662-b1ea-34787600c054",
-								"corpus_item_id": "6cde1af4-3c98-4255-9b6c-376393c71938",
-								"url": "https://www.bustle.com/life/do-not-disturb-iphone-emo-aim-away-message-nostalgia?utm_source=firefox-newtab-en-intl",
-								"title": "“Do Not Disturb” Is Basically the Modern-Day Emo Away Message",
-								"topic": "tech",
-								"excerpt": "Using my iPhone's \"Do Not Disturb\" feature gives me the same petty satisfaction as a Y2K emo AIM away message.",
-								"publisher": "Bustle",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/40f0eb37-d3cd-48ea-a7e1-4bda2a9a334d.jpeg",
-								"received_rank": 16,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/ab20da348d19d1f1dd94ecb5faca866b3fc1b15a48d32ff1df5078770adf115f_10436.png",
-								"score": 1
-							},
-							{
-								"id": "ac6e2766-fd92-449a-8e55-67ab3c000d17",
-								"scheduled_corpus_item_id": "3716430e-4025-42e8-b98e-ed622b3498da",
-								"corpus_item_id": "ac6e2766-fd92-449a-8e55-67ab3c000d17",
-								"url": "https://www.entrepreneur.com/growing-a-business/why-small-business-success-comes-down-to-these-7-things/490809?utm_source=firefox-newtab-en-intl",
-								"title": "Why Small Business Success Comes Down to These 7 Things",
-								"topic": "business",
-								"excerpt": "Stay curious, stay committed and keep showing up — your success story is still unfolding.",
-								"publisher": "Entrepreneur",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/30240be7-144a-4045-978c-3295ca888796.jpeg",
-								"received_rank": 17,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/1e2bbb5b1eded71ebff7f78d31e001fc5f0397daf409698232b222b69eded586_1478.jpeg",
-								"score": 1
-							},
-							{
-								"id": "214538ba-48a9-45ca-822f-35475d6a7a05",
-								"scheduled_corpus_item_id": "2027c7c6-7f1d-4b56-8c2a-aac588382ef9",
-								"corpus_item_id": "214538ba-48a9-45ca-822f-35475d6a7a05",
-								"url": "https://economictimes.indiatimes.com/nri/study/france-expands-educational-opportunities-for-indian-students-aims-to-welcome-30000-students-by-2030/articleshow/121163365.cms?utm_source=firefox-newtab-en-intl",
-								"title": "France Expands Educational Opportunities for Indian Students; Aims to Welcome 30,000 Students by 2030",
-								"topic": "education",
-								"excerpt": "France is actively seeking to deepen its strategic partnership with India by aiming to host 30,000 Indian students by 2030, a significant increase from the current 8,000. To achieve this, France is introducing unique initiatives like special one-year programs at 35 universities and streamlining visa procedures to attract top Indian talent and foster stronger bilateral ties.",
-								"publisher": "The Economic Times",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/7437787b-f5bc-4aa7-9913-8989102d49ed.jpeg",
-								"received_rank": 18,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/65622cc0ca236f7fd12212e4feb2e937172330ff1c5c8dc1cace4f3041b42af1_1030.svg",
-								"score": 1
-							},
-							{
-								"id": "86f9173f-7b07-43c2-9634-6b24e272d788",
-								"scheduled_corpus_item_id": "03ffbee1-d23b-4038-adc8-4b01d0dbca26",
-								"corpus_item_id": "86f9173f-7b07-43c2-9634-6b24e272d788",
-								"url": "https://www.livemint.com/money/personal-finance/personal-loans-how-rbi-s-latest-rules-on-digital-lending-are-likely-to-impact-borrowers-11747146533073.html?utm_source=firefox-newtab-en-intl",
-								"title": "How RBI’s Latest Rules on Digital Lending Are Likely to Impact Borrowers?",
-								"topic": "finance",
-								"excerpt": "The banking regulator issued (Digital Lending) Directions, 2025 last week which address issues relating to multiple lenders",
-								"publisher": "Mint",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9abf2950-386f-43b1-bb41-31a12416073e.jpeg",
-								"received_rank": 19,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/94c90954b82767e8ce3b1f993339f22ae526e2568ceaf59585988c0d61b0e0fd_1318.svg",
-								"score": 1
-							},
-							{
-								"id": "19fb7523-4662-4871-a222-db16abbd7553",
-								"scheduled_corpus_item_id": "0df464e4-a3bb-400d-92e2-423bd14d5173",
-								"corpus_item_id": "19fb7523-4662-4871-a222-db16abbd7553",
-								"url": "https://www.architecturaldigest.in/story/diwiks-studio-in-bikaner-is-rooted-in-craftsmanship-audio-engineering-and-art-deco/?utm_source=firefox-newtab-en-intl",
-								"title": "Diwiks Studio in Bikaner Is Rooted in Craftsmanship, Audio Engineering, and Art Deco",
-								"topic": "home",
-								"excerpt": "Diwiks, the cult radios, are crafted in a historic pink sandstone studio in Bikaner, rooted in the region’s art deco legacy.",
-								"publisher": "AD India",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b5161555-5285-4aef-b9b5-2275598a04d0.jpeg",
-								"received_rank": 20,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/8d3df1e947c3b44cafb0fb4887d58fc7f1b3f10c10d593d5bedf17e311d05561_309614.oct",
-								"score": 1
-							},
-							{
-								"id": "80d50460-544d-4444-b011-c5d50cf09144",
-								"scheduled_corpus_item_id": "0b335c4c-6008-40c1-868b-6403d4def47f",
-								"corpus_item_id": "80d50460-544d-4444-b011-c5d50cf09144",
-								"url": "https://analyticsindiamag.com/global-tech/big-tech-uses-ai-as-an-excuse-to-fire-thousands-2/?utm_source=firefox-newtab-en-intl",
-								"title": "Big Tech Uses AI As an Excuse to Fire Thousands",
-								"topic": "tech",
-								"excerpt": "While some say AI-driven efficiency is behind the layoffs, others cite the cost of building AI infrastructure that is making companies reduce headcount.",
-								"publisher": "Analytics India Magazine",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4bbcad29-199b-41d0-8243-b5cb1829146e.jpeg",
-								"received_rank": 21,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/04ab1ed54c9c6afae334b72462d7e56af24f7af5508659936a9e29c3b1403c74_2621.png",
-								"score": 1
-							},
-							{
-								"id": "9fdc4537-19c2-4567-bfc6-186663079072",
-								"scheduled_corpus_item_id": "80c4df0e-880b-44cc-a818-d544617aa1c2",
-								"corpus_item_id": "9fdc4537-19c2-4567-bfc6-186663079072",
-								"url": "https://bigthink.com/books/is-english-a-killer-language/?utm_source=firefox-newtab-en-intl",
-								"title": "Is English a “Killer” Language — or Is It Dying?",
-								"topic": "education",
-								"excerpt": "English could settle into a state of diglossia where a gulf exists between the written form and the spoken varieties.",
-								"publisher": "Big Think",
-								"raw_image_src": "https://bigthink.com/wp-content/uploads/2025/05/Proto-Excerpt.jpg?resize=1200,630",
-								"received_rank": 22,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/9ef958bd58eb2f8510b192097078d6ea2e01b273aaeb31ff66fe1b56b7d4936d_770.webp",
-								"score": 1
-							},
-							{
-								"id": "c3dc0ead-cf4d-4bed-b336-de8974f0e915",
-								"scheduled_corpus_item_id": "d9739cb0-93b3-49e3-bb9d-0e3c98b4dfbb",
-								"corpus_item_id": "c3dc0ead-cf4d-4bed-b336-de8974f0e915",
-								"url": "https://www.the-independent.com/arts-entertainment/films/news/trump-tariffs-foreign-films-bollywood-india-box-office-b2750592.html?utm_source=firefox-newtab-en-intl",
-								"title": "Bollywood Fears Huge Impact of Trump’s Tariffs on Foreign Films",
-								"topic": "arts",
-								"excerpt": "US president wants to impose 100 per cent levy on all films made outside US",
-								"publisher": "The Independent",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/10dbab9b-27f7-442e-b946-69dc79555bb5.jpeg",
-								"received_rank": 23,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/f0a0f4929b74b9462f3ce83e0cafe12fa14cd076654add1a5d5d3d63deb59a87_80112.png",
-								"score": 1
-							},
-							{
-								"id": "6dd528f7-9d31-4a5d-940c-6f3a5d7f9f07",
-								"scheduled_corpus_item_id": "23e0c8b2-de99-429c-9988-3d139eef0192",
-								"corpus_item_id": "6dd528f7-9d31-4a5d-940c-6f3a5d7f9f07",
-								"url": "https://www.hindustantimes.com/lifestyle/relationships/kids-safety-101-essential-lessons-for-parents-to-ensure-a-safer-tomorrow-101747213499618.html?utm_source=firefox-newtab-en-intl",
-								"title": "Kids’ Safety 101: Essential Lessons for Parents to Ensure a Safer Tomorrow",
-								"topic": "society-parenting",
-								"excerpt": "From touch to tech: The modern guide for parents to keeping your child safe.",
+								"id": "66dddf91-4cdd-45a5-a501-1e99079314f8",
+								"scheduled_corpus_item_id": "f75eb149-ccb2-4e67-bfbf-4dec27816716",
+								"corpus_item_id": "66dddf91-4cdd-45a5-a501-1e99079314f8",
+								"url": "https://www.hindustantimes.com/india-news/rcb-event-turns-deadly-what-led-to-the-bengaluru-stampede-killing-11-cricket-fans-101749087650141.html?utm_source=firefox-newtab-en-intl",
+								"title": "RCB Event Turns Deadly: What Led to the Bengaluru Stampede Killing 11 Cricket Fans?",
+								"topic": "sports",
+								"excerpt": "Police said around 50,000 people had gathered within a 1-km radius of the stadium, and many tried to push through gates or climb over barriers.",
 								"publisher": "Hindustan Times",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c2c615b2-0d9f-42cf-844e-2ce596b38a26.jpeg",
-								"received_rank": 24,
-								"recommended_at": 1747284522185,
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9d5ebfb8-d8d8-4418-ae9c-430baead2dad.jpeg",
+								"received_rank": 6,
+								"recommended_at": 1749211618045,
 								"icon_src": "https://merino-images.services.mozilla.com/favicons/f6e337a4d6af6278eaae9aeba4d94daee40cc417985c456bda8b40505423f87a_1808.png",
+								"isTimeSensitive": true,
 								"score": 1
 							},
 							{
-								"id": "710d12c1-a723-43a2-9f3b-fa5059f00c66",
-								"scheduled_corpus_item_id": "99a81875-ff88-42c9-b7b8-f6a324123eb6",
-								"corpus_item_id": "710d12c1-a723-43a2-9f3b-fa5059f00c66",
-								"url": "https://www.menshealth.com/uk/nutrition/food-drink/a64757306/plant-vs-animal-protein-muscle-growth/?utm_source=firefox-newtab-en-intl",
-								"title": "Plant-Based Protein Vs. Meat: Why Science Says There’s No Difference for Muscle Growth",
-								"topic": "education-science",
-								"excerpt": "Omnivorous? Vegan? Protein source doesn’t matter when it comes to the best muscle-building foods, according to new research.",
-								"publisher": "Men's Health",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d8a42889-57b5-4a12-8e66-4e4df0893740.jpeg",
-								"received_rank": 25,
-								"recommended_at": 1747284522185,
-								"icon_src": "https://merino-images.services.mozilla.com/favicons/79f5d221252b6e365e0391d67ab857c44d2fb00f7bcaa6d0a12e9ac36fffbd58_5213.png",
+								"id": "580ff4e6-d9ce-445a-bfc5-a52bcf8b3670",
+								"scheduled_corpus_item_id": "38c88e6f-35b8-443e-9281-b627f6e00e49",
+								"corpus_item_id": "580ff4e6-d9ce-445a-bfc5-a52bcf8b3670",
+								"url": "https://www.architecturaldigest.in/gallery/beautiful-colleges-attended-by-the-modern-royals-of-india/?utm_source=firefox-newtab-en-intl",
+								"title": "5 Beautiful Colleges Attended by the Modern Royals of India",
+								"topic": "arts",
+								"excerpt": "From the Mayo College in Ajmer to the University of Cambridge in England, here is a list of beautiful colleges that are the alma maters of Indian Royalty.",
+								"publisher": "AD India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/a9501abe-c3ae-4e6e-ae4a-dcf14aed9e86.jpeg",
+								"received_rank": 7,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/8d3df1e947c3b44cafb0fb4887d58fc7f1b3f10c10d593d5bedf17e311d05561_309614.oct",
+								"isTimeSensitive": false,
 								"score": 1
 							},
 							{
-								"id": "522405f1-c44e-424a-babe-9df1d8ee9c43",
-								"scheduled_corpus_item_id": "e1c7e72b-986b-49e7-a6ac-e8b403e961bf",
-								"corpus_item_id": "522405f1-c44e-424a-babe-9df1d8ee9c43",
-								"url": "https://indiandefencereview.com/506-million-year-old-sea-creature-sci-fi/?utm_source=firefox-newtab-en-intl",
-								"title": "Scientists Discover 506-Million-Year-Old Sea Creature That Looks Like a Sci-Fi Kaiju and It’s Real!",
-								"topic": "education-science",
-								"excerpt": "Discover the bizarre 506-million-year-old sea creature that looks like it jumped straight out of a sci-fi movie!",
-								"publisher": "Indian Defense Review",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c7565031-3ca1-4642-9532-0874a5d7706a.jpeg",
-								"received_rank": 26,
-								"recommended_at": 1747284522185,
+								"id": "4df6361f-4675-4a62-8de2-33a4bdb4e05f",
+								"scheduled_corpus_item_id": "5b826479-d840-465b-8e41-47390e03c039",
+								"corpus_item_id": "4df6361f-4675-4a62-8de2-33a4bdb4e05f",
+								"url": "https://www.theguardian.com/us-news/2025/jun/04/what-is-trump-travel-ban-countries?utm_source=firefox-newtab-en-intl",
+								"title": "What Is Trump’s New Travel Ban, and Which Countries Are Affected?",
+								"topic": "travel",
+								"excerpt": "President’s sweeping proclamation targets citizens of many countries and would dramatically reshape US border policy",
+								"publisher": "The Guardian",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bc7b17b1-2d4c-43df-8c59-894d0fe68db3.jpeg",
+								"received_rank": 8,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/6df36ad9a79866d419c73bbf94be4570fa025203cdd43f49a750b4d6d2b3b3de_411.svg",
+								"isTimeSensitive": true,
+								"score": 1
+							},
+							{
+								"id": "903767d8-58b6-4885-a26f-d4942659ad1d",
+								"scheduled_corpus_item_id": "7ed7ae01-4a85-4d63-ab2a-3874400081ac",
+								"corpus_item_id": "903767d8-58b6-4885-a26f-d4942659ad1d",
+								"url": "https://www.travelandleisure.com/lost-cultures-living-legacies-podcast-season-2-episode-3-kolkata-11746214?utm_source=firefox-newtab-en-intl",
+								"title": "How a Once-Thriving Jewish Community Helped Shape Kolkata, India",
+								"topic": "travel",
+								"excerpt": "The Baghdadi Jewish community in Kolkata, India, built synagogues, schools, and a lasting legacy.",
+								"publisher": "Travel + Leisure Asia",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f13c4fd6-b5cf-4912-a051-c87dfad15d3c.jpeg",
+								"received_rank": 9,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/93212540e7effb8a7e17191f5986a6b1134ce57b4404a625f71f120c6215588a_531.oct",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "996fc5de-c66d-4740-900a-760e1a3dc16b",
+								"scheduled_corpus_item_id": "a47cff5b-aa54-4e04-9054-0f861d3de360",
+								"corpus_item_id": "996fc5de-c66d-4740-900a-760e1a3dc16b",
+								"url": "https://www.entrepreneur.com/en-in/news-and-trends/not-just-hype-what-investors-really-think-about-ai-in/492738?utm_source=firefox-newtab-en-intl",
+								"title": "Not Just Hype : What Investors Really Think About AI in Indian Education",
+								"topic": "tech",
+								"excerpt": "At a time when Artificial Intelligence (AI) continues to dominate many facets of life, the education technology sector is emerging as one of the more promising ones.",
+								"publisher": "Entrepreneur",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/71383462-3e77-42fc-b635-52983a5cf1df.jpeg",
+								"received_rank": 10,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/1e2bbb5b1eded71ebff7f78d31e001fc5f0397daf409698232b222b69eded586_1478.jpeg",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "06810b8f-20d2-496a-9a33-b1ebdae6df29",
+								"scheduled_corpus_item_id": "07ca6e1d-66c4-41c5-ba63-b2de444c8364",
+								"corpus_item_id": "06810b8f-20d2-496a-9a33-b1ebdae6df29",
+								"url": "https://www.moneycontrol.com/news/business/personal-finance/personal-finance-investing-for-tax-savings-is-now-passe-13097127.html?utm_source=firefox-newtab-en-intl",
+								"title": "Investing for Tax Savings Is Now Passe",
+								"topic": "finance",
+								"excerpt": "Many individuals start restructuring investments closer to when they think they are likely to hang up their boots",
+								"publisher": "Moneycontrol",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/6a809e03-ce21-4264-a800-eaf1bab6bce2.jpeg",
+								"received_rank": 11,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/6b2ce72b5667a9aa57432482702cb175c2665c7ec96b15d0ec9bfdca905295b6_1650.webp",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "c304cee6-3f14-4e6c-aa7c-e0af83738588",
+								"scheduled_corpus_item_id": "63045c89-00e5-4816-8ce1-25a6051d11a8",
+								"corpus_item_id": "c304cee6-3f14-4e6c-aa7c-e0af83738588",
+								"url": "https://theprint.in/education-2/shrewsburys-472-year-legacy-comes-to-india-with-cambridge-curriculum-50-international-faculty/2647306/?utm_source=firefox-newtab-en-intl",
+								"title": "Shrewsbury’s 472-Year Legacy Comes to India With Cambridge Curriculum & 50% International Faculty",
+								"topic": "education",
+								"excerpt": "UK-based school to open campus with strong Indian identity in Bhopal, set to enroll around 650 students across grades 6 to 11.",
+								"publisher": "The Print",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d80c4809-6881-4f58-846d-aa46333c70a3.jpeg",
+								"received_rank": 12,
+								"recommended_at": 1749211618045,
 								"icon_src": null,
+								"isTimeSensitive": true,
 								"score": 1
 							},
 							{
-								"id": "ced47837-d92b-4d05-8a5c-1cbbec21e5fa",
-								"scheduled_corpus_item_id": "f675fd65-9ed5-43b2-8f1b-8b4a76e7bcee",
-								"corpus_item_id": "ced47837-d92b-4d05-8a5c-1cbbec21e5fa",
-								"url": "https://indianexpress.com/article/health-wellness/trump-drug-price-order-hit-indian-generics-what-you-need-to-know-10004305/?utm_source=firefox-newtab-en-intl",
-								"title": "Will Trump’s Drug Price Order Hit Indian Generics? Here’s What You Need to Know",
+								"id": "91983482-e786-4810-be8d-16356bc7f38c",
+								"scheduled_corpus_item_id": "8284070e-a8b8-4082-b897-4d01c6158d42",
+								"corpus_item_id": "91983482-e786-4810-be8d-16356bc7f38c",
+								"url": "https://indianexpress.com/article/lifestyle/food-wine/fathers-experts-approved-measures-heart-kidneys-liver-brain-prostate-cholesterol-levels-9994255/?utm_source=firefox-newtab-en-intl",
+								"title": "Fathers, Here Are Some Health Measures for Your Heart, Kidneys, Liver, Brain, Prostate, and Cholesterol Levels",
 								"topic": "health",
-								"excerpt": "Nearly 47 per cent of all generics prescribed in the US are manufactured here",
+								"excerpt": "To help you get the right information, we asked experts about some specific nutrient-rich foods and lifestyle measures that, when incorporated into one's life, can be highly beneficial",
 								"publisher": "The Indian Express",
-								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/2bcdb28c-ee58-495f-94b7-e9cf3efaf3c4.jpeg",
-								"received_rank": 27,
-								"recommended_at": 1747284522185,
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/2ad01686-2756-40b8-910b-a2d4d6047816.jpeg",
+								"received_rank": 13,
+								"recommended_at": 1749211618045,
 								"icon_src": "https://merino-images.services.mozilla.com/favicons/f7e61d313a7ce7debf61bbe6a1c9680dd3e8b7c1ccd1b2f0c9fddab7cb516852_93062.ico",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "b3723e34-e3c4-46ad-ba3f-83e3bb04012d",
+								"scheduled_corpus_item_id": "454e31a4-e2d0-4a0c-8dc4-10751e2b120b",
+								"corpus_item_id": "b3723e34-e3c4-46ad-ba3f-83e3bb04012d",
+								"url": "https://www.firstpost.com/explainers/india-population-caste-census-beginning-2026-13894467.html?utm_source=firefox-newtab-en-intl",
+								"title": "Why India Will Hold Census After 15 Years, Beginning in 2026",
+								"topic": "government",
+								"excerpt": "India will carry out its overdue population census, along with caste enumeration, in two phases, starting from snowy states and UTs of Ladakh, Jammu and Kashmir, Himachal Pradesh, and Uttarakhand in October 2026. For the rest of the country, the exercise will begin from March 2027. Supposed to be held in 2021, the process was deferred. Here’s why",
+								"publisher": "Firstpost",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/91f4affb-f42f-448c-bac7-9f8f2fe77939.jpeg",
+								"received_rank": 14,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/37bc5c6c957b0f22a7c14ac2213bbfea4d8071ac41fe9031450f136d7428d687_732.webp",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "d4ca8aa3-c044-4fac-bcdf-5e1d41f16dbd",
+								"scheduled_corpus_item_id": "c29ef0c2-7734-40d4-ba23-5c1354cf3399",
+								"corpus_item_id": "d4ca8aa3-c044-4fac-bcdf-5e1d41f16dbd",
+								"url": "https://www.socialketchup.in/binge-lens/hindi-film-hero-8946885?utm_source=firefox-newtab-en-intl",
+								"title": "The Vanishing Act of the Hindi Film Hero Is Bollywood’s Biggest Silent Tragedy!",
+								"topic": "arts",
+								"excerpt": "In the noise of chasing trends and hyper-masculinity, once a symbol of hope, today’s Hindi film heroes are nowhere to be found, both on screen and in spirit.",
+								"publisher": "Social Ketchup",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/02ff0d35-1b88-4506-a042-b1b4c3e34ee0.jpeg",
+								"received_rank": 15,
+								"recommended_at": 1749211618045,
+								"icon_src": null,
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "de263bf8-d693-458b-aa9c-35612c42e81d",
+								"scheduled_corpus_item_id": "f9a4f71b-b75e-4aac-b6b4-927f60c30a4b",
+								"corpus_item_id": "de263bf8-d693-458b-aa9c-35612c42e81d",
+								"url": "https://www.homesandgardens.com/interior-design/rug-colors-going-out-of-style-in-2025?utm_source=firefox-newtab-en-intl",
+								"title": "These 5 Rug Colors Are Going Out of Style for 2025, According to Interior Designers",
+								"topic": "home",
+								"excerpt": "The rug colors that are out – and what to pick instead – are right here",
+								"publisher": "Homes & Gardens",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/17ebdc80-a190-4a1c-ac41-5e3873c49390.jpeg",
+								"received_rank": 16,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/0d05fb9e0f11be894228e3e74dbfa7b29b22ac6c9f248a5e4d856d22964ce738_14997.png",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "25f3b649-536f-442b-a23f-661216f947d4",
+								"scheduled_corpus_item_id": "d34789fb-3b93-4573-87ce-0115c8783725",
+								"corpus_item_id": "25f3b649-536f-442b-a23f-661216f947d4",
+								"url": "https://www.the74million.org/zero2eight/whats-the-sad-beige-parenting-trend-and-does-it-affect-infant-development/?utm_source=firefox-newtab-en-intl",
+								"title": "What’s the ‘Sad Beige’ Parenting Trend — and Does It Affect Infant Development?",
+								"topic": "society-parenting",
+								"excerpt": "Are neutral colors influencing your baby’s growth?",
+								"publisher": "The 74",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/bcaad6af-e9c7-466f-8f32-9718f5fcb728.jpeg",
+								"received_rank": 17,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/fd5c1148cbeda37825eadb30b4740942c365b837d08bdf5469b7b3963e1e9911_3974.png",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "85db2b9f-9687-4938-8ea4-3ede582e9936",
+								"scheduled_corpus_item_id": "ef09f55d-ed6d-4474-b3e0-1687110bb93f",
+								"corpus_item_id": "85db2b9f-9687-4938-8ea4-3ede582e9936",
+								"url": "https://www.deccanchronicle.com/lifestyle/food/the-red-miracle-how-watermelon-became-indias-summertime-salvation-1883308?utm_source=firefox-newtab-en-intl",
+								"title": "The Red Miracle: How Watermelon Became India’s Summertime Salvation",
+								"topic": "food",
+								"excerpt": "From Mughal cravings to colonial ice houses, the watermelon has been more than a fruit — it’s been a cultural balm for centuries of Indian summers.",
+								"publisher": "Deccan Chronicle",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/86f40fbb-1985-4641-9345-2f5b5266a05d.jpeg",
+								"received_rank": 18,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/82ee1fbc8a318ded3d1b6a6972e055853ad811ff1bfc7b5a0e0a7e6adaf4fb4a_4891.png",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "3c97f478-4808-498d-be70-4a46f4bdc6f4",
+								"scheduled_corpus_item_id": "6aa90070-9097-4c3d-9358-f18b19a1eb6e",
+								"corpus_item_id": "3c97f478-4808-498d-be70-4a46f4bdc6f4",
+								"url": "https://hbr.org/2025/06/employee-stress-is-a-business-risk-not-an-hr-problem?utm_source=firefox-newtab-en-intl",
+								"title": "Employee Stress Is a Business Risk—Not an HR Problem",
+								"topic": "business",
+								"excerpt": "Workplace stress, on the rise for decades, has been treated by many organizations as a personal issue instead of a business-critical risk that merits executive oversight. This is likely due in part to the fact that companies have not effectively quantified and tracked the cost stress poses to integral business outcomes. ",
+								"publisher": "Harvard Business Review",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/80362e60-1aa2-4503-b449-691e68002086.jpeg",
+								"received_rank": 19,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/a5c1d4745e9d4ca513887b5d60f351d9cd776b22ab095458df89d65075346a96_7345.oct",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "983a550a-d008-4532-b80d-48c2bb6a6645",
+								"scheduled_corpus_item_id": "d10f9bed-f02d-413c-8c82-d769de904137",
+								"corpus_item_id": "983a550a-d008-4532-b80d-48c2bb6a6645",
+								"url": "https://timesofindia.indiatimes.com/world/middle-east/high-tech-hajj-more-safety-but-less-privacy-spirituality/articleshow/121620878.cms?utm_source=firefox-newtab-en-intl",
+								"title": "High-Tech Hajj: More Safety but Less Privacy, Spirituality?",
+								"topic": "tech",
+								"excerpt": "The annual Hajj pilgrimage in Saudi Arabia is increasingly incorporating technology to manage the massive crowds and ensure safety. Drones with therma",
+								"publisher": "The Times of India",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ffb328b7-d2da-4f43-8f3e-b0facdea0425.jpeg",
+								"received_rank": 20,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/65622cc0ca236f7fd12212e4feb2e937172330ff1c5c8dc1cace4f3041b42af1_1030.svg",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "f77b2f6b-19e3-44c4-af06-6ff1bb32d234",
+								"scheduled_corpus_item_id": "e6fb6d41-aa91-402a-8711-6a553058b119",
+								"corpus_item_id": "f77b2f6b-19e3-44c4-af06-6ff1bb32d234",
+								"url": "https://www.news18.com/lifestyle/circular-goals-lasting-impact-how-businesses-are-building-a-sustainable-tomorrow-9368997.html?utm_source=firefox-newtab-en-intl",
+								"title": "Circular Goals, Lasting Impact: How Businesses Are Building a Sustainable Tomorrow",
+								"topic": "business",
+								"excerpt": "From organic farms to commercial campuses, Indian enterprises are rewriting the playbook on sustainable growth.",
+								"publisher": "News18",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4e52e289-ed7b-42b3-9782-8bcbe2a58550.jpeg",
+								"received_rank": 21,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/1d5d05757346ab976ede202d2f518d4339d0aebcc863c85f99ed74314f240661_1229.png",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "b0b0efa9-e196-4a18-8a8e-d3fd22f2a36a",
+								"scheduled_corpus_item_id": "37d8dfe4-c161-402e-a2dc-4ddd11d8a95e",
+								"corpus_item_id": "b0b0efa9-e196-4a18-8a8e-d3fd22f2a36a",
+								"url": "https://www.theguardian.com/world/2025/jun/04/indian-students-shock-trump-international-study-visa?utm_source=firefox-newtab-en-intl",
+								"title": "‘They Are in Shock’: Indian Students Fear Trump Has Ended Their American Dream",
+								"topic": "education",
+								"excerpt": "Those hoping to study in US are in limbo or looking elsewhere after president’s targeting of foreign students",
+								"publisher": "The Guardian",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3cece7a5-d03e-4a22-a80b-2727365ee91e.jpeg",
+								"received_rank": 22,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/6df36ad9a79866d419c73bbf94be4570fa025203cdd43f49a750b4d6d2b3b3de_411.svg",
+								"isTimeSensitive": true,
+								"score": 1
+							},
+							{
+								"id": "573384b6-d492-42cf-9bd6-ba307149a49a",
+								"scheduled_corpus_item_id": "8ca9590f-1151-493c-b359-4bf05e36c35f",
+								"corpus_item_id": "573384b6-d492-42cf-9bd6-ba307149a49a",
+								"url": "https://economictimes.indiatimes.com/news/international/us/james-bond-video-game-007-first-light-announced-at-playstation-event-what-to-expect/articleshow/121635850.cms?utm_source=firefox-newtab-en-intl",
+								"title": "James Bond Video Game 007 First Light Announced at PlayStation Event, What to Expect",
+								"topic": "hobbies",
+								"excerpt": "The IO Interactive has revealed its first new James Bond video game 007 First Light. The game will explore Bond's early days with MI6. It is expected in 2026 and will be available on PS5, Xbox, PC, and Switch 2. The IO Interactive also revealed that it began working on this project in 2020.",
+								"publisher": "The Economic Times",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/7bb2e832-2ec4-46bf-adea-89c430f3d252.jpeg",
+								"received_rank": 23,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/65622cc0ca236f7fd12212e4feb2e937172330ff1c5c8dc1cace4f3041b42af1_1030.svg",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "b980bac8-4e8b-4fe3-9f41-a03de7827fed",
+								"scheduled_corpus_item_id": "7928d657-d2ea-4825-ac3a-1a6d1cdad434",
+								"corpus_item_id": "b980bac8-4e8b-4fe3-9f41-a03de7827fed",
+								"url": "https://theconversation.com/what-parents-and-youth-athletes-can-do-to-protect-against-abuse-in-sport-255614?utm_source=firefox-newtab-en-intl",
+								"title": "What Parents and Youth Athletes Can Do to Protect Against Abuse in Sport",
+								"topic": "sports",
+								"excerpt": "The line between abuse and acceptable behaviour is blurred in many sports, so parents and youth athletes must be vigilant.",
+								"publisher": "The Conversation",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/58dcf7c6-98e8-4744-89b2-d2fd6e3b472c.jpeg",
+								"received_rank": 24,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/893396eaa6fda2f65ae0dc35f7d2b021e634ffff35978ce4240cdd7ff9eedb6a_257164.png",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "1477b3c6-c406-493f-8f09-ca39dcb07747",
+								"scheduled_corpus_item_id": "c2a64a44-0465-4b92-b2ae-8c631fc974ab",
+								"corpus_item_id": "1477b3c6-c406-493f-8f09-ca39dcb07747",
+								"url": "https://www.fastcompany.com/91343438/these-are-the-6-necessary-skills-that-every-leader-should-have?utm_source=firefox-newtab-en-intl",
+								"title": "These Are the 6 Necessary Skills That Every Leader Should Have",
+								"topic": "career",
+								"excerpt": "These are the skills necessary for meaningful leadership, and tips for how you can hone them in your day-to-day life and work.",
+								"publisher": "Fast Company",
+								"raw_image_src": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit,w_1024,h_1024/wp-cms-2/2025/06/p-91343438-These-are-the-6-necessary-skills-that-every-leader-should-have.jpg",
+								"received_rank": 25,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/f34e78b810bd94f252615246cee3141c4883a6866542ffc8cc496308ab1c24d3_2933.png",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "6784aba5-97ac-4211-9d2d-3388b047c2f4",
+								"scheduled_corpus_item_id": "48259ce4-e933-4103-b038-ccea34a75d4f",
+								"corpus_item_id": "6784aba5-97ac-4211-9d2d-3388b047c2f4",
+								"url": "https://nautil.us/our-boiling-seas-1215199/?utm_source=firefox-newtab-en-intl",
+								"title": "Our Boiling Seas",
+								"topic": "education-science",
+								"excerpt": "Scientists are getting better at predicting marine heatwaves. But is it enough to save ecosystems and vulnerable species?",
+								"publisher": "Nautilus",
+								"raw_image_src": "https://assets.nautil.us/sites/3/nautilus/uKq1wk9F-Kazamia_HERO.png?auto=compress&fm=png&ixlib=php-3.3.1",
+								"received_rank": 26,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/6bdb369337ac2496761c6f063bffea0aa6a91d4662279c399071a468251f51f0_4119.png",
+								"isTimeSensitive": false,
+								"score": 1
+							},
+							{
+								"id": "5860a8b5-0ba2-4619-ba74-8b2ef357c2c2",
+								"scheduled_corpus_item_id": "9e3f358d-d751-4a81-93e0-b1dda62bd2a7",
+								"corpus_item_id": "5860a8b5-0ba2-4619-ba74-8b2ef357c2c2",
+								"url": "https://www.fastcompany.com/91297652/the-two-kinds-of-people-in-the-world-and-why-it-matters-for-leadership?utm_source=firefox-newtab-en-intl",
+								"title": "The Two Kinds of People in the World—and Why It Matters for Leadership",
+								"topic": "career",
+								"excerpt": "Hard-nosed leadership and compassionate leadership aren’t opposites. The best leaders embrace both.",
+								"publisher": "Fast Company",
+								"raw_image_src": "https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit,w_1024,h_1024/wp-cms-2/2025/06/p-91297652-the-systems-leader.jpg",
+								"received_rank": 27,
+								"recommended_at": 1749211618045,
+								"icon_src": "https://merino-images.services.mozilla.com/favicons/f34e78b810bd94f252615246cee3141c4883a6866542ffc8cc496308ab1c24d3_2933.png",
+								"isTimeSensitive": false,
 								"score": 1
 							}
 						],
+						"surfaceId": "NEW_TAB_EN_INTL",
 						"status": "success"
 					}
 				}
@@ -1258,7 +1219,7 @@ window.__STARTUP_STATE__ = {
 		"blocks": {},
 		"spocs": {
 			"spocs_endpoint": "https://spocs.getpocket.com/spocs",
-			"lastUpdated": 1744713126611,
+			"lastUpdated": 1749211617754,
 			"data": {},
 			"loaded": true,
 			"frequency_caps": [],
@@ -1278,6 +1239,7 @@ window.__STARTUP_STATE__ = {
 			"visible": false,
 			"data": {}
 		},
+		"sectionPersonalization": {},
 		"pocketButtonEnabled": true,
 		"saveToPocketCard": true,
 		"hideDescriptions": false,
@@ -2362,40 +2324,40 @@ window.__STARTUP_STATE__ = {
 		"query": "",
 		"suggestions": [
 			{
-				"title": "Weather for Ahmedabad",
-				"url": "https://www.accuweather.com/en/in/ahmedabad/202438/current-weather/202438?lang=en-us&partner=web_mozilla_adc",
+				"title": "Weather for Vadodara",
+				"url": "https://www.accuweather.com/en/in/vadodara/202439/current-weather/202439?lang=en-us&partner=web_mozilla_adc",
 				"provider": "accuweather",
 				"is_sponsored": false,
 				"score": 0.3,
-				"city_name": "Ahmedabad",
+				"city_name": "Vadodara",
 				"region_code": "GJ",
 				"current_conditions": {
-					"url": "https://www.accuweather.com/en/in/ahmedabad/202438/current-weather/202438?lang=en-us&partner=web_mozilla_adc",
-					"summary": "Hazy sunshine",
-					"icon_id": 5,
+					"url": "https://www.accuweather.com/en/in/vadodara/202439/current-weather/202439?lang=en-us&partner=web_mozilla_adc",
+					"summary": "Mostly sunny",
+					"icon_id": 2,
 					"temperature": {
-						"c": 33,
-						"f": 91
+						"c": 41,
+						"f": 105
 					}
 				},
 				"forecast": {
-					"url": "https://www.accuweather.com/en/in/ahmedabad/202438/daily-weather-forecast/202438?lang=en-us&partner=web_mozilla_adc",
-					"summary": "Very warm from Monday to Thursday",
+					"url": "https://www.accuweather.com/en/in/vadodara/202439/daily-weather-forecast/202439?lang=en-us&partner=web_mozilla_adc",
+					"summary": "Very warm from Saturday to Thursday",
 					"high": {
 						"c": 41,
 						"f": 106
 					},
 					"low": {
-						"c": 29,
-						"f": 84
+						"c": 28,
+						"f": 82
 					}
 				},
-				"request_id": "8dd5190ebdd1480f93c75f1fe903f82c",
+				"request_id": "def290f3d9d347ea88fd64eb8f850899",
 				"source": "merino"
 			}
 		],
 		"locationData": {
-			"city": "Ahmedabad",
+			"city": "Vadodara",
 			"adminArea": "",
 			"country": ""
 		},
@@ -2405,4 +2367,4 @@ window.__STARTUP_STATE__ = {
 	}
 };
 
-�O�e��           h%r/H0N`����       :about:home alt-data 1;60140,script version 20250512223554  m�
+=�7�           hB��HD�0����       :about:home alt-data 1;61538,script version 20250529220913  [

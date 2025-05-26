@@ -1,20 +1,27 @@
-{"timestamp":87640173,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"glean_timestamp":"1747284521011","can_load":"true","loadfail_reason":"N/A","path_key":"clean"}}
-{"timestamp":87640173,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"path_key":"clean","glean_timestamp":"1747284521011","can_load":"true","loadfail_reason":"N/A"}}
-{"timestamp":87640173,"category":"session_restore","name":"shutdown_success_session_startup","extra":{"shutdown_reason":"N/A","shutdown_ok":"false","glean_timestamp":"1747284521012"}}
-{"timestamp":87640799,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"required","glean_timestamp":"1747284521638"}}
-{"timestamp":87641167,"category":"jsonfile","name":"load_autofillprofiles","extra":{"value":"","glean_timestamp":"1747284522005"}}
-{"timestamp":87641395,"category":"doh","name":"state_rollback","extra":{"glean_timestamp":"1747284522233","value":"null"}}
-{"timestamp":87641854,"category":"normandy","name":"validation_failed_nimbus_experiment","extra":{"value":"whats-new-notification-sidebarvertical-tabs","glean_timestamp":"1747284522692","feature_ids":"backgroundTaskMessage","reason":"unsupported-feature"}}
-{"timestamp":87641854,"category":"nimbus_events","name":"validation_failed","extra":{"glean_timestamp":"1747284522692","experiment":"whats-new-notification-sidebarvertical-tabs","reason":"unsupported-feature","feature_ids":"backgroundTaskMessage"}}
-{"timestamp":87641864,"category":"normandy","name":"enroll_failed_nimbus_experiment","extra":{"glean_timestamp":"1747284522702","reason":"feature-conflict","value":"recommend-bookmark-toolbar-existing-user-rollout"}}
-{"timestamp":87641864,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","glean_timestamp":"1747284522703","experiment":"recommend-bookmark-toolbar-existing-user-rollout"}}
-{"timestamp":87641938,"category":"normandy","name":"validation_failed_nimbus_experiment","extra":{"value":"whats-new-notification-tab-groups","glean_timestamp":"1747284522776","reason":"unsupported-feature","feature_ids":"backgroundTaskMessage"}}
-{"timestamp":87641938,"category":"nimbus_events","name":"validation_failed","extra":{"feature_ids":"backgroundTaskMessage","experiment":"whats-new-notification-tab-groups","reason":"unsupported-feature","glean_timestamp":"1747284522776"}}
-{"timestamp":87641957,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1747284522795"}}
-{"timestamp":87641962,"category":"jsonfile","name":"load_logins","extra":{"value":"","glean_timestamp":"1747284522800"}}
-{"timestamp":87641963,"category":"upgrade_dialog","name":"trigger_reason","extra":{"glean_timestamp":"1747284522801","value":"not-major"}}
-{"timestamp":87641435,"category":"media.playback","name":"first_frame_loaded","extra":{"metadata_loaded_time":"20","buffering_time":"0","video_codec":"video/vp8","decoder_name":"ffvpx video decoder (RDD remote)","is_hardware_decoding":"true","is_hdr":"false","first_frame_loaded_time":"397","total_waiting_data_time":"0","glean_timestamp":"1747284530531","playback_type":"Non-MSE playback","resolution":"V,720<h<=1080"}}
-{"timestamp":87647082,"category":"media.playback","name":"first_frame_loaded","extra":{"is_hardware_decoding":"true","is_hdr":"false","video_codec":"video/vp8","metadata_loaded_time":"19","first_frame_loaded_time":"41","resolution":"V,720<h<=1080","total_waiting_data_time":"0","playback_type":"Non-MSE playback","decoder_name":"ffvpx video decoder (RDD remote)","buffering_time":"0","glean_timestamp":"1747284530531"}}
-{"timestamp":87647297,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"true","glean_timestamp":"1747284530531"}}
-{"timestamp":87648094,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"true","glean_timestamp":"1747284530531"}}
-{"timestamp":87649716,"category":"doh","name":"state_shutdown","extra":{"value":"null","glean_timestamp":"1747284530554"}}
+{"timestamp":83780295,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"path_key":"clean","glean_timestamp":"1749211615453","loadfail_reason":"N/A","can_load":"true"}}
+{"timestamp":83780298,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"can_load":"true","loadfail_reason":"N/A","glean_timestamp":"1749211615453","path_key":"clean"}}
+{"timestamp":83780298,"category":"session_restore","name":"shutdown_success_session_startup","extra":{"shutdown_reason":"N/A","shutdown_ok":"false","glean_timestamp":"1749211615454"}}
+{"timestamp":83781780,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"required","glean_timestamp":"1749211616936"}}
+{"timestamp":83782551,"category":"jsonfile","name":"load_autofillprofiles","extra":{"glean_timestamp":"1749211617707","value":""}}
+{"timestamp":83782654,"category":"doh","name":"state_rollback","extra":{"glean_timestamp":"1749211617810","value":"null"}}
+{"timestamp":83782948,"category":"jsonfile","name":"load_logins","extra":{"value":"","glean_timestamp":"1749211618103"}}
+{"timestamp":83782972,"category":"upgrade_dialog","name":"trigger_reason","extra":{"value":"not-major","glean_timestamp":"1749211618128"}}
+{"timestamp":83783163,"category":"normandy","name":"enroll_failed_nimbus_experiment","extra":{"value":"recommend-bookmark-toolbar-existing-user-rollout","reason":"feature-conflict","glean_timestamp":"1749211618318"}}
+{"timestamp":83783163,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"recommend-bookmark-toolbar-existing-user-rollout","glean_timestamp":"1749211618319","reason":"feature-conflict"}}
+{"timestamp":83783199,"category":"normandy","name":"validation_failed_nimbus_experiment","extra":{"glean_timestamp":"1749211618355","feature_ids":"backgroundTaskMessage","reason":"unsupported-feature","value":"whats-new-notification-tab-groups"}}
+{"timestamp":83783199,"category":"nimbus_events","name":"validation_failed","extra":{"reason":"unsupported-feature","glean_timestamp":"1749211618355","experiment":"whats-new-notification-tab-groups","feature_ids":"backgroundTaskMessage"}}
+{"timestamp":83783226,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1749211618381"}}
+{"timestamp":83785785,"category":"doh","name":"state_shutdown","extra":{"value":"null","glean_timestamp":"1749211620941"}}
+{"timestamp":83785786,"category":"doh","name":"state_rollback","extra":{"value":"null","glean_timestamp":"1749211620941"}}
+{"timestamp":83811193,"category":"addons_manager","name":"update_extension","extra":{"step":"started","source":"system-addon","method":"product-updates","updated_from":"app","glean_timestamp":"1749211646348","value":"1","addon_id":"webcompat@mozilla.org"}}
+{"timestamp":83811193,"category":"addons_manager","name":"update","extra":{"glean_timestamp":"1749211646348","step":"started","addon_id":"webcompat@mozilla.org","source":"system-addon","addon_type":"extension","updated_from":"app","install_id":"1","source_method":"product-updates"}}
+{"timestamp":83811209,"category":"addons_manager","name":"update_extension","extra":{"updated_from":"app","step":"completed","glean_timestamp":"1749211646365","value":"1","source":"system-addon","addon_id":"webcompat@mozilla.org","method":"product-updates"}}
+{"timestamp":83811209,"category":"addons_manager","name":"update","extra":{"step":"completed","source":"system-addon","source_method":"product-updates","addon_id":"webcompat@mozilla.org","glean_timestamp":"1749211646365","install_id":"1","addon_type":"extension","updated_from":"app"}}
+{"timestamp":83798577,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"true","glean_timestamp":"1749211652592"}}
+{"timestamp":83799144,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"false","glean_timestamp":"1749211652592"}}
+{"timestamp":83803184,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"false","glean_timestamp":"1749211652592"}}
+{"timestamp":83804595,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"false","glean_timestamp":"1749211652592"}}
+{"timestamp":83805315,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"false","glean_timestamp":"1749211652592"}}
+{"timestamp":83815265,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"false","glean_timestamp":"1749211652592"}}
+{"timestamp":83782670,"category":"media.playback","name":"first_frame_loaded","extra":{"resolution":"V,720<h<=1080","is_hdr":"false","video_codec":"video/vp8","metadata_loaded_time":"26","buffering_time":"0","decoder_name":"ffvpx video decoder (RDD remote)","total_waiting_data_time":"0","playback_type":"Non-MSE playback","first_frame_loaded_time":"505","is_hardware_decoding":"true","glean_timestamp":"1749211652592"}}
+{"timestamp":83817480,"category":"doh","name":"state_shutdown","extra":{"value":"null","glean_timestamp":"1749211652636"}}

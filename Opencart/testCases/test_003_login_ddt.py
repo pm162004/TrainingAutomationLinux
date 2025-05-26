@@ -13,8 +13,8 @@ class Test_Login_DDT():
     logger = LogGen.loggen()  # Logger
     print("hii")
     # path = os.path.join(os.path.abspath(os.curdir), "Opencart", "testdata", "Opencart_LoginData.xlsx")
-    # path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/testdata/Opencart_LoginData.xlsx"
-    path = "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/Opencart/testdata/Opencart_LoginData.xlsx"
+    path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/testdata/Opencart_LoginData.xlsx"
+    # path = "C:/Users/Winner/PycharmProjects/TrainingAutomationLinux/Opencart/testdata/Opencart_LoginData.xlsx"
     print(path,"hii")
     # path = "/home/web-h-028/PycharmProjects/TrainingAutomation/Opencart/testdata/Opencart_LoginData.xlsx"
     def test_login_ddt(self,setup):
