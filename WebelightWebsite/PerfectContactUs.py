@@ -1,8 +1,10 @@
+import wait
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
 import time
 import re
 
@@ -13,6 +15,7 @@ driver.implicitly_wait(10)
 # Open the Site
 driver.get("https://dev.webelight.co.in/contact-us")
 driver.maximize_window()
+wait = WebDriverWait(driver, 60)
 
 
 time.sleep(2)
@@ -144,6 +147,10 @@ print('Valid:', message.strip())
 time.sleep(2)
 
 driver.find_element(By.XPATH,"//button[@type='submit']").click()
+success_message = "Thank you, we have successfully received your message."
+def check_invite_success_msg():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Thank you, we have successfully received your message.')]")))
+assert check_invite_success_msg().text == success_message
 time.sleep(3.0)
 
 driver.close()
